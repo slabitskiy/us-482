@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,400' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- plugins -->
+  </head>
+<body>
+<!-- begin social  -->
+<div class="social">
+  <a href="#" class="social-button vk-color" title="">
+    <b class="sprite vk"></b>
+  </a>
+  <a href="#" class="social-button fb-color" title="">
+    <b class="sprite fb"></b>
+  </a>
+  <a href="#" class="social-button tw-color" title="">
+    <b class="sprite tw"></b>
+  </a>
+</div>
+<!-- end social -->
+  <!-- begin fixed_navigation-right  -->
+  <div class="fixed_navigation-right hidden-xs hidden-sm">
+    <a href="#" title="" class="button">
+      <span class="glyphicon glyphicon-chevron-up"></span>  
+    </a>
+    <a href="#" title="" class="button">
+      <span class="glyphicon glyphicon-chevron-down"></span>  
+    </a>
+  </div>
+  <!-- end fixed_navigation-right -->
+  <!-- main info header -->
+  <div class="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-7 hidden-xs">
+          <div class="info_text text-left">
+            <div class="info_text_block">
+              <p class="info_text_block_text">
+                Компаній на сайті:
+                <span class="info_text_block_text_number">37 477</span>
+              </p>
+            </div>
+            <div class="info_text_block">
+              <p class="info_text_block_text">
+                Учасників на сайті:
+                <span class="info_text_block_text_number">717 729</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-5">
+          <div class="info_nav text-right">
+            <ul class="inf_nav_main">
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">
+                  <div class="info_nav-icon"></div>
+                </a>
+              </li>
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">Щось там</a>
+              </li>
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">Розваги</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end main info header -->
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+        <div class="header_main_block">
+          <div class="row">
+            <!-- header logo -->
+            <div class="col-md-2 col-sm-6">
+              <div class="header_logo text-center">
+                <a href="#" class="header_logo_a">
+                  <img src="img/logo.png" height="143" width="120" alt="ua-482"></a>
+              </div>
+            </div>
+            <!-- end header logo -->
+            <!-- header panel right -->
+            <div class="col-md-10">
+              <div class="header_main_panel">
+                <div class="header_main_panel_text">
+                  <div class="row">
+                    <!-- header text quote -->
+                    <div class="col-md-9 col-sm-6">
+                      <div class="header_main_panel_text_quote hidden-xs hidden-sm">
+                        <p class="header_main_panel_text_quote_center text-right">
+                          Якщо сьогодні ти не здатний нікого любити, спробуй хоча б нікого не образити.
+                        </p>
+                        <p class="header_main_panel_text_quote_right text-right">Стівен Кінг</p>
+                      </div>
+                    </div>
+                    <!-- end header text quote -->
+                    <!-- header pick lenguage -->
+                    <div class="header_main_panel_text_leng col-md-2 text-right">
+                      <a href="#" class="header_main_panel_text_leng_ua active_leng">Ua</a>
+                      <a href="#" class="header_main_panel_text_leng_ru">Ru</a>
+                    </div>
+                    <!-- end header pick lenguage --> </div>
+                </div>
+
+                <div class="header_main_panel_reg">
+                  <div class="row">
+                    <!-- header city -->
+                    <div class="col-md-2 col-sm-3">
+                      <div class="header_main_panel_reg_city text-center ">
+                        <h4 class="header_main_panel_reg_city_name">Тернопіль</h4>
+                        <a href="#" class="header_main_panel_reg_city_a">змінити</a>
+                      </div>
+                    </div>
+                    <!-- end header city -->
+
+                    <!-- delete blocks: header reg pass, header color-->
+           
+                    <!-- header reg_profile registration form -->
+                    <div class="col-md-10  col-sm-9">
+                      <div class="header_main_panel_reg_profile_mainform text-right ">
+                      <div class="header_main_panel_reg_profile_regbutt">
+                        <a href="#" class="header_main_panel_reg_profile_regbutt_link">
+                          Реєстрація
+                        </a>
+                      </div>
+                      <form action="" class="header_main_panel_reg_form text-center">                       
+                        <div class="header_main_panel_reg_form_block">
+                          <span class="header_main_panel_reg_form_block_text">
+                            E-mail чи номер телефону:
+                          </span>
+                          <input type="text" class="header_main_panel_reg_form_block_email">    
+                          <div class="header_main_panel_reg_profile_remembers_blocks">
+                          <div class="header_main_panel_reg_profile_remembers_blocks--inline width_and_height">
+                             <input type="checkbox" id="checkbox" class="header_main_panel_reg_profile_remembers_blocks_checkbox">
+                            <label for="checkbox" class=""></label>
+                          </div>
+                          <div class="header_main_panel_reg_profile_remembers_blocks--inline">
+                            <span class="header_main_panel_reg_profile_remembers_blocks_checkbox_label">пам’ятати мене</span>
+                          </div>
+                           <!--  <input type="checkbox" id="checkbox" class="header_main_panel_reg_profile_remembers_blocks_checkbox">
+                            <label for="checkbox" class="header_main_panel_reg_profile_remembers_blocks_checkbox_label">пам’ятати мене</label> -->
+                          </div>                    
+                        </div>
+                        <div class="header_main_panel_reg_form_block">
+                          <span class="header_main_panel_reg_form_block_text">
+                            Пароль:
+                          </span>
+                           <input type="password" class="header_main_panel_reg_form_block_pass">  
+                           <div class="header_main_panel_reg_profile_remembers_blocks">
+                            <a href="#" class="header_main_panel_reg_profile_remembers_blocks_link">Забули пароль?</a>
+                          </div>                        
+                        </div>  
+                         <input type="button" class="header_main_panel_reg_form_butt_in" value="Вхід">                       
+                      </form>
+                    <!-- not uses -->
+                      <div class="header_main_panel_reg_profile_remembers hidden">
+                        <div class="header_main_panel_reg_profile_remembers_blocks">
+                          <input type="checkbox" id="checkbox" class="header_main_panel_reg_profile_remembers_blocks_checkbox"><label for="checkbox" class="header_main_panel_reg_profile_remembers_blocks_checkbox_label">пам’ятати мене</label>
+                        </div>
+                        <div class="header_main_panel_reg_profile_remembers_blocks">
+                          <a href="#" class="header_main_panel_reg_profile_remembers_blocks_link">Забули пароль?</a>
+                        </div>                        
+                      </div>
+                     <!-- end not uses -->
+                      </div>
+                    </div>
+                    <!-- end header reg_profile  registration form-->
+                   </div>
+                </div>
+                <!-- <div class="clearfix"></div> -->
+                <!-- begin nav -->
+                <div class="row">
+                <div class="col-md-8 col-sm-8">
+                <div class="header_main_panel_nav">
+                  <nav class="navbar " role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="active">
+                          <a href="#">СТВОРИ МАРШРУТ</a>
+                        </li>
+                        <li>
+                          <a href="#">АВТОСТОП</a>
+                        </li>
+                        <li>
+                          <a href="#">ЕКСПРЕС-РОБОТА</a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            ПОДІЇ <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">СТВОРИ МАРШРУТ</a>
+                            </li>
+                            <li>
+                              <a href="#">АВТОСТОП</a>
+                            </li>
+                            <li>
+                              <a href="#">ЕКСПРЕС-РОБОТА</a>
+                            </li>
+                            <li>
+                              <a href="#">ПОДІЇ</a>
+                            </li>
+                            <li>
+                              <a href="#">ПРИЗИ</a>
+                            </li>
+                            <li>
+                              <a href="#">ПОДАРУНКИ</a>
+                            </li>
+                            <li>
+                              <a href="#">ДОБРОТА</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">ПРИЗИ</a>
+                        </li>
+                   <!--      <li>
+                          <a href="#">ПОДАРУНКИ</a>
+                        </li>
+                        <li>
+                          <a href="#">ДОБРОТА</a>
+                        </li> -->
+                      </ul>
+                    </div>
+                    <!-- /.navbar-collapse --> </nav>
+                </div>
+                </div>
+                <div class="col-md-4 col-md-4">
+                  <div class="header_main_panel_nav_second">
+                    <ul class="second_list">
+                      <li class="list_items"><a href="#" class="items_link">Аукціон</a></li>
+                      <li class="list_items"><a href="#" class="items_link">Дисконтний <br> клуб</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                <!-- end nav -->
+                <div class="header_main_panel_breads">
+                  <ul class="header_main_panel_breads_ul">
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text1</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text2</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text3</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text4</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text5</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end header panel --> </div>
+        </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- main content -->
+
+  <div class="main_content">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-10 col-md-push-2">
+            <div class="reg_info">
+              <!-- reg info header -->
+                <div class="reg_info_header text-center">
+                  <h3 class="reg_info_header_text">Реєстрація</h3>
+                </div>
+               <!-- end reg info header -->
+              <div class="reg_info_remember_pass_company">
+                <form action="" class="reg_info_remember_pass_company_form">
+                  <div class="reg_info_remember_pass_company_form_block">
+                    <p class="reg_info_remember_pass_company_form_block_title">
+                      Електронна пошта чи номер телефону: 
+                    </p>
+                    <input type="text" class="reg_info_remember_pass_company_form_block_input">
+                  </div>
+                  <div class="reg_info_remember_pass_company_form_block">
+                    <p class="reg_info_remember_pass_company_form_block_title">
+                      Пароль: 
+                    </p>
+                    <input type="pass" class="reg_info_remember_pass_company_form_block_input">
+                  </div>
+                  <div class="reg_info_remember_pass_company_form_block">
+                    <p class="reg_info_remember_pass_company_form_block_title">
+                      Продублюйте пароль: 
+                    </p>
+                    <input type="pass" class="reg_info_remember_pass_company_form_block_input">
+                  </div>
+                  <div class="reg_info_remember_pass_company_form_block">  
+                      <img src="img/captcha.png" alt="" class="reg_info_remember_pass_company_form_block_input--img">               
+                      <input type="text" class="reg_info_remember_pass_company_form_block_input--captcha">
+                  </div>
+                  <div class="reg_info_remember_pass_company_form_block">
+                    <button type="submit" class="reg_info_remember_pass_company_form_block_button" >
+                       Створити сторінку <br> КОМПАНІЇ
+                    </button>
+                  </div>
+                </form>
+              </div>
+             </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end main content -->
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_copy text-left">
+            <p class="footer_copy_text">
+              <span class="footer_copy_text_symbol">&copy;</span>
+              <span class="footer_copy_text_year">2014</span>
+              sharkee.net
+            </p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="footer_nav ">
+            <ul class="footer_nav_ul">
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a footer_active_link">Інформація</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Каталог компаній</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Контакти</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Stuff</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer -->
+
+  <!-- fixed ads -->
+
+  <div class="fixed_ad">
+
+<!--     <div class="fixed_ad_gotop">
+      <div class="container">
+        <div class="fixed_ad_gotop_butt">
+          <a href="#" class="fixed_ad_gotop_href ">
+          <span class="hidden-xs"> 
+           Повернутись наверх
+          </span>
+          <img src="img/top_arrow_2.svg" alt="" class="hidden-lg hidden-md hidden-sm ">
+          </a>
+        </div>
+      </div>
+    </div> -->
+    <div class="fixed_ad_gotop hidden-lg hidden-md">
+      <div class="container">
+        <div class="fixed_ad_gotop_butt">
+          <a href="#" class="fixed_ad_gotop_href ">
+          <span class="glyphicon glyphicon-chevron-up"> 
+          </span>          
+          </a>
+        </div>
+      </div>
+    </div>    
+    <div class="fixed_ad_block">
+      <div class="container pos_relative">
+        <div class="fixed_ad_block_ico hidden-xs">
+          <img src="img/fixed_ad_ico.png" height="36" width="36" alt="fixed_ico" class="fixed_ad_block_ico_img"></div>
+        <div class="fixed_ad_block_ads">
+          <p class="fixed_ad_block_ads_text">
+            <span class="fixed_ad_block_ads_text_upper">Реклама</span>
+            : блок реклами, яку можна при бажанні прибрати.
+          </p>
+        </div>
+        <div class="fixed_ad_block_close">
+        <a href="#" class="fixed_ad_block_close_link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end fixed ads -->
+
+  <!--scripts-->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

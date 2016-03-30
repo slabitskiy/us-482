@@ -1,0 +1,130 @@
+@fixed_ad_gotop_butt_bg: #a3a3a3;
+
+.fixed_ad{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+
+		// .fixed_ad_gotop{
+		// 	.fixed_ad_gotop_butt{				
+		// 		background: @fixed_ad_gotop_butt_bg;
+		// 		border-top-right-radius: 5px;
+		// 		border-top-left-radius: 5px;
+		// 		float: left;
+		// 		text-align: center;
+
+		// 		.fixed_ad_gotop_href{
+		// 			line-height: 28px;
+		// 			font-size: 12px;
+		// 			color: #fff;
+		// 			display: block;
+		// 			width: 150px;
+		// 			height: 30px;
+		// 			img{
+		// 				margin-top: -2px;
+		// 			}
+		// 			&:hover{
+		// 				text-decoration: none;
+		// 			}
+		// 		}
+		// 	}
+		// }
+		.fixed_ad_gotop{
+			.fixed_ad_gotop_butt{				
+				background: @fixed_ad_gotop_butt_bg;
+				float: left;
+				text-align: center;
+
+				.fixed_ad_gotop_href{
+					line-height: 33px;
+					font-size: 23px;
+					color: #fff;
+					display: block;
+					width: 30px;
+					height: 29px;	
+					.glyphicon{
+						margin-left: 3px;
+					}			
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		.fixed_ad_block{
+			background: #fff;
+			padding: 2px 0;
+			position: relative;
+			.fixed_ad_block_ico{
+				display: inline-block;
+				padding-right: 17px;
+				padding-left: 27px;
+				background: url(../img/shadow-left.png) center right no-repeat;
+			}
+
+			.fixed_ad_block_ads{
+			display: inline-block;
+			overflow: hidden;
+			width: 65%;
+			height: 20px;
+			top: 5px;
+			position: relative;
+				.fixed_ad_block_ads_text{
+				color: @fixed_ad_gotop_butt_bg;
+				font-size: 14px;
+				width: 471px;
+					.fixed_ad_block_ads_text_upper{
+						text-transform: uppercase;
+					}
+				}
+			}
+			.fixed_ad_block_close{
+				position: absolute;
+				right: 15px;
+				top: 9px;				
+				.fixed_ad_block_close_link{
+					display: block;
+					width: 20px;
+					height: 20px;
+					background: #484848;
+					position: relative;
+					border-radius: 50px;
+					&:before{
+						content: '';
+						width: 11px;
+						height: 1px;
+						background:#fff;
+						position: absolute;
+						top: 10px;
+						-webkit-transform: rotate(45deg);
+						-moz-transform: rotate(45deg);
+						-ms-transform: rotate(45deg);
+						-o-transform: rotate(45deg);
+						transform: rotate(45deg);
+						left: 5px;
+						}
+					&:after{
+						content: '';
+						width: 11px;
+						height: 1px;
+						background:#fff;
+						position: absolute;
+						top: 10px;
+						-webkit-transform: rotate(-45deg);
+						-moz-transform: rotate(-45deg);
+						-ms-transform: rotate(-45deg);
+						-o-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+						left: 5px;
+					}
+				}
+			}
+		}
+}
+.pos_relative{
+	position: relative;
+}

@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,400' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  </head>
+
+<body>
+<!-- begin social  -->
+<div class="social">
+  <a href="#" class="social-button vk-color" title="">
+    <b class="sprite vk"></b>
+  </a>
+  <a href="#" class="social-button fb-color" title="">
+    <b class="sprite fb"></b>
+  </a>
+  <a href="#" class="social-button tw-color" title="">
+    <b class="sprite tw"></b>
+  </a>
+</div>
+<!-- end social -->
+  <!-- begin fixed_navigation-right  -->
+  <div class="fixed_navigation-right hidden-xs hidden-sm">
+    <a href="#" title="" class="button">
+      <span class="glyphicon glyphicon-chevron-up"></span>  
+    </a>
+    <a href="#" title="" class="button">
+      <span class="glyphicon glyphicon-chevron-down"></span>  
+    </a>
+  </div>
+  <!-- end fixed_navigation-right -->
+  <!-- main info header -->
+  <div class="info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-7 hidden-xs">
+          <div class="info_text text-left">
+            <div class="info_text_block">
+              <p class="info_text_block_text">
+                Компаній на сайті:
+                <span class="info_text_block_text_number">37 477</span>
+              </p>
+            </div>
+            <div class="info_text_block">
+              <p class="info_text_block_text">
+                Учасників на сайті:
+                <span class="info_text_block_text_number">717 729</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-5">
+          <div class="info_nav text-right">
+            <ul class="inf_nav_main">
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">
+                  <div class="info_nav-icon"></div>
+                </a>
+              </li>
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">Щось там</a>
+              </li>
+              <li class="info_nav_li">
+                <a href="#" class="info_nav_li_a">Розваги</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end main info header -->
+
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+    <div class="row">
+        <div class="header_main_block">
+          <div class="roww">
+            <!-- header logo -->
+            <div class="col-md-2 col-sm-6">
+              <div class="header_logo text-center">
+                <a href="#" class="header_logo_a">
+                  <img src="img/logo.png" height="143" width="120" alt="ua-482"></a>
+              </div>
+            </div>
+            <!-- end header logo -->
+            <!-- header panel right -->
+            <div class="col-md-10">
+              <div class="header_main_panel">
+                <div class="header_main_panel_text">
+                  <div class="row">
+                    <!-- header text quote -->
+                    <div class="col-md-9 col-sm-6">
+                      <div class="header_main_panel_text_quote hidden-xs hidden-sm">
+                        <p class="header_main_panel_text_quote_center text-right ">
+                          Якщо сьогодні ти не здатний нікого любити, спробуй хоча б нікого не образити.
+                        </p>
+                        <p class="header_main_panel_text_quote_right text-right">Стівен Кінг</p>
+                      </div>
+                    </div>
+                    <!-- end header text quote -->
+                    <!-- header pick lenguage -->
+                    <div class="header_main_panel_text_leng col-md-2 text-right">
+                      <a href="#" class="header_main_panel_text_leng_ua active_leng">Ua</a>
+                      <a href="#" class="header_main_panel_text_leng_ru">Ru</a>
+                    </div>
+                    <!-- end header pick lenguage --> </div>
+                </div>
+
+                <div class="header_main_panel_reg">
+                  <div class="row">
+                    <!-- header city -->
+                    <div class="col-md-2 col-sm-6">
+                      <div class="header_main_panel_reg_city text-center ">
+                        <h4 class="header_main_panel_reg_city_name">Тернопіль</h4>
+                        <a href="#" class="header_main_panel_reg_city_a">змінити</a>
+                      </div>
+                    </div>
+                    <!-- end header city -->
+                    <!-- header reg pass -->
+                    <div class="col-md-6 col-sm-6 text-center">
+                      <div class="header_main_panel_reg_pass text-center ">
+                        <p class="header_main_panel_reg_pass_text">Пароль дня:</p>
+                        <div class="header_main_panel_reg_pass_top">
+                          <p class="header_main_panel_reg_pass_top_text">Тепер я Чебурашка!</p>
+                        </div>
+                      </div>
+                       <div class="header_main_panel_reg_color text-center hidden-sm hidden-xs">
+                        <p class="header_main_panel_reg_color_text">Колір дня:</p>
+                        <a href="#" class="header_main_panel_reg_color_click">
+                          <div class="header_main_panel_reg_color_pick"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end header reg pass -->
+                    <!-- header color -->
+                    <div class="hidden-lg hidden-md col-sm-6">
+                      <div class="header_main_panel_reg_color text-center">
+                        <p class="header_main_panel_reg_color_text">Колір дня:</p>
+                        <a href="#" class="header_main_panel_reg_color_click">
+                          <div class="header_main_panel_reg_color_pick"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end header color -->
+                    <!-- header reg_profile -->
+                    <div class="col-md-4 col-sm-6">
+                      <div class="header_main_panel_reg_profile text-right ">
+                        <div class="header_main_panel_reg_profile_logo">
+                          <div class="header_main_panel_reg_profile_logo_like"></div>
+                          <img src="img/user.jpg" alt="face_user" class="header_main_panel_reg_profile_logo_img"></div>
+                        <div class="header_main_panel_reg_profile_text text-left">
+                          <p class="header_main_panel_reg_profile_text_name">Маріанна</p>
+                          <div class="header_main_panel_reg_profile_text_surname">Переяславченко</div>
+                          <p class="header_main_panel_reg_profile_text_nickname">Lady_in_red_2014</p>
+                        </div>
+                        <div class="header_main_panel_reg_profile_room">
+                          <div class="header_main_panel_reg_profile_room_mess"></div>
+                          <a href="" class="header_main_panel_reg_profile_room_a">
+                            <img src="img/room.png" alt="room_img" class="header_main_panel_reg_profile_room_a_img"></a>
+
+                        </div>
+                        <div class="header_main_panel_reg_profile_out">
+                          <a href="#" class="header_main_panel_reg_profile_out_href">
+                            <img src="img/out.png"  alt="out"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end header reg_profile --> </div>
+                </div>
+                <!-- <div class="clearfix"></div> -->
+                <!-- begin nav -->
+                <div class="row">
+                <div class="col-md-8 col-sm-8">
+                <div class="header_main_panel_nav">
+                  <nav class="navbar " role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                      <ul class="nav navbar-nav">
+                        <li class="active">
+                          <a href="#">СТВОРИ МАРШРУТ</a>
+                        </li>
+                        <li>
+                          <a href="#">АВТОСТОП</a>
+                        </li>
+                        <li>
+                          <a href="#">ЕКСПРЕС-РОБОТА</a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            ПОДІЇ <b class="caret"></b>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a href="#">СТВОРИ МАРШРУТ</a>
+                            </li>
+                            <li>
+                              <a href="#">АВТОСТОП</a>
+                            </li>
+                            <li>
+                              <a href="#">ЕКСПРЕС-РОБОТА</a>
+                            </li>
+                            <li>
+                              <a href="#">ПОДІЇ</a>
+                            </li>
+                            <li>
+                              <a href="#">ПРИЗИ</a>
+                            </li>
+                            <li>
+                              <a href="#">ПОДАРУНКИ</a>
+                            </li>
+                            <li>
+                              <a href="#">ДОБРОТА</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">ПРИЗИ</a>
+                        </li>
+                   <!--      <li>
+                          <a href="#">ПОДАРУНКИ</a>
+                        </li>
+                        <li>
+                          <a href="#">ДОБРОТА</a>
+                        </li> -->
+                      </ul>
+                    </div>
+                    <!-- /.navbar-collapse --> </nav>
+                </div>
+                </div>
+                <div class="col-md-4 col-md-4">
+                  <div class="header_main_panel_nav_second">
+                    <ul class="second_list">
+                      <li class="list_items"><a href="#" class="items_link">Аукціон</a></li>
+                      <li class="list_items"><a href="#" class="items_link">Дисконтний <br> клуб</a></li>
+                    </ul>
+                  </div>
+                </div>
+                </div>
+                <!-- end nav -->
+                <div class="header_main_panel_breads">
+                  <ul class="header_main_panel_breads_ul">
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">Головна</a>
+                      >>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text2</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text3</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text4</a>
+                    </li>
+                    <li class="header_main_panel_breads_li">
+                      <a href="#" class="header_main_panel_breads_li_a">text5</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- end header panel --> </div>
+        </div>
+        </div>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <!-- main content -->
+
+  <div class="main_content">
+    <div class="container">
+      <div class="row">
+        <div class="epj">
+          <div class="row">
+            <!-- events -->
+            <div class="col-md-3 col-sm-6">
+              <div class="events text-center">
+                <div class="events_text">
+                  <h3 class="events_text_header">Події</h3>
+                  <p class="events_text_small">особливі пропозиції</p>
+                </div>
+                <div class="events_ico">
+                  <img src="img/events_best.png" alt="events_img" class="events_ico_img"></div>
+                <div class="events_text_if">
+                  <p class="events_text_if_text">(або будь-який рекламний блок на продаж)</p>
+                </div>
+                <div class="events_butt">
+                  <a href="#" class="events_butt_link">проглянути</a>
+                </div>
+              </div>
+            </div>
+            <!-- end events -->
+            <!-- player  -->
+            <div class="col-md-6">
+              <div class="player_tv ">
+                <div class="video_box">
+                 <video id='video_box_media' controls>
+                    <source src='videoADs/Marvels_Avengers- Age_of Ultron_Trailer_3.mp4' type='video/mp4'>                   
+                 </video>
+                 <div class="vedio_box_controls">
+                   
+                 </div>
+                </div>
+              </div>
+            </div>
+            <!-- end player  -->
+            <!-- job -->
+            <div class="col-md-3 col-sm-6">
+              <div class="jobs text-center">
+                <div class="job_text">
+                  <p class="job_text_heder">Експресс-робота</p>
+                  <p class="job_text_small">найкращі пропозиції</p>
+                </div>
+                <div class="job_ico">
+                  <img src="img/job_ico_job.png" alt="jov_ico" class="job_ico_img"></div>
+                <div class="job_text_if">
+                  <p class="job_text_if_text">
+                    (або будь-який інший блок чи рекламне місце на продаж, 
+                чи щось інше, що нам потрібно винести на чільне місце)
+                  </p>
+                </div>
+                <div class="job_ico_second text-right">
+                  <img src="img/job_ico_chat.png" alt="job_ico_chat" class="job_ico_second_img"></div>
+              </div>
+            </div>
+            <!-- end job --> </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="marque">
+          <div class="row">
+            <div class="col-md-3">
+            <div class="marque_icons text-center">
+              <a href="#" class="marque_icons_link">
+                <img src="img/marque_ico_link.png" height="21" width="20" alt="" class="marque_icons_link_img_link"></a>
+              <a href="#" class="marque_icons_link">
+                <img src="img/marque_ico_clock.png" height="21" width="21" alt="" class="marque_icons_link_img_clock"></a>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="marque_gostring  text-center">
+              <p class="marque_gostring_text">
+                за телефоном: 067-505-48-70
+                <span class="marque_gostring_text_dot"></span>
+                Тільки сьогодні для перших 30 покупців - 50% на усі пок
+              </p>
+            </div>
+            </div>
+            <div class="col-md-3">
+            <div class="marque_see_all  text-center">
+              <a href="#" class="marque_see_all_link">Переглянути всю стрічку</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="categories">
+        <!-- begin categories  -->
+        
+        <!-- end categories -->
+          <div class="row">
+            <!-- services -->
+            <div class="col-md-3 col-sm-6">
+              <div class="categories_block " id="services">
+                <div class="categories_block_header">
+                  <div class="categories_block_header_info text-center">
+                    <p class="categories_block_header_info_text">37</p>
+                  </div>
+                  <div class="categories_block_header_text text-center">
+                    <h4 class="categories_block_header_text_big">Послуги</h4>
+                  </div>
+                  <div class="categories_block_header_lines">
+                    <div class="row">
+                      <div class="categories_block_header_lines_yellow col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_yellowlight col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_silver col-md-4 col-xs-4 col-sm-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories_block_content">
+                  <div class="categories_block_content_hover text-center">
+                    <a href="" class="categories_block_content_hover_link">
+                      <img src="img/categories_key.png" alt="" class="categories_block_content_hover_link_img"></a>
+                  </div>
+                  <div class="categories_block_content_img">
+                    <img src="img/services_img.jpg" alt="" class=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- end services -->
+            <!-- products -->
+            <div class="col-md-3 col-sm-6">
+              <div class="categories_block " id="products">
+                <div class="categories_block_header">
+                  <div class="categories_block_header_info text-center">
+                    <p class="categories_block_header_info_text">37</p>
+                  </div>
+                  <div class="categories_block_header_text text-center">
+                    <h4 class="categories_block_header_text_big">Товари</h4>
+                  </div>
+                  <div class="categories_block_header_lines">
+                    <div class="row">
+                      <div class="categories_block_header_lines_yellow col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_yellowlight col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_silver col-md-4 col-xs-4 col-sm-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories_block_content">
+                  <div class="categories_block_content_hover text-center">
+                    <a href="" class="categories_block_content_hover_link">
+                      <img src="img/categories_key.png" alt="" class="categories_block_content_hover_link_img"></a>
+                  </div>
+                  <div class="categories_block_content_img">
+                    <img src="img/products_img.jpg" alt="" class=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- end products -->
+            <!-- food -->
+            <div class="col-md-3 col-sm-6">
+              <div class="categories_block " id="food">
+                <div class="categories_block_header">
+                  <div class="categories_block_header_info text-center">
+                    <p class="categories_block_header_info_text">37</p>
+                  </div>
+                  <div class="categories_block_header_text text-center">
+                    <h4 class="categories_block_header_text_big">Їжа & Розваги</h4>
+                  </div>
+                  <div class="categories_block_header_lines">
+                    <div class="row">
+                      <div class="categories_block_header_lines_yellow col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_yellowlight col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_silver col-md-4 col-xs-4 col-sm-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories_block_content">
+                  <div class="categories_block_content_hover text-center">
+                    <a href="" class="categories_block_content_hover_link">
+                      <img src="img/categories_key.png" alt="" class="categories_block_content_hover_link_img"></a>
+                  </div>
+                  <div class="categories_block_content_img">
+                    <img src="img/food_img.jpg"  alt="" class=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- end food  -->
+            <!-- tourism -->
+            <div class="col-md-3 col-sm-6">
+              <div class="categories_block " id="tourism">
+                <div class="categories_block_header">
+                  <div class="categories_block_header_info text-center">
+                    <p class="categories_block_header_info_text">37</p>
+                  </div>
+                  <div class="categories_block_header_text text-center">
+                    <h4 class="categories_block_header_text_big">Туризм</h4>
+                  </div>
+                  <div class="categories_block_header_lines">
+                    <div class="row">
+                      <div class="categories_block_header_lines_yellow col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_yellowlight col-md-4 col-xs-4 col-sm-4"></div>
+                      <div class="categories_block_header_lines_silver col-md-4 col-xs-4 col-sm-4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories_block_content">
+                  <div class="categories_block_content_hover text-center">
+                    <a href="" class="categories_block_content_hover_link">
+                      <img src="img/categories_key.png" alt="" class="categories_block_content_hover_link_img"></a>
+                  </div>
+                  <div class="categories_block_content_img">
+                    <img src="img/tourism_img.jpg"  alt="" class=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- end tourism --> </div>
+        </div>
+      </div>
+      <!-- begin first slider -->
+      <div class="row">
+        <div class="categories_header">
+            <p class="header_text">
+              Акції вашого міста
+            </p>
+          </div>
+        <div class="slideshow_hlodiay_block">
+          <div class="row">
+            <!-- slideshow -->
+            <div class="col-md-12">
+              <div class="slideshow">
+                <div class="slideshow_block" >
+                  <!-- slides block -->
+                  <div class="slideshow_slides">
+                    <div class="roww slide_show_id" id="">
+                      <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_green">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      15<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                      <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> </div>
+                          <!-- end slide content -->
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+                          <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                <span class="strong">Lorem ipsum dolor sit amet</span>  , consectetur adipisicing elit. Vitae, pariatur nostrum! Repellat <span class="color_text">saepe eum sequi unde, </span> qui consequatur, ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                           </div>
+                      </div>
+                      <!-- end slide -->
+                      <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_orange">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> </div>
+                          <!-- end slide content --> 
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+        <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                               <span class="strong">Lorem ipsum dolor sit amet,</span>  consectetur adipisicing elit. Vitae, pariatur nostrum! Repellat saepe <span class="color_text">eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                          </div>
+                      </div>
+                      <!-- end slide --> <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_red">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> 
+                            </div>
+                          <!-- end slide content --> 
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+        <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                Lorem ipsum dolor sit amet, <span class="strong">consectetur adipisicing elit.</span> Vitae, pariatur nostrum! <span class="color_text">Repellat saepe eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                          </div>
+                      </div>
+                      <!-- end slide --> <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_blue">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button -->
+                                 </div>
+                            </div>
+                            <!-- end slide content bottom --> 
+                            </div>
+                          <!-- end slide content -->
+
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+                              <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                Lorem ipsum <span class="strong">dolor sit amet, consectetur adipisicing elit.</span> Vitae, pariatur nostrum! <span class="color_text"> Repellat saepe eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                           </div>
+                      </div>
+                      <!-- end slide --> </div>
+                    <!-- end slides block --> </div>
+                  <!-- slide navigation -->
+                  <div class="slideshow_navigation">
+                    <a class="navigation_left" > <b class="navigation_left_ico"></b>
+                    </a>
+                    <a class="navigation_right" >
+                      <b class="navigation_right_ico"></b>
+                    </a>
+                  </div>
+                  <!-- end slide navigation --> </div>
+              </div>
+            </div>
+            <!-- end slideshow --> 
+            </div>
+        </div>
+      </div>
+  <!-- end first slider -->
+     <!-- begin second slider -->
+      <div class="row">
+        <div class="flash_add_index">
+          
+        </div>
+        <div class="slideshow_hlodiay_block  top_normal_radius">
+          <div class="row">
+            <!-- slideshow -->
+            <div class="col-md-12">
+              <div class="slideshow">
+                <div class="slideshow_block" >
+                  <!-- slides block -->
+                  <div class="slideshow_slides">
+                    <div class="roww slide_show_id" id="">
+                      <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_green">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      15<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                      <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> </div>
+                          <!-- end slide content -->
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+                          <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                <span class="strong">Lorem ipsum dolor sit amet</span>  , consectetur adipisicing elit. Vitae, pariatur nostrum! Repellat <span class="color_text">saepe eum sequi unde, </span> qui consequatur, ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                           </div>
+                      </div>
+                      <!-- end slide -->
+                      <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_orange">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> </div>
+                          <!-- end slide content --> 
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+        <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                               <span class="strong">Lorem ipsum dolor sit amet,</span>  consectetur adipisicing elit. Vitae, pariatur nostrum! Repellat saepe <span class="color_text">eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                          </div>
+                      </div>
+                      <!-- end slide --> <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_red">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button --> </div>
+                            </div>
+                            <!-- end slide content bottom --> 
+                            </div>
+                          <!-- end slide content --> 
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+        <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                Lorem ipsum dolor sit amet, <span class="strong">consectetur adipisicing elit.</span> Vitae, pariatur nostrum! <span class="color_text">Repellat saepe eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                          </div>
+                      </div>
+                      <!-- end slide --> <!-- slide -->
+                      <div class="col-md-122 slideshow_slides_max-width">
+                        <div class="slideshow_slides_slide slide_blue">
+                          <!-- slide content -->
+                          <div class="slideshow_slides_slide_content">
+                            
+                            <!-- slide  content img -->
+                            <div class="slideshow_slides_slide_content_image_block">
+                              <img src="img/user.jpg" alt="" class="slideshow_slides_slide_content_image_block_img"></div>
+                            <!-- end slide content img -->
+                            <!-- slide content bottom -->
+                            <div class="slideshow_slides_slide_content_bottom">
+                              <div class="slideshow_slides_slide_content_bottom_stick" id="">
+                                <div class="slideshow_slides_slide_content_bottom_stick_cell">
+                                  <div class="slideshow_slides_slide_content_bottom_stick_sm">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_sm_text">до</p>
+                                  </div>
+                                  <div class="slideshow_slides_slide_content_bottom_stick_bg text-center">
+                                    <p class="slideshow_slides_slide_content_bottom_stick_bg_text">
+                                      99<span>%</span>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                                           <!-- right -->
+                              <div class="slideshow_slides_slide_content_bottom_stick-right">
+                                <div class="bottom_gifts">
+                                <div class="bottom_gifts_img"><b class="image"></b></div>
+                                <div class="bottom_gifts_info">                                 
+                                  <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
+                                  <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
+                                </div>
+                              </div>
+                              </div>
+                              <!-- end right -->
+                              <div class="slideshow_slides_slide_content_bottom_block">
+                                <!-- block text -->
+                                <div class="slideshow_slides_slide_content_bottom_block_text text-center">
+                                  <p class="slideshow_slides_slide_content_bottom_block_text_p">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">з</span>
+                                    20:00
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_p_color">до</span>
+                                    23:00
+                                  </p>
+                                  <div class="slideshow_slides_slide_content_bottom_block_text_date">
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_with">22.11</span>
+                                    -
+                                    <span class="slideshow_slides_slide_content_bottom_block_text_date_to">22.12</span>
+                                  </div>
+                                </div>
+                                <!-- end block text -->
+                                <!-- block button -->
+                                <div class="slideshow_slides_slide_content_bottom_block_butt text">
+                                  <a href="#" class="slideshow_slides_slide_content_bottom_block_butt_link">переглянути</a>
+                                </div>
+                                <!-- end block button -->
+                                 </div>
+                            </div>
+                            <!-- end slide content bottom --> 
+                            </div>
+                          <!-- end slide content -->
+
+                          <!-- slide header -->
+                          <div class="slideshow_slides_slide_header">
+                              <div class="slideshow_slides_slide_statistics">
+                              <div class="see">
+                                <p class="text">555</p>
+                                <b class="sprite yey"></b>
+                              </div>
+                              <div class="star">
+                                <p class="text">45</p>
+                                <b class="sprite star"></b>
+                              </div>
+                              <div class="like">
+                                <p class="text">455</p>
+                                <b class="sprite heart"></b>
+                              </div>
+                            </div>
+                            <div class="slideshow_slides_slide_header_text text-center">
+                              <p class="slideshow_slides_slide_header_text_p">
+                                Lorem ipsum <span class="strong">dolor sit amet, consectetur adipisicing elit.</span> Vitae, pariatur nostrum! <span class="color_text"> Repellat saepe eum sequi unde, qui consequatur,</span> ea aut, nobis laboriosam corrupti reprehenderit!
+                              </p>
+                            </div>
+                          </div>
+                          <!-- end slide header -->
+                           </div>
+                      </div>
+                      <!-- end slide --> </div>
+                    <!-- end slides block --> </div>
+                  <!-- slide navigation -->
+                  <div class="slideshow_navigation">
+                    <a class="navigation_left" > <b class="navigation_left_ico"></b>
+                    </a>
+                    <a class="navigation_right" >
+                      <b class="navigation_right_ico"></b>
+                    </a>
+                  </div>
+                  <!-- end slide navigation --> </div>
+              </div>
+            </div>
+            <!-- end slideshow --> 
+            </div>
+        </div>
+      </div>
+      <!-- end second slider -->
+      <div class="row">
+        <div class="gifts">
+          <div class="gifts_header text-center">
+            <p class="gifts_header_text">Подарунки</p>
+          </div>
+          <!-- blocks gift -->
+          <div class="gifts_blocks">
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block">
+                <div class="gift_block_mark"></div>
+                <div class="gift_block_image">
+                  <img src="img/user.jpg" alt=""></div>
+                <div class="gift_block_title text-center">
+                  <p class="gift_block_title_text">Котик</p>
+                  <div class="gift_block_title_butt">
+                    <a href="#" class="gift_block_title_butt_link">Проглянути</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end block gift -->
+            <!-- block gift -->
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="gift_block text-center">
+                <a class="gift_block_see_all">
+                  <div class="gift_block_see_all_block">
+                    <div class="gift_block_see_all_block_ico">
+                      <img src="img/gift_ico_gift.png" alt="gift" class="gift_block_see_all_block_ico_img"></div>
+                    <div class="gift_block_see_all_block_text">
+                      <p class="gift_block_see_all_block_text_p">
+                        Проглянути
+                        каталог
+                        подарунків
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- end block gift --> </div>
+          <!-- end blocks gift --> </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end main content -->
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_copy text-left">
+            <p class="footer_copy_text">
+              <span class="footer_copy_text_symbol">&copy;</span>
+              <span class="footer_copy_text_year">2014</span>
+              sharkee.net
+            </p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="footer_nav ">
+            <ul class="footer_nav_ul">
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a footer_active_link">Інформація</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Каталог компаній</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Контакти</a>
+              </li>
+              <li class="footer_nav_li">
+                <a href="#" class="footer_nav_li_a">Stuff</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- end footer -->
+
+  <!-- fixed ads -->
+
+  <div class="fixed_ad">
+<!--     <div class="fixed_ad_gotop">
+      <div class="container">
+        <div class="fixed_ad_gotop_butt">
+          <a href="#" class="fixed_ad_gotop_href ">
+          <span class="hidden-xs"> 
+           Повернутись наверх
+          </span>
+          <img src="img/top_arrow_2.svg" alt="" class="hidden-lg hidden-md hidden-sm ">
+          </a>
+        </div>
+      </div>
+    </div>  -->
+    <div class="fixed_ad_gotop hidden-lg hidden-md">
+      <div class="container">
+        <div class="fixed_ad_gotop_butt">
+          <a href="#" class="fixed_ad_gotop_href ">
+          <span class="glyphicon glyphicon-chevron-up"> 
+          </span>          
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fixed_ad_block">
+      <div class="container pos_relative">
+        <div class="fixed_ad_block_ico hidden-xs">
+          <img src="img/fixed_ad_ico.png" height="36" width="36" alt="fixed_ico" class="fixed_ad_block_ico_img"></div>
+        <div class="fixed_ad_block_ads">
+          <p class="fixed_ad_block_ads_text">
+            <span class="fixed_ad_block_ads_text_upper">Реклама</span>
+            : блок реклами, яку можна при бажанні прибрати.
+          </p>
+        </div>
+        <div class="fixed_ad_block_close">
+        <a href="#" class="fixed_ad_block_close_link"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end fixed ads -->
+
+  <!--scripts-->
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/chosen.jquery.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script>
+      //  slider OWL carousel 
+        var owl = $(".slide_show_id");       
+        owl.owlCarousel({
+            items : 2, //1 items above 1000px browser width
+            itemsDesktop : [1000,2], //1 items between 1000px and 901px
+            itemsDesktopSmall : [900,1], // betweem 900px and 601px
+            itemsTablet: [600,1], //2 items between 600 and 0
+            itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            pagination: true
+        });       
+        
+        // Custom Navigation Events
+        $(".navigation_right").click(function(){
+          owl.trigger('owl.next');
+        });
+        $(".navigation_left").click(function(){
+          owl.trigger('owl.prev');
+        });
+     
+  </script>
+
+</body>
+</html>

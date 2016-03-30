@@ -1,0 +1,482 @@
+.main_content{
+	// circles main
+	.check_circle{
+		position: absolute;
+		left: 13px;
+		top:2px;		
+		.check_circle_block{
+			width: 28px;
+			height: 28px;
+			border-radius: 50px;
+			border: 3px solid #fff;
+			position: relative;			
+		}
+
+	}
+	.line_circle{
+		&:before{
+			width: 4px;
+			background: #fff;
+			content: '';
+			display: block;
+			height: 1840px;
+			position: absolute;
+			left: 12px;
+			top: 24px;
+
+		}
+	}
+	.true_circle{
+		&:after{
+				display: block;
+				content: '';
+				left: 0;
+				top: 0;
+				right: 0;	
+				margin: 0 auto;			
+				background:  url(../img/check_circle_good.png) center center no-repeat;
+				position: absolute;
+				width: 100%;
+				height: 100%;				
+				
+			}				
+	}
+	.error_circle{
+		background: #ff0000!important;		
+		&:after{display: block;
+				content: '';
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				// background-image: url(../img/error_line1.svg);
+				background:  url(../img/check_circle_error.png) center center no-repeat;
+				position: absolute;
+				width: 100%;
+				height: 100%;				
+				top: 0;
+			}				
+	}
+	// end circles main
+	.reg_steps{
+		background: #f9d503;
+		.reg_steps_block{
+			.check_circle{			
+				.check_circle_block{
+					background: #f9d503;
+				}
+			}
+			padding-left: 85px;
+			position: relative;
+			.reg_steps_blocks{
+				position: relative;
+				text-align: center;
+				display: inline-block;
+				width: 18.6%;	
+				padding: 3px 0;
+				.reg_steps_blocks_step{
+					font-size: 18px;
+					font-weight: 700;
+					color:#ffffff;				
+				}	
+			}
+		}
+	}
+	.reg_company_block{
+		&:nth-child(2){
+			margin: 50px 0 10px 0;
+		}
+		&:nth-child(4){
+			margin: 25px 0 10px 0;
+		}
+		&:nth-child(6){
+			margin: 40px 0 10px 0;
+		}
+		&:nth-child(8){
+			margin: 40px 0 10px 0;
+		}
+		// cirles
+		.check_circle{
+			left:16px;
+			.check_circle_block{
+				background: #e6e6e6;
+			}
+		}
+		#name_obj_ur{
+			top: 57px;
+		}
+		#category{
+			top: 122px;
+		}
+		#obj_category{
+			top: 184px;
+		}
+		#location{
+			top: 18px;
+		}
+		#work_graf{
+			top: 298px;
+		}
+		#avatar{
+			top: -2px;
+		}
+		#pictures{
+			top: 125px;
+		}
+		#video{
+			top: 255px;
+		}
+		#info{
+			top: 255+128px;
+		}
+		#last{
+			top: 78px;
+		}
+		// end cirles
+		.reg_company_block_main{
+			width: 680px;
+			margin-left: 76px;		
+			&--full{
+				width: 100%;
+				margin-left: 0;
+			}
+			.reg_company_block_main_fieldset{
+				input{
+					.input_reg_mixin;
+				}
+				select{
+					.input_reg_mixin;
+					  -webkit-appeara nce: none;
+					  -moz-appearance : none;
+					   appearance: none;
+					   background: url(../img/arrow_down_select.png) 95% center no-repeat, #fff;
+					&:-ms-expand{
+						 display: none;
+					}
+				}
+				.reg_company_block_form_blocks_text{
+					font-size: 11px;
+					color: #727272;
+					margin-right: 65px;
+					margin-bottom: 3px;
+				}
+				.reg_company_block_form_blocks--line1{
+					max-width: 400px;
+					display: inline-block;
+					margin-right: 15px;
+					margin-bottom: 10px;
+					vertical-align: top;
+					.reg_company_block_form_blocks_title{
+						color: #4d4d4d;
+						font-size: 14px;
+						font-weight: 700;
+						margin-right: 8px;
+						margin-bottom: 0;
+						vertical-align: middle;
+						display: inline-block;
+					}
+				}
+				.reg_company_block_form_blocks--line2{
+					width: 257px;
+					display: inline-block;
+				}
+			
+					.reg_company_block_form_blocks_inline_text{
+						font-size: 13px;
+						color:#656565;
+						font-weight: 700;
+						display: block;
+					}
+				.reg_company_block_form_blocks_inline_small_input--first{
+						.input_reg_mixin(53px,7px);
+					}
+				.reg_company_block_form_blocks_inline_small_input--second{
+						.input_reg_mixin(153px);
+					}
+				.reg_company_block_form_blocks_inline_small_input--third{
+						.input_reg_mixin(198px);
+					}
+				
+				.reg_company_block_form_blocks_button_add{
+					.link_button_mixin;
+				}
+				.reg_company_block_form_blocks_button_next{
+					.link_button_mixin(81px,14px);
+					float: right;
+				}
+				.reg_company_map{
+					height: 275px;
+					width: 100%;
+					background: #b9b9b9;
+					border-radius: 12px;
+				}
+
+				.reg_company_block_from_blocks_checkbox_main{
+					display: inline-block;
+					.reg_company_block_from_blocks_checkbox_main_title{
+						font-size: 12px;
+						color:#656565;
+						display: block;		
+						margin-bottom: 3px;				
+						}
+						.reg_company_block_from_blocks_checkbox_main_block{
+							position: relative;
+							width: 19px;
+							height: 18px;
+							margin: 0 auto;
+							input[type=checkbox]{
+								opacity: 0;
+								visibility: hidden;
+								position: absolute;
+								display: none;						
+
+								&:checked+label:before{
+									content: '';
+									position: absolute;
+									width: 10px;
+									height: 9px;
+									background: #b2b2b2;
+									margin: 0 auto;
+									right: 0;
+									left: 0;
+									top: 5px;								
+								}
+							}
+							label{
+								display: block;
+								height: 18px;
+								width: 19px;
+								background: #fff;
+								margin-bottom: 0;
+								cursor: pointer;	
+								position: relative;						
+						}
+					}
+				}
+				.reg_company_block_form_blocks_day{
+					display: inline-block;
+					vertical-align: bottom;
+					.reg_company_block_form_blocks_day_text{
+						display: inline-block;
+						width: 42px;
+						background: #777777;
+						border-bottom-left-radius: 10px;
+						border-top-left-radius: 10px;
+						text-align: center;
+						height: 25px;
+						line-height: 25px;
+						vertical-align: bottom;
+						.reg_company_block_form_blocks_day_text_p{
+							color: #fff;
+						}
+					}
+					.reg_company_block_form_blocks_day_hours{
+						display: inline-block;
+						padding-left: 20px;
+						padding-right: 25px;
+						background: #fff;
+						border-bottom-right-radius: 10px;
+						border-top-right-radius: 10px;
+						margin-left: -4px;
+						vertical-align: bottom;
+						.reg_company_block_form_blocks_day_hours_input{
+							.input_reg_mixin(50px,0)
+						}
+					}
+				}
+				.reg_company_form_avatar{
+					width: 118px;
+					height: 118px;
+					border-radius: 10px;
+					background: #b9b9b9;
+					overflow: hidden;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.reg_company_block_form_blocks_file_upload{
+					position: relative;
+					&:hover {
+						 	cursor: pointer;
+						 }
+					.reg_company_block_form_blocks_file_upload_input{
+						opacity: 0;						
+						position: absolute;
+						cursor: pointer;
+						right: 0;
+						.input_reg_mixin(100%);						 
+					}
+					.reg_company_block_form_blocks_file_upload_fileblock{
+						.input_reg_mixin(229px);
+						display: inline-block;
+					}
+					.reg_company_block_form_blocks_file_upload_button{
+						display: inline-block;
+						height: 25px;
+						width: 101px;
+						border-radius: 10px;
+						background: #777777;
+						text-align: center;						
+						font-size: 12px;
+						line-height: 25px;
+						color: #fff;
+						font-weight: bold;
+						margin-left: 4px;	
+						cursor: pointer;									
+					}
+				}
+				.reg_company_form_photos_block_main{
+					width: 118px;
+					height: 118px;
+					.reg_company_form_photos_blocks{
+						display: inline-block;
+						width: 37px;
+						height: 37px;		
+						.reg_company_form_photos_blocks_img{
+							width: 100%;
+							height: 100%;					
+							border-radius: 10px;
+							overflow: hidden;
+							margin-bottom: -2px;
+							background: #b9b9b9;
+							img{
+								width: 100%;
+								height: 100%;
+							}
+										
+						}
+					}					
+				}
+				.reg_company_block_form_blocks_textarea{
+					.input_reg_mixin(100%,11px,12px,75px,left);
+					font-style: italic;
+					padding-bottom: 11px;
+					padding-top: 11px;
+					resize: none;
+				}
+				.reg_company_block_form_blocks_button_preview{
+					.link_button_mixin(330px,14px,#fcea81,#4d4d4d,30px);
+					margin: 20px auto 0 auto;
+				}
+				.reg_company_block_form_blocks_button_ppublication{
+					.link_button_mixin(330px,14px,#f9d503,#4d4d4d,30px);
+					margin: 10px auto 10px auto;
+				}
+				.reg_company_block_form_blocks_button_add_one{
+					color: #4d4d4d;
+					text-decoration: underline;
+					font-weight: bold;
+				}
+				
+			}
+		}
+	}
+
+}
+.vt-align{
+	vertical-align: middle!important;
+}
+
+.width340_margin{
+	.mix_width_margin;
+}
+.width500_margin{
+	.mix_width_margin(500px,30px);
+	margin-left: -15px;
+}
+
+.vt-align_top{
+	vertical-align: top!important;
+}
+.reg_company_block_form_blocks_inline{
+		display: inline-block;
+}
+.reg_company_block_form_blocks_not_inline{
+	max-width: 265px;
+	float: right;
+}
+.minus_margin{
+	margin-left: -1px;
+}
+
+.margin_bottom_10px{
+	margin-bottom: 10px;
+}
+.margin_bottom_25px{
+	margin-bottom: 25px;
+}
+.margin_bottom_6px{
+	margin-bottom: 6px;
+}
+
+#break{
+	.reg_company_block_form_blocks_inline,
+	.reg_company_block_form_blocks_not_inline{
+		float: left;
+	}
+	.reg_company_block_form_blocks_day{
+		.reg_company_block_form_blocks_day_text{
+			display: none;
+		}
+		.reg_company_block_form_blocks_day_hours{
+			border-radius: 10px;
+			width:166px;
+		}
+	}
+}
+
+ /* active step for numbers line */
+
+.active_step_numbers{
+	background: #fcea81;
+	&:after{
+		content: '';
+		color:  #fcea81;
+		display: block;
+		border-left: 9px solid;
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		position: absolute;
+		right: -9px;
+		top: 30%;
+	}
+	.reg_steps_blocks_step{
+		color:#777777 !important;
+	}
+}
+/*mixins */
+.mix_width_margin(@width:340px,@margin:54px){
+	width: @width!important;
+	margin-right: @margin;
+}
+.link_button_mixin(@width: 41px,@fontsize:24px,@color_bg:#777777,@color_text:#fff,@height:26px){
+	display: block;
+		width: @width;
+		height: @height;
+		line-height: @height;
+		color:@color_text;
+		background:@color_bg;
+		border-radius: 10px;
+		text-align: center;
+		font-weight: 700;
+		font-size: @fontsize;
+		&:hover{
+			text-decoration: none;
+			background: darken(@color_bg,10%);
+		}	
+}
+
+
+.input_reg_mixin(@width: 255px,@padding: 15px,@font-size:16px,@height:25px,@text-align:center){
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background: #fff;
+	font-size: @font-size;
+	color: #656565;
+	padding: 0 @padding;
+	width: @width;
+	height: @height;
+	text-align: @text-align;
+	vertical-align: middle;
+}

@@ -1,0 +1,539 @@
+.main_content{
+	&.ref_admin{
+		.admin_service_content_my_referals_resp{
+			width: 100%;
+			padding: 0 15px 15px;
+			overflow-y: hidden;
+			// height: 400px;
+		}
+		.admin_service_content_my_referals{
+			min-width: 800px;
+			@media only screen and (max-width: 1199px) {
+				min-width: 820px;
+			}
+			// overflow-x: auto;
+			.my_referals_header{
+				&:after{
+					display: block;
+					content: '';
+					height: 0;
+					clear: both;
+				}
+				.header_name{
+					float: left;
+					min-width: 180px;
+					width: 22%;
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.name_text{
+						color: #4d4d4d;
+						font-size: 11px;
+						line-height: 39px;
+						text-align: center;
+					}
+					.sort_up{
+						position: absolute;
+						top: 10px;
+						left: 24px;
+						.up_btn{
+							width: 12px;
+							height: 6px;
+							background: url('../img/header_name.png') no-repeat center;
+							background-position: 0 0;
+							cursor: pointer;
+							&:hover{
+								&+div{
+									display: block;
+								}
+							}
+						}
+						.up_hit{
+							display: none;
+							position: absolute;
+						    top: -1px;
+						    left: 19px;
+							background: #fbefa6;
+							box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+							width: 136px;
+							height: 20px;
+							text-align: center;
+							.hit_text{
+								font-size: 9px;
+								line-height: 20px;
+							}
+						}
+					}
+					.sort_down{
+						position: absolute;
+						top: 22px;
+						left: 24px;
+						.down_btn{
+							width: 12px;
+							height: 6px;
+							background: url('../img/header_name.png') no-repeat center;
+							background-position: 0 -13px;
+							cursor: pointer;
+							&:hover{
+								&+div{
+									display: block;
+								}
+							}
+						}
+						.down_hit{
+							display: none;
+							position: absolute;
+							bottom: -1px;
+						    left: 19px;
+							background: #fbefa6;
+							box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+							width: 136px;
+							height: 20px;
+							text-align: center;
+							.hit_text{
+								font-size: 9px;
+								line-height: 20px;
+							}
+						}
+					}
+				}
+				.header_place{
+					margin-left: 4px;
+					float: left;
+					min-width: 122px;
+					width: 15%;
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.place_text{
+						color: #4d4d4d;
+						font-size: 11px;
+						line-height: 39px;
+						text-align: center;
+					}
+				} 
+				.header_date{
+					margin-left: 4px;
+					float: left;
+					min-width: 76px;
+					@media only screen and (max-width: 1199px) {
+						width: 9.7%;
+					}
+					width: 10%;
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.date_text{
+						margin-top: 8px;
+						color: #4d4d4d;
+						font-size: 11px;
+						line-height: 11px;
+						text-align: center;
+					}
+				} 
+				.header_count{
+					margin-left: 4px;
+					float: left;
+					min-width: 76px;
+					@media only screen and (max-width: 1199px) {
+						width: 9.7%;
+					}
+					width: 10%;
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.count_text{
+						margin-top: 8px;
+						color: #4d4d4d;
+						font-size: 11px;
+						line-height: 11px;
+						text-align: center;
+					}
+				}  
+				.header_money{
+					margin-left: 4px;
+					float: left;
+					min-width: 94px;
+					width: 11.7%;
+					@media only screen and (max-width: 1199px) {
+						width: 11.5%;
+					}
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.money_text{
+						margin-top: 5px;
+						color: #4d4d4d;
+						font-size: 10px;
+						line-height: 10px;
+						text-align: center;
+					}
+				} 
+				.header_profit{
+					margin-left: 4px;
+					float: left;
+					min-width: 94px;
+					width: 11.6%;
+					@media only screen and (max-width: 1199px) {
+						width: 11.5%;
+					}
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					.profit_text{
+						margin-top: 10px;
+						color: #4d4d4d;
+						font-size: 10px;
+						line-height: 10px;
+						text-align: center;
+					}
+				}   
+				.header_period{
+					margin-left: 4px;
+					float: left;
+					min-width: 136px;
+					width: 17%;
+					@media only screen and (max-width: 1199px) {
+						width: 16.6%;	
+					}
+					background: #f9f9f9;
+					border-bottom: 1px solid #c3c3c3;
+					height: 39px;
+					position: relative;
+					z-index: 2;
+					&.open{
+						.period_dropdown{
+							transform: rotate(180deg);
+						}
+						.period_choose{
+							display: block;
+						}
+					}
+					.period_text{
+						margin-top: 10px;
+						color: #4d4d4d;
+						font-size: 10px;
+						line-height: 10px;
+						text-align: center;
+					}
+					.period_dropdown{
+						right: 15px;
+						top: 18px;
+						position: absolute;
+						width: 12px;
+						height: 6px;
+						background: url('../img/header_name.png') no-repeat center;
+						background-position: 0 -13px;
+						cursor: pointer;
+						// z-index: 2;
+					}
+					.period_choose{
+						position: absolute;
+						top: 30px;
+						left: 0;
+						width: 100%;
+						box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+						background: #fff;
+						display: none;
+						// padding-bottom: 5px;
+						.choose_year{
+							color: #ffffff;
+							font-size: 10px;
+							line-height: 13px;
+							height: 13px;
+							background: #878787;
+							border-radius: 7px;
+							width: 119px;
+							margin: 3px auto 5px;
+							position: relative;
+							.year{
+								text-align: center;
+								font-weight: 600;
+							}
+							.year_prev{
+								position: absolute;
+								height: 100%;
+								left: 7px;
+								top: 0;
+								cursor: pointer;
+							    user-select: none;
+							}
+							.year_next{
+								position: absolute;
+								height: 100%;
+								right: 7px;
+								top: 0;
+								cursor: pointer;
+							    user-select: none;
+							}
+						}
+						.choose_months{
+							&:after{
+								clear: both;
+								height: 0;
+								content: '';
+								display: block;
+							}
+							display: flex;
+							flex-wrap:wrap;
+							.month{
+								color: #4d4d4d;
+								font-size: 8px;
+								text-align: center;
+								width: 33%;
+								line-height: 1;
+								height: 13px;
+								cursor: pointer;
+							}
+						}
+					}
+				}   			
+			}
+			.my_referals_users{
+				.referal_user{
+					&:nth-child(even){
+						background: #fff;
+						.user_info{
+							.user_name{
+								.name_text{
+									padding-left: 49px;
+								}
+							}
+						}
+					}
+					&:nth-child(odd){
+						.user_info{
+							.user_name{
+								.name_text{
+									padding-left:  52px;
+								}
+							}
+						}
+					}
+					&.open{
+						// .user_dropdown{
+						// 	display: block;
+						// }
+					}
+					.user_info{
+						height: 31px;
+						line-height: 31px;
+						color: #4d4d4d;
+						&:after{
+							display: block;
+							content: '';
+							height: 0;
+							clear: both;
+						}
+						.user_name{
+							font-size: 11px;
+							float: left;
+							min-width: 180px;
+							width: 22%;
+							position: relative;
+							height: 31px;
+							.user_count{
+								position: absolute;
+								left: 7px;
+								top: 0;
+								height: 100%;
+							}
+							.user_info_btn{
+								top: 7px;
+								left: 25px;
+								position: absolute;
+								// cursor: help;
+								cursor: pointer;
+								width: 9px;
+								height: 15px;
+								z-index: 2;
+								background: url('../img/referal_user_info.png') no-repeat center;
+							}
+							.name_text{
+								line-height: 1;
+								display: inline-block;
+								left: 0;
+								width: 100%;
+								top: 50%;
+								transform: translateY(-58%);
+								position: absolute;
+							}
+						}
+						.user_place{
+							margin-left: 4px;
+							float: left;
+							min-width: 122px;
+							width: 15%;
+							.place_text{
+								font-size: 10px;
+								text-align: center;
+							}
+							// 
+						}
+						.user_date{
+							margin-left: 4px;
+							float: left;
+							min-width: 76px;
+							@media only screen and (max-width: 1199px) {
+								width: 9.7%;
+							}
+							width: 10%;
+							.date_text{
+								font-size: 11px;
+								text-align: center;
+							}
+						}
+						.user_count{
+							margin-left: 4px;
+							float: left;
+							min-width: 76px;
+							@media only screen and (max-width: 1199px) {
+								width: 9.7%;
+							}
+							width: 10%;
+							.count_text{
+								font-size: 11px;
+								text-align: center;
+							}
+						}
+						.user_money{
+							margin-left: 4px;
+							float: left;
+							min-width: 94px;
+							width: 11.7%;
+							@media only screen and (max-width: 1199px) {
+								width: 11.5%;
+							}
+							position: relative;
+							.money_text{
+								font-size: 11px;
+								text-align: center;
+							}
+						}
+						.user_profit{
+							margin-left: 4px;
+							float: left;
+							min-width: 94px;
+							width: 11.6%;
+							@media only screen and (max-width: 1199px) {
+								width: 11.5%;
+							}
+							position: relative;
+							.profit_text{
+								font-size: 11px;
+								text-align: center;
+							}
+						}
+						.user_period{
+							margin-left: 4px;
+							float: left;
+							min-width: 136px;
+							width: 17%;
+							@media only screen and (max-width: 1199px) {
+								width: 16.6%;	
+							}
+							position: relative;
+							.period_text{
+								font-size: 11px;
+								text-align: center;
+							}
+						}
+					}
+					// 
+					.user_dropdown{
+						height: 31px;
+						line-height: 31px;
+						color: #4d4d4d;
+						background: #f8f8f8;
+						display: none;
+						&:after{
+							display: block;
+							content: '';
+							height: 0;
+							clear: both;
+						}
+						.dropdown_hp{
+							float: left;
+							min-width: 180px;
+							width: 22%;
+							position: relative;
+							height: 31px;
+							font-size: 10px;
+							text-align: center;
+							strong{
+								color: #eea800;
+							}
+						}
+						.dropdown_adress{
+							margin-left: 4px;
+							float: left;
+							min-width: 122px;
+							width: 15%;
+							text-align: center;
+							.adress_text{
+								font-size: 10px;
+							}
+						}
+						.dropdown_email{
+							float: left;
+							margin-left: 4px;
+							width: 31%;
+							@media only screen and (max-width: 1199px) {
+								width: 29.3%;								
+							}
+							text-align: center;
+							.email_text{
+								font-size: 10px;
+								span{
+									color: #561b1b;
+								}
+							}
+						}
+						.dropdown_tell{
+							position: relative;
+							height: 31px;
+							font-size: 11px;
+							line-height: 11px;
+							float: left;
+							width: 13.5%;
+							.tell_center{
+								position: absolute;
+								top: 50%;
+								left: 0;
+								width: 100%;
+								transform: translateY(-56%);
+							}
+						}
+						.dropdown_skype{
+							float: left;
+							margin-left: 4px;
+							width: 16.8%;
+							@media only screen and (max-width: 1199px) {
+								width: 18.5%;
+							}
+							text-align: center;
+							.img{
+								display: inline-block;
+								vertical-align: middle;
+								margin-right: 10px;
+								width: 19px;
+								height: 19px;
+								background: url('../img/skype.png') no-repeat center;
+							}
+							.skype_text{
+								font-size: 11px;
+							}
+						}
+					}
+					// 
+				}
+			}
+		}
+	}
+}

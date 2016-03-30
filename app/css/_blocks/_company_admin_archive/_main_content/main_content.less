@@ -1,0 +1,1924 @@
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+
+@input-border:                   #ccc;
+
+@brand-primary:         #428bca;
+//@btn-default-color:              #333;
+//@btn-default-bg:                 #fff;
+//@btn-default-border:             #ccc;
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 5%);
+
+
+@btn-link-disabled-color:        @gray-light;
+
+@input-group-addon-bg:           @gray-lighter;
+@input-group-addon-border-color: @input-border;
+
+@state-info-bg:           #d9edf7;
+
+@font-size-base:          14px;
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+@orange:                #f89406;
+
+// Mixins
+
+// Button variants
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: @background;
+  border-color: @border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    color: @color;
+    background-color: darken(@background, 8%);
+        border-color: darken(@border, 12%);
+  }
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border
+    }
+  }
+}
+
+// modal
+#modalCalendar{
+	.modal-dialog{
+		min-width: 1060px;
+		.modal-header{
+		  border-bottom: 1px solid #B6B6B6;
+			.close{
+				opacity: .8;
+			  	width: 21px;height: 21px;
+			  	border-radius: 500px;
+			  	background-color: #fff;
+			  	span{
+			  		opacity: .7;
+			  	}
+			}
+		}
+		.modal-content{
+			background-color: #e6e6e6;
+		}
+		.modal-body{
+			padding-top:5px;
+		}
+		.body-header{
+			color: #777777;
+			line-height: 1;
+			min-height: 35px;
+			// margin-bottom: 10px;
+			.header{
+				&-left{
+					float: left;
+					margin-left: 117px;
+					margin-top: 5px;
+					font-size: 16px;
+					text-align: center;
+					.left-text{
+						font-weight: 700;
+					}
+					.small{
+						font-weight: 500;
+					}
+				}
+				&-right{
+					float: right;
+					margin-top: 3px;
+					.right-img{
+						display: inline-block;
+						vertical-align: middle;
+						width: 29px;
+						height: 29px;
+						background: url('../img/print_img.png') center center no-repeat;
+					}
+					.right-text{
+						display: inline-block;
+						vertical-align: middle;
+						font-size: 11px;
+					}
+				}
+			}
+		}
+		.modal-action{
+			clear: both;
+			// margin-top: 10px;
+				// status
+				.on-turn{
+					background: #f9d503;
+				}
+				.in-archive{
+					background: #f9efa7;
+				}
+				.published{
+					background: #75c6ff;
+				}
+				.re-publish{
+					background: #a2bccf;
+					.status_text{
+						font-size: 11px!important;				
+					}
+				}
+				.took-place{
+					background: #d6d6d6;
+				}
+				// end status
+				// generet colums
+				.generate-columns(8);
+
+				.generate-columns(@n, @i: 1) when (@i =< @n) {
+				  .action-col-@{i} {
+				    display: inline-block;
+				    vertical-align: top;
+				    margin-top: 10px;
+
+				  }
+				  .generate-columns(@n, (@i + 1));
+				}
+				// end
+			.action{
+				&_number{
+					width: 108px;
+					height: 16px;	
+					text-align: center;
+					background: #777777;			
+					.number_text{
+						color: #fff;
+						font-weight: 700;
+						font-size: 12px;
+						line-height: 16px;
+					}
+				}
+				&_status{
+					width: 108px;
+					// margin-right: 3px;
+					margin-top: 3px;
+					height: 21px;
+					text-align: center;
+					.status_text{
+						font-size: 12px;
+						color: #494949;
+						line-height: 19px;
+					}
+				}
+			
+				&-button{
+					margin-top: 3px;
+					// margin-right: 3px;
+					line-height:  18px;
+					width: 108px;
+					background: #000;
+					height: 21px;
+					.button-link{
+						width: 100%;
+						height: 100%;
+						display: inline-block;
+						text-align: center;
+						font-size: 12px;
+						color: #fff;
+						// line-height: 16px;
+						line-height: .8;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+				&_main_header{
+					margin-bottom: 3px;
+					// margin-right: 3px;
+					height: 16px;
+					text-align: center;
+					background: #cdcdcd;
+					width: 100%;
+					.header_text{
+						line-height: 16px;
+						font-size: 12px;
+						color: #777;
+					}
+				}
+				&_date{
+					width: 85px;
+					line-height: 1;
+					text-align: center;
+					font-weight: 700;
+					color: #787878;
+					background: #fff;
+					  height: 70px;
+					// margin-right: 3px;
+					.date_month{
+						font-size: 16px;
+						padding-top: 5px;
+					}
+					.date_number{
+						font-size: 32px;
+						padding-top: 2px;
+					}
+				}
+				&_time{
+					width: 106px;
+					// margin-right: 3px;
+					text-align: center;
+					color: #787878;
+					font-size: 14px;
+					// height: 56px;
+					  height: 70px;
+					  background-color: #ffffff;
+					line-height: 68px;
+					.time_start{
+						display: inline-block;
+						vertical-align: middle;
+						line-height: 1;
+					}
+					.time_sep{
+						display: inline-block;
+						vertical-align: middle;
+						padding: 0 3px;
+						line-height: 1;
+					}
+					.time_end{
+						display: inline-block;
+						vertical-align: middle;
+						line-height: 1;
+					}
+				}
+				&_discount{
+					// height: 56px;
+				  height: 70px;
+					text-align: center;					
+					line-height: 68px;
+					width: 55px;
+					background: #777;
+					.discount_text{
+						font-size: 16px;
+						font-weight: 700;
+						color: #fff;
+					}
+				}
+				&_content{
+					// height: 56px;
+					  height: 70px;
+					text-align: left;					
+					line-height: 68px;
+					width: 142px;
+					background: #fff;
+					.content_text{
+						padding-left: 10px;
+						display: inline-block;
+						line-height: 1;
+						color: #787878;
+						font-size: 12px;
+					}
+				}
+				&_gift{
+					// height: 56px;
+					  height: 70px;
+					text-align: center;					
+					line-height: 68px;
+					width: 240px;
+					background: #fff;
+					.gift_text{
+						display: inline-block;
+						line-height: 1;
+						color: #787878;
+						font-size: 12px;
+					}
+				}
+				&_pass{
+					// height: 56px;
+					  height: 70px;
+					text-align: center;					
+					line-height: 68px;
+					width: 143px;
+					background: #777;
+					.pass_text{
+						display: inline-block;
+						line-height: 1;
+						color: #fff;
+						font-size: 12px;
+					}
+				}
+				&_duration{
+					.duration_start{
+						display: inline-block;
+						vertical-align: top;
+						// height: 56px;
+						  height: 70px;
+						text-align: center;					
+						line-height: 68px;
+						width: 56px;
+						margin-right: 3px;
+						background: #fff;
+						.start_text{
+							color: #777;
+							font-size: 12px;
+						}
+					}
+					.duration_end{
+						display: inline-block;
+						vertical-align: top;
+						// height: 56px;
+						text-align: center;
+						  height: 70px;					
+						line-height: 68px;
+						width: 56px;
+						background: #fff;
+						.end_text{
+							color: #777;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+	}			
+}
+
+.main_content{
+	.content_calendar{
+		text-align: right;
+	}
+	.calendar_year{
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		background: #cdcdcd;
+		border-radius: 10px;
+		width: 150px;
+		height: 73px;
+		padding-top: 3px;
+		margin-left: 30px;
+		line-height: 1;
+		.year{
+			&_img{
+				.img{
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					background: url('../img/calendar_archive_ico.png') center center no-repeat;
+				}
+			}
+			&_text{
+				.text{
+					color: #787878;
+					font-size: 16px;
+					
+				}
+			}
+			&_link{
+				.link{
+					font-size: 10px;
+					color: #787878;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	#data_archive{
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+
+
+	.datepicker {
+	border-radius: 4px;
+	display: block!important;
+	&-inline {
+		// width: 220px;
+	}
+	direction: ltr;
+	&&-rtl {
+		direction: rtl;
+		table tr td span {
+			float: right;
+		}
+	}
+	// new styles
+	.thead{
+		.tr{
+			&:first-child{
+			width: 581px;
+				background: #f9d503;
+				line-height: 42px;
+				color: #6e6e6e;
+				position: relative;
+				margin-bottom: 5px;
+					.none-th{
+						&:nth-child(2){
+							float: left;
+ 							 margin-left: 25px;
+						}
+					}
+					.th,
+					.prev,
+					.next,
+					.datepicker-switch{
+						vertical-align: middle;
+						text-align: center;
+						position: relative;
+						display: inline-block;
+						font-size: 30px;
+						font-weight: 700;						
+					}
+						.prependSpan{
+							position: absolute;
+							top: 12px;
+							width: 90px;
+							line-height: 1;
+							font-size: 12px;
+							font-weight: 700;
+							.city_company{
+								font-weight: 400;
+								display: block;
+							}
+
+						}
+						.appendSpan{
+							position: absolute;
+							top: -11px;
+							margin: 0 auto;
+							font-size: 16px;
+							font-weight: 700;
+							width: 94px;
+							height: 24px;
+							line-height: 24px;
+							background: #fff;
+							border-radius: 10px;
+
+						}
+				}
+				&:nth-child(2){
+					font-size: 10px;
+					.th{
+						&:first-child{
+							margin-left: 0!important;
+						}
+						&:last-child{
+							margin-right: 0!important;
+						}
+						width: 66px;
+						height: 20px;
+						line-height: 19px;
+						color: #fff;
+						background: #afafaf;
+						margin: 5px 10px;
+						text-transform: lowercase;
+						display: inline-block;
+						vertical-align: middle;
+
+					}
+				}
+				.next,
+				.prev{
+					font-size: 1px;
+					position: relative;
+					color:  #f9d503;
+					width: 37px;
+					cursor: pointer;
+
+					&:before{
+						content: '';
+						position: absolute;
+						top: 50%;
+						width: 25px;
+						height: 25px;
+						background: #fff;
+						margin-top: -13px;
+					}
+					&:after{
+						top: 50%;
+						margin-top: -9px;
+					}
+				}
+				.prev{
+					float: left;
+					&:before{
+						left: 10px;
+					}
+					&:after{
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(119, 119, 119, 0);
+						border-right-color: #777777;
+						border-width: 9px;
+						left: 9px;
+					}					
+				}
+				.next{
+					float: right;
+					&:before{
+						right: 10px;
+					}
+					&:after{
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(119, 119, 119, 0);
+						border-left-color: #777777;
+						border-width: 9px;
+						right: 9px;
+					}
+				}
+			.th{
+			
+			}
+		}
+	}
+		.tbody{
+			.tr{
+				.td{
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					margin: 5px 10px;
+					&.day:hover,
+					&.day.focused {
+						cursor: pointer;
+					}
+
+					&.old,
+					&.new {
+						color: #787878;
+						opacity: .6;
+						&:hover{
+							&:before{
+								opacity: .6;
+							}
+						}
+					}
+					&.disabled,
+					&.disabled:hover {
+						background: none;
+						color: @btn-link-disabled-color;
+						cursor: default;
+					}
+					&.highlighted {
+						background: @state-info-bg;
+						border-radius: 0;
+					}
+					&.today,
+					&.today:hover,
+					&.today.disabled,
+					&.today.disabled:hover {
+						.span{
+							&:before{
+								position: absolute;
+								content: '';
+								display: block;
+								width: 113%;
+								height: 114%;
+								border: 5px solid #f9d503;
+								left: -4px;
+								top: -4px;
+								z-index: -15;
+							}				
+							
+						}			
+					}
+					&.today:hover:hover { // Thank bootstrap 2.0 for this selector...
+						// TODO: Bump min BS to 2.1, use @textColor in buttonBackground above
+						color: #000;
+					}
+					&.today.active:hover {
+						color: #fff;
+					}
+					
+					&:first-child{
+							margin-left: 0!important;
+					}
+					&:last-child{
+						margin-right: 0!important;
+					}
+					.span{
+						position: relative;
+						font-weight: 700;
+						width: 66px;
+						line-height: 60px;
+						font-size: 32px;
+						background: #fff;
+						color: #787878;
+						height: 60px;
+						display: block;
+						// margin: 5px auto;
+						z-index: -15;		
+					}
+					// z-index: 1;
+					.numberLink{
+						width: 15px;
+						height: 15px;
+						border-radius: 100px;
+						background: #afafaf;
+						display: block;
+						position: absolute;
+						color: #303030;
+						font-size: 10px;
+						font-weight: 600;
+						bottom: 4px;
+						right: 4px;
+						line-height: 14px;
+					}
+					&:hover{
+						.span{
+							&:before{
+								position: absolute;
+								content: '';
+								display: block;
+								width: 113%;
+								height: 114%;
+								border: 5px solid #f9d503;
+								left: -4px;
+								top: -4px;
+								z-index: -15;
+							}				
+							
+						}
+					}
+					&:nth-last-child(2),
+					&:nth-last-child(1){
+						color: #f8b501;
+					}
+				}
+			}
+		}
+	// end new styles
+	&-dropdown {
+		top: 0;
+		left: 0;
+		padding: 4px;
+		&:before {
+			content: '';
+			display: inline-block;
+			border-left:   7px solid transparent;
+			border-right:  7px solid transparent;
+			border-bottom: 7px solid #ccc;
+			border-top:    0;
+			border-bottom-color: rgba(0,0,0,.2);
+			position: absolute;
+		}
+		&:after {
+			content: '';
+			display: inline-block;
+			border-left:   6px solid transparent;
+			border-right:  6px solid transparent;
+			border-bottom: 6px solid #fff;
+			border-top:    0;
+			position: absolute;
+		}
+		&.datepicker-orient-left:before   { left: 6px; }
+		&.datepicker-orient-left:after    { left: 7px; }
+		&.datepicker-orient-right:before  { right: 6px; }
+		&.datepicker-orient-right:after   { right: 7px; }
+		&.datepicker-orient-top:before    { top: -7px; }
+		&.datepicker-orient-top:after     { top: -6px; }
+		&.datepicker-orient-bottom:before {
+			bottom: -7px;
+			border-bottom: 0;
+			border-top:    7px solid #999;
+		}
+		&.datepicker-orient-bottom:after {
+			bottom: -6px;
+			border-bottom: 0;
+			border-top:    6px solid #fff;
+		}
+	}
+	> div {
+		display: none;
+	}
+	&.days .datepicker-days,
+	&.months .datepicker-months,
+	&.years .datepicker-years {
+		display: block;
+	}
+	table {
+		margin: 0;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		tr {
+			td, th {
+				text-align: center;
+				// width: 30px;
+				// height: 30px;
+				// border-radius: 4px;
+				border: none;
+			}
+		}
+	}
+	.table-condensed{
+		thead{
+			tr{
+				&:first-child{
+					background: #f9d503;
+					line-height: 42px;
+					border-width: 0 20px 0 20px;
+					border-style: solid;
+					border-color: #E6e6e6;
+					color: #6e6e6e;
+					position: relative;
+
+					th{
+						vertical-align: middle;
+						text-align: center;
+						position: relative;
+						// span{
+							font-size: 30px;
+							font-weight: 700;
+							// display: block;							
+						// }
+					}
+
+						.prependSpan{
+							position: absolute;
+							left: -10px;
+							top: 12px;
+							width: 90px;
+							line-height: 1;
+							font-size: 12px;
+							font-weight: 700;
+							.city_company{
+								font-weight: 400;
+								display: block;
+							}
+
+						}
+						.appendSpan{
+							position: absolute;
+							top: 9px;
+							// right: -255px;
+							// left: 0;
+							left: -45px;
+							margin: 0 auto;
+							font-size: 16px;
+							font-weight: 700;
+							// display: block;
+							width: 94px;
+							height: 24px;
+							line-height: 24px;
+							background: #fff;
+							border-radius: 10px;
+
+						}
+				}
+				&:nth-child(2){
+					font-size: 10px;
+					th{
+						// margin: 10px;
+						// border-spacing: 10px;
+						width: 85px;
+						height: 20px;
+						line-height: 19px;
+						color: #fff;
+						background: #afafaf;
+						// border: 10px 20px 10px 20px solid #E6E6E6;
+						border-width: 10px 20px 10px 20px;
+						border-style: solid;
+						border-color: #E6E6E6;
+						text-transform: lowercase;
+
+					}
+				}
+				.next,
+				.prev{
+					font-size: 1px;
+					position: relative;
+					color:  #f9d503;
+					&:before{
+						content: '';
+						position: absolute;
+						top: 50%;
+						width: 25px;
+						height: 25px;
+						background: #fff;
+						margin-top: -13px;
+					}
+					&:after{
+						top: 50%;
+						margin-top: -9px;
+					}
+				}
+				.prev{
+					&:before{
+						left: 10px;
+					}
+					&:after{
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(119, 119, 119, 0);
+						border-right-color: #777777;
+						border-width: 9px;
+						left: 9px;
+					}					
+				}
+				.next{
+					&:before{
+						right: 10px;
+					}
+					&:after{
+						border: solid transparent;
+						content: " ";
+						height: 0;
+						width: 0;
+						position: absolute;
+						pointer-events: none;
+						border-color: rgba(119, 119, 119, 0);
+						border-left-color: #777777;
+						border-width: 9px;
+						right: 9px;
+					}
+				}
+			}
+		}
+		tbody{
+			tr{
+				td{
+					// border-width: 0 20px 20px 20px;
+					// border-style: solid;
+					// border-color: #E6E6E6;
+					position: relative;
+					// z-index: 1;
+					.span{
+						position: relative;
+						font-weight: 700;
+						width: 66px;
+						line-height: 60px;
+						font-size: 32px;
+						background: #fff;
+						color: #787878;
+						height: 60px;
+						display: block;
+						margin: 5px auto;
+						// margin-bottom: 10px;
+						// margin: 5px 0;	
+						z-index: -15;		
+					}
+					// z-index: 1;
+					.numberLink{
+						width: 15px;
+						height: 15px;
+						border-radius: 100px;
+						background: #afafaf;
+						display: block;
+						position: absolute;
+						color: #303030;
+						font-size: 10px;
+						font-weight: 600;
+						bottom: 10px;
+						right: 14px;
+						line-height: 13px;
+						// &:before{
+						// 	content: '';
+						// 	position: absolute;
+						// 	width: 65px;
+						// 	height: 60px;
+						// 	top: -40px;
+						// 	left: -45px;
+						// }
+					}
+					&:hover{
+						.span{
+							// border: 5px solid ;	
+
+							// border-color:#f9d503;
+							// width: 76px;
+							// height: 70px;
+							&:before{
+								position: absolute;
+								content: '';
+								display: block;
+								width: 113%;
+								height: 114%;
+								border: 5px solid #f9d503;
+								left: -4px;
+								top: -4px;
+								z-index: -15;
+
+								width: 70px;
+								height: 65px;
+								left: -3px;
+								top: -3px;
+							}				
+							
+						}
+					}
+					&:nth-last-child(2),
+					&:nth-last-child(1){
+						color: #f8b501;
+					}
+				}
+			}
+		}
+	}
+	// Inline display inside a table presents some problems with
+	// border and background colors.
+	.table-striped & table tr {
+		td, th {
+			background-color: transparent;
+		}
+	}
+	table tr td {
+		&.day:hover,
+		&.day.focused {
+			cursor: pointer;
+		}
+
+		&.old,
+		&.new {
+			color: #787878;
+			opacity: .6;
+			&:hover{
+				&:before{
+					opacity: .6;
+				}
+			}
+		}
+		&.disabled,
+		&.disabled:hover {
+			background: none;
+			color: @btn-link-disabled-color;
+			cursor: default;
+		}
+		&.highlighted {
+			background: @state-info-bg;
+			border-radius: 0;
+		}
+		&.today,
+		&.today:hover,
+		&.today.disabled,
+		&.today.disabled:hover {
+			@today-bg: lighten(orange, 30%);
+			.button-variant(#000, @today-bg, darken(@today-bg, 20%));
+		}
+		&.today:hover:hover { // Thank bootstrap 2.0 for this selector...
+			// TODO: Bump min BS to 2.1, use @textColor in buttonBackground above
+			color: #000;
+		}
+		&.today.active:hover {
+			color: #fff;
+		}
+		&.range,
+		&.range:hover,
+		&.range.disabled,
+		&.range.disabled:hover {
+			background: @gray-lighter;
+			border-radius: 0;
+		}
+		&.range.today,
+		&.range.today:hover,
+		&.range.today.disabled,
+		&.range.today.disabled:hover {
+			@today-bg: mix(orange, @gray-lighter, 50%);
+			.button-variant(#000, @today-bg, darken(@today-bg, 20%));
+			border-radius: 0;
+		}
+		&.selected,
+		&.selected:hover,
+		&.selected.disabled,
+		&.selected.disabled:hover {
+			.button-variant(#fff, @gray-light, @gray);
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.active,
+		&.active:hover,
+		&.active.disabled,
+		&.active.disabled:hover {
+		// 	.button-variant(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
+		// 	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		span {
+			display: block;
+			width: 23%;
+			height: 54px;
+			line-height: 54px;
+			float: left;
+			margin: 1%;
+			cursor: pointer;
+			border-radius: 4px;
+			&:hover {
+				background: @gray-lighter;
+			}
+			&.disabled,
+			&.disabled:hover {
+				background: none;
+				color: @btn-link-disabled-color;
+				cursor: default;
+			}
+			&.active,
+			&.active:hover,
+			&.active.disabled,
+			&.active.disabled:hover {
+				// .button-variant(@btn-primary-color, @btn-primary-bg, @btn-primary-border);
+				// text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+			}
+			&.old,
+			&.new {
+				color: @btn-link-disabled-color;
+			}
+		}
+	}
+
+	.datepicker-switch {
+		width: 145px;
+	}
+
+	thead tr:first-child th,
+	tfoot tr th {
+		cursor: pointer;
+		&:hover {
+			// background: @gray-lighter;
+		}
+	}
+
+	// Basic styling for calendar-week cells
+	.cw {
+		font-size: 10px;
+		width: 12px;
+		padding: 0 2px 0 5px;
+		vertical-align: middle;
+	}
+	thead tr:first-child .cw {
+		cursor: default;
+		background-color: transparent;
+	}
+}
+.input-group.date .input-group-addon {
+	cursor: pointer;
+}
+.input-daterange {
+	width: 100%;
+	input {
+		text-align: center;
+	}
+	input:first-child {
+		border-radius: 3px 0 0 3px;
+	}
+	input:last-child {
+		border-radius: 0 3px 3px 0;
+	}
+	.input-group-addon {
+		width: auto;
+		min-width: 16px;
+		padding: 4px 5px;
+		font-weight: normal;
+		line-height: @line-height-base;
+		text-align: center;
+		text-shadow: 0 1px 0 #fff;
+		vertical-align: middle;
+		background-color: @input-group-addon-bg;
+		border: solid @input-group-addon-border-color;
+		border-width: 1px 0;
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+}
+
+		
+// .dow{
+//   text-transform: lowercase;
+// }
+// .datepicker {
+//   /*padding: 2px;*/
+//   overflow: hidden;
+//   border-radius: 10px;
+//   direction: ltr;
+// }
+// .datepicker-inline {
+//   width: 320px;
+//   background: white;
+// }
+// .datepicker.datepicker-rtl {
+//   direction: rtl;
+// }
+// .datepicker.datepicker-rtl table tr td span {
+//   float: right;
+// }
+// .datepicker-dropdown {
+//   top: 0;
+//   left: 0;
+// }
+// .datepicker-dropdown:before {
+//   content: '';
+//   display: inline-block;
+//   border-left: 7px solid transparent;
+//   border-right: 7px solid transparent;
+//   border-bottom: 7px solid #ccc;
+//   border-top: 0;
+//   border-bottom-color: rgba(0, 0, 0, 0.2);
+//   position: absolute;
+// }
+// .datepicker-dropdown:after {
+//   content: '';
+//   display: inline-block;
+//   border-left: 6px solid transparent;
+//   border-right: 6px solid transparent;
+//   border-bottom: 6px solid #fff;
+//   border-top: 0;
+//   position: absolute;
+// }
+// .datepicker-dropdown.datepicker-orient-left:before {
+//   left: 6px;
+// }
+// .datepicker-dropdown.datepicker-orient-left:after {
+//   left: 7px;
+// }
+// .datepicker-dropdown.datepicker-orient-right:before {
+//   right: 6px;
+// }
+// .datepicker-dropdown.datepicker-orient-right:after {
+//   right: 7px;
+// }
+// .datepicker-dropdown.datepicker-orient-top:before {
+//   top: -7px;
+// }
+// .datepicker-dropdown.datepicker-orient-top:after {
+//   top: -6px;
+// }
+// .datepicker-dropdown.datepicker-orient-bottom:before {
+//   bottom: -7px;
+//   border-bottom: 0;
+//   border-top: 7px solid #999;
+// }
+// .datepicker-dropdown.datepicker-orient-bottom:after {
+//   bottom: -6px;
+//   border-bottom: 0;
+//   border-top: 6px solid #fff;
+// }
+// .datepicker > div {
+//   display: none;
+// }
+// .datepicker.days .datepicker-days,
+// .datepicker.months .datepicker-months,
+// .datepicker.years .datepicker-years {
+//   display: block;
+// }
+// .datepicker table {
+//   margin: 0;
+//   -webkit-touch-callout: none;
+//   -webkit-user-select: none;
+//   -khtml-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+//   width: 100%;
+// }
+// .datepicker table tr td,
+// .datepicker table tr th {
+//   text-align: center;
+//   /*border-radius: 4px;*/
+//   border: none;
+//   vertical-align: middle;
+// }
+// /*my styles*/
+// .datepicker table tr td{
+//     width: 43px;
+//     height: 40px;
+//     font-size: 16px;
+//     color: #656565;
+// }
+// .datepicker table tr:first-child th{
+//   height: 40px;
+//   color: white;
+//   background: #484848;
+//   font-weight: normal;
+// }
+// .datepicker table tr:last-child th{
+//   height: 23px;
+//   color: white;
+//   background: #b9b9b9;
+// }
+// .datepicker .datepicker-months table tr:last-child th,
+// .datepicker .datepicker-years table tr:last-child th{
+//   height: 40px;
+//   color: white;
+//   background: #484848;
+// }
+// .datepicker .datepicker-months table thead tr .next,
+// .datepicker .datepicker-months table thead tr .prev,
+// .datepicker .datepicker-years table thead tr .prev,
+// .datepicker .datepicker-years table thead tr .next{
+//   width: 40px;
+// }
+// .datepicker table tbody{
+//     border-right: 2px solid white;
+//     border-bottom: 2px solid white;
+// }
+// /*end my styles*/
+// .table-striped .datepicker table tr td,
+// .table-striped .datepicker table tr th {
+//   background-color: transparent;
+// }
+// .datepicker table tr td.day:hover,
+// .datepicker table tr td.day.focused {
+//   background: #eeeeee;
+//   cursor: pointer;
+//   border: 1px solid white;
+// }
+// .datepicker table tr td.old,
+// .datepicker table tr td.new {
+//   color: #999999;
+// }
+// .datepicker table tr td.disabled,
+// .datepicker table tr td.disabled:hover {
+//   background: none;
+//   color: #999999;
+//   cursor: default;
+// }
+// .datepicker table tr td.today,
+// .datepicker table tr td.today:hover,
+// .datepicker table tr td.today.disabled,
+// .datepicker table tr td.today.disabled:hover {
+//   color: #000000;
+//   background-color: #ffdb99;
+//   border-color: #ffb733;
+// }
+// .datepicker table tr td.today:hover,
+// .datepicker table tr td.today:hover:hover,
+// .datepicker table tr td.today.disabled:hover,
+// .datepicker table tr td.today.disabled:hover:hover,
+// .datepicker table tr td.today:focus,
+// .datepicker table tr td.today:hover:focus,
+// .datepicker table tr td.today.disabled:focus,
+// .datepicker table tr td.today.disabled:hover:focus,
+// .datepicker table tr td.today:active,
+// .datepicker table tr td.today:hover:active,
+// .datepicker table tr td.today.disabled:active,
+// .datepicker table tr td.today.disabled:hover:active,
+// .datepicker table tr td.today.active,
+// .datepicker table tr td.today:hover.active,
+// .datepicker table tr td.today.disabled.active,
+// .datepicker table tr td.today.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.today,
+// .open .dropdown-toggle.datepicker table tr td.today:hover,
+// .open .dropdown-toggle.datepicker table tr td.today.disabled,
+// .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
+//   color: #000000;
+//   background-color: #ffcd70;
+//   border-color: #f59e00;
+// }
+// .datepicker table tr td.today:active,
+// .datepicker table tr td.today:hover:active,
+// .datepicker table tr td.today.disabled:active,
+// .datepicker table tr td.today.disabled:hover:active,
+// .datepicker table tr td.today.active,
+// .datepicker table tr td.today:hover.active,
+// .datepicker table tr td.today.disabled.active,
+// .datepicker table tr td.today.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.today,
+// .open .dropdown-toggle.datepicker table tr td.today:hover,
+// .open .dropdown-toggle.datepicker table tr td.today.disabled,
+// .open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
+//   background-image: none;
+// }
+// .datepicker table tr td.today.disabled,
+// .datepicker table tr td.today:hover.disabled,
+// .datepicker table tr td.today.disabled.disabled,
+// .datepicker table tr td.today.disabled:hover.disabled,
+// .datepicker table tr td.today[disabled],
+// .datepicker table tr td.today:hover[disabled],
+// .datepicker table tr td.today.disabled[disabled],
+// .datepicker table tr td.today.disabled:hover[disabled],
+// fieldset[disabled] .datepicker table tr td.today,
+// fieldset[disabled] .datepicker table tr td.today:hover,
+// fieldset[disabled] .datepicker table tr td.today.disabled,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+// .datepicker table tr td.today.disabled:hover,
+// .datepicker table tr td.today:hover.disabled:hover,
+// .datepicker table tr td.today.disabled.disabled:hover,
+// .datepicker table tr td.today.disabled:hover.disabled:hover,
+// .datepicker table tr td.today[disabled]:hover,
+// .datepicker table tr td.today:hover[disabled]:hover,
+// .datepicker table tr td.today.disabled[disabled]:hover,
+// .datepicker table tr td.today.disabled:hover[disabled]:hover,
+// fieldset[disabled] .datepicker table tr td.today:hover,
+// fieldset[disabled] .datepicker table tr td.today:hover:hover,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover:hover,
+// .datepicker table tr td.today.disabled:focus,
+// .datepicker table tr td.today:hover.disabled:focus,
+// .datepicker table tr td.today.disabled.disabled:focus,
+// .datepicker table tr td.today.disabled:hover.disabled:focus,
+// .datepicker table tr td.today[disabled]:focus,
+// .datepicker table tr td.today:hover[disabled]:focus,
+// .datepicker table tr td.today.disabled[disabled]:focus,
+// .datepicker table tr td.today.disabled:hover[disabled]:focus,
+// fieldset[disabled] .datepicker table tr td.today:focus,
+// fieldset[disabled] .datepicker table tr td.today:hover:focus,
+// fieldset[disabled] .datepicker table tr td.today.disabled:focus,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover:focus,
+// .datepicker table tr td.today.disabled:active,
+// .datepicker table tr td.today:hover.disabled:active,
+// .datepicker table tr td.today.disabled.disabled:active,
+// .datepicker table tr td.today.disabled:hover.disabled:active,
+// .datepicker table tr td.today[disabled]:active,
+// .datepicker table tr td.today:hover[disabled]:active,
+// .datepicker table tr td.today.disabled[disabled]:active,
+// .datepicker table tr td.today.disabled:hover[disabled]:active,
+// fieldset[disabled] .datepicker table tr td.today:active,
+// fieldset[disabled] .datepicker table tr td.today:hover:active,
+// fieldset[disabled] .datepicker table tr td.today.disabled:active,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover:active,
+// .datepicker table tr td.today.disabled.active,
+// .datepicker table tr td.today:hover.disabled.active,
+// .datepicker table tr td.today.disabled.disabled.active,
+// .datepicker table tr td.today.disabled:hover.disabled.active,
+// .datepicker table tr td.today[disabled].active,
+// .datepicker table tr td.today:hover[disabled].active,
+// .datepicker table tr td.today.disabled[disabled].active,
+// .datepicker table tr td.today.disabled:hover[disabled].active,
+// fieldset[disabled] .datepicker table tr td.today.active,
+// fieldset[disabled] .datepicker table tr td.today:hover.active,
+// fieldset[disabled] .datepicker table tr td.today.disabled.active,
+// fieldset[disabled] .datepicker table tr td.today.disabled:hover.active {
+//   background-color: #ffdb99;
+//   border-color: #ffb733;
+// }
+// .datepicker table tr td.today:hover:hover {
+//   color: #000;
+// }
+// .datepicker table tr td.today.active:hover {
+//   color: #fff;
+// }
+// .datepicker table tr td.range,
+// .datepicker table tr td.range:hover,
+// .datepicker table tr td.range.disabled,
+// .datepicker table tr td.range.disabled:hover {
+//   background: #eeeeee;
+//   border-radius: 0;
+// }
+// .datepicker table tr td.range.today,
+// .datepicker table tr td.range.today:hover,
+// .datepicker table tr td.range.today.disabled,
+// .datepicker table tr td.range.today.disabled:hover {
+//   color: #000000;
+//   background-color: #f7ca77;
+//   border-color: #f1a417;
+//   border-radius: 0;
+// }
+// .datepicker table tr td.range.today:hover,
+// .datepicker table tr td.range.today:hover:hover,
+// .datepicker table tr td.range.today.disabled:hover,
+// .datepicker table tr td.range.today.disabled:hover:hover,
+// .datepicker table tr td.range.today:focus,
+// .datepicker table tr td.range.today:hover:focus,
+// .datepicker table tr td.range.today.disabled:focus,
+// .datepicker table tr td.range.today.disabled:hover:focus,
+// .datepicker table tr td.range.today:active,
+// .datepicker table tr td.range.today:hover:active,
+// .datepicker table tr td.range.today.disabled:active,
+// .datepicker table tr td.range.today.disabled:hover:active,
+// .datepicker table tr td.range.today.active,
+// .datepicker table tr td.range.today:hover.active,
+// .datepicker table tr td.range.today.disabled.active,
+// .datepicker table tr td.range.today.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.range.today,
+// .open .dropdown-toggle.datepicker table tr td.range.today:hover,
+// .open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+// .open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover {
+//   color: #000000;
+//   background-color: #f4bb51;
+//   border-color: #bf800c;
+// }
+// .datepicker table tr td.range.today:active,
+// .datepicker table tr td.range.today:hover:active,
+// .datepicker table tr td.range.today.disabled:active,
+// .datepicker table tr td.range.today.disabled:hover:active,
+// .datepicker table tr td.range.today.active,
+// .datepicker table tr td.range.today:hover.active,
+// .datepicker table tr td.range.today.disabled.active,
+// .datepicker table tr td.range.today.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.range.today,
+// .open .dropdown-toggle.datepicker table tr td.range.today:hover,
+// .open .dropdown-toggle.datepicker table tr td.range.today.disabled,
+// .open .dropdown-toggle.datepicker table tr td.range.today.disabled:hover {
+//   background-image: none;
+// }
+// .datepicker table tr td.range.today.disabled,
+// .datepicker table tr td.range.today:hover.disabled,
+// .datepicker table tr td.range.today.disabled.disabled,
+// .datepicker table tr td.range.today.disabled:hover.disabled,
+// .datepicker table tr td.range.today[disabled],
+// .datepicker table tr td.range.today:hover[disabled],
+// .datepicker table tr td.range.today.disabled[disabled],
+// .datepicker table tr td.range.today.disabled:hover[disabled],
+// fieldset[disabled] .datepicker table tr td.range.today,
+// fieldset[disabled] .datepicker table tr td.range.today:hover,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+// .datepicker table tr td.range.today.disabled:hover,
+// .datepicker table tr td.range.today:hover.disabled:hover,
+// .datepicker table tr td.range.today.disabled.disabled:hover,
+// .datepicker table tr td.range.today.disabled:hover.disabled:hover,
+// .datepicker table tr td.range.today[disabled]:hover,
+// .datepicker table tr td.range.today:hover[disabled]:hover,
+// .datepicker table tr td.range.today.disabled[disabled]:hover,
+// .datepicker table tr td.range.today.disabled:hover[disabled]:hover,
+// fieldset[disabled] .datepicker table tr td.range.today:hover,
+// fieldset[disabled] .datepicker table tr td.range.today:hover:hover,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:hover,
+// .datepicker table tr td.range.today.disabled:focus,
+// .datepicker table tr td.range.today:hover.disabled:focus,
+// .datepicker table tr td.range.today.disabled.disabled:focus,
+// .datepicker table tr td.range.today.disabled:hover.disabled:focus,
+// .datepicker table tr td.range.today[disabled]:focus,
+// .datepicker table tr td.range.today:hover[disabled]:focus,
+// .datepicker table tr td.range.today.disabled[disabled]:focus,
+// .datepicker table tr td.range.today.disabled:hover[disabled]:focus,
+// fieldset[disabled] .datepicker table tr td.range.today:focus,
+// fieldset[disabled] .datepicker table tr td.range.today:hover:focus,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:focus,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:focus,
+// .datepicker table tr td.range.today.disabled:active,
+// .datepicker table tr td.range.today:hover.disabled:active,
+// .datepicker table tr td.range.today.disabled.disabled:active,
+// .datepicker table tr td.range.today.disabled:hover.disabled:active,
+// .datepicker table tr td.range.today[disabled]:active,
+// .datepicker table tr td.range.today:hover[disabled]:active,
+// .datepicker table tr td.range.today.disabled[disabled]:active,
+// .datepicker table tr td.range.today.disabled:hover[disabled]:active,
+// fieldset[disabled] .datepicker table tr td.range.today:active,
+// fieldset[disabled] .datepicker table tr td.range.today:hover:active,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:active,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:active,
+// .datepicker table tr td.range.today.disabled.active,
+// .datepicker table tr td.range.today:hover.disabled.active,
+// .datepicker table tr td.range.today.disabled.disabled.active,
+// .datepicker table tr td.range.today.disabled:hover.disabled.active,
+// .datepicker table tr td.range.today[disabled].active,
+// .datepicker table tr td.range.today:hover[disabled].active,
+// .datepicker table tr td.range.today.disabled[disabled].active,
+// .datepicker table tr td.range.today.disabled:hover[disabled].active,
+// fieldset[disabled] .datepicker table tr td.range.today.active,
+// fieldset[disabled] .datepicker table tr td.range.today:hover.active,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled.active,
+// fieldset[disabled] .datepicker table tr td.range.today.disabled:hover.active {
+//   background-color: #f7ca77;
+//   border-color: #f1a417;
+// }
+// .datepicker table tr td.selected,
+// .datepicker table tr td.selected:hover,
+// .datepicker table tr td.selected.disabled,
+// .datepicker table tr td.selected.disabled:hover {
+//   color: #ffffff;
+//   background-color: #999999;
+//   border-color: #555555;
+//   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+// }
+// .datepicker table tr td.selected:hover,
+// .datepicker table tr td.selected:hover:hover,
+// .datepicker table tr td.selected.disabled:hover,
+// .datepicker table tr td.selected.disabled:hover:hover,
+// .datepicker table tr td.selected:focus,
+// .datepicker table tr td.selected:hover:focus,
+// .datepicker table tr td.selected.disabled:focus,
+// .datepicker table tr td.selected.disabled:hover:focus,
+// .datepicker table tr td.selected:active,
+// .datepicker table tr td.selected:hover:active,
+// .datepicker table tr td.selected.disabled:active,
+// .datepicker table tr td.selected.disabled:hover:active,
+// .datepicker table tr td.selected.active,
+// .datepicker table tr td.selected:hover.active,
+// .datepicker table tr td.selected.disabled.active,
+// .datepicker table tr td.selected.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.selected,
+// .open .dropdown-toggle.datepicker table tr td.selected:hover,
+// .open .dropdown-toggle.datepicker table tr td.selected.disabled,
+// .open .dropdown-toggle.datepicker table tr td.selected.disabled:hover {
+//   color: #ffffff;
+//   background-color: #858585;
+//   border-color: #373737;
+// }
+// .datepicker table tr td.selected:active,
+// .datepicker table tr td.selected:hover:active,
+// .datepicker table tr td.selected.disabled:active,
+// .datepicker table tr td.selected.disabled:hover:active,
+// .datepicker table tr td.selected.active,
+// .datepicker table tr td.selected:hover.active,
+// .datepicker table tr td.selected.disabled.active,
+// .datepicker table tr td.selected.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.selected,
+// .open .dropdown-toggle.datepicker table tr td.selected:hover,
+// .open .dropdown-toggle.datepicker table tr td.selected.disabled,
+// .open .dropdown-toggle.datepicker table tr td.selected.disabled:hover {
+//   background-image: none;
+// }
+// .datepicker table tr td.selected.disabled,
+// .datepicker table tr td.selected:hover.disabled,
+// .datepicker table tr td.selected.disabled.disabled,
+// .datepicker table tr td.selected.disabled:hover.disabled,
+// .datepicker table tr td.selected[disabled],
+// .datepicker table tr td.selected:hover[disabled],
+// .datepicker table tr td.selected.disabled[disabled],
+// .datepicker table tr td.selected.disabled:hover[disabled],
+// fieldset[disabled] .datepicker table tr td.selected,
+// fieldset[disabled] .datepicker table tr td.selected:hover,
+// fieldset[disabled] .datepicker table tr td.selected.disabled,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+// .datepicker table tr td.selected.disabled:hover,
+// .datepicker table tr td.selected:hover.disabled:hover,
+// .datepicker table tr td.selected.disabled.disabled:hover,
+// .datepicker table tr td.selected.disabled:hover.disabled:hover,
+// .datepicker table tr td.selected[disabled]:hover,
+// .datepicker table tr td.selected:hover[disabled]:hover,
+// .datepicker table tr td.selected.disabled[disabled]:hover,
+// .datepicker table tr td.selected.disabled:hover[disabled]:hover,
+// fieldset[disabled] .datepicker table tr td.selected:hover,
+// fieldset[disabled] .datepicker table tr td.selected:hover:hover,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover:hover,
+// .datepicker table tr td.selected.disabled:focus,
+// .datepicker table tr td.selected:hover.disabled:focus,
+// .datepicker table tr td.selected.disabled.disabled:focus,
+// .datepicker table tr td.selected.disabled:hover.disabled:focus,
+// .datepicker table tr td.selected[disabled]:focus,
+// .datepicker table tr td.selected:hover[disabled]:focus,
+// .datepicker table tr td.selected.disabled[disabled]:focus,
+// .datepicker table tr td.selected.disabled:hover[disabled]:focus,
+// fieldset[disabled] .datepicker table tr td.selected:focus,
+// fieldset[disabled] .datepicker table tr td.selected:hover:focus,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:focus,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover:focus,
+// .datepicker table tr td.selected.disabled:active,
+// .datepicker table tr td.selected:hover.disabled:active,
+// .datepicker table tr td.selected.disabled.disabled:active,
+// .datepicker table tr td.selected.disabled:hover.disabled:active,
+// .datepicker table tr td.selected[disabled]:active,
+// .datepicker table tr td.selected:hover[disabled]:active,
+// .datepicker table tr td.selected.disabled[disabled]:active,
+// .datepicker table tr td.selected.disabled:hover[disabled]:active,
+// fieldset[disabled] .datepicker table tr td.selected:active,
+// fieldset[disabled] .datepicker table tr td.selected:hover:active,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:active,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover:active,
+// .datepicker table tr td.selected.disabled.active,
+// .datepicker table tr td.selected:hover.disabled.active,
+// .datepicker table tr td.selected.disabled.disabled.active,
+// .datepicker table tr td.selected.disabled:hover.disabled.active,
+// .datepicker table tr td.selected[disabled].active,
+// .datepicker table tr td.selected:hover[disabled].active,
+// .datepicker table tr td.selected.disabled[disabled].active,
+// .datepicker table tr td.selected.disabled:hover[disabled].active,
+// fieldset[disabled] .datepicker table tr td.selected.active,
+// fieldset[disabled] .datepicker table tr td.selected:hover.active,
+// fieldset[disabled] .datepicker table tr td.selected.disabled.active,
+// fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
+//   background-color: #999999;
+//   border-color: #555555;
+// }
+// .datepicker table tr td.active,
+// .datepicker table tr td.active:hover,
+// .datepicker table tr td.active.disabled,
+// .datepicker table tr td.active.disabled:hover {
+//   color: #ffffff;
+//   background-color: #428bca;
+//   border-color: #357ebd;
+//   /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+// }
+// .datepicker table tr td.active:hover,
+// .datepicker table tr td.active:hover:hover,
+// .datepicker table tr td.active.disabled:hover,
+// .datepicker table tr td.active.disabled:hover:hover,
+// .datepicker table tr td.active:focus,
+// .datepicker table tr td.active:hover:focus,
+// .datepicker table tr td.active.disabled:focus,
+// .datepicker table tr td.active.disabled:hover:focus,
+// .datepicker table tr td.active:active,
+// .datepicker table tr td.active:hover:active,
+// .datepicker table tr td.active.disabled:active,
+// .datepicker table tr td.active.disabled:hover:active,
+// .datepicker table tr td.active.active,
+// .datepicker table tr td.active:hover.active,
+// .datepicker table tr td.active.disabled.active,
+// .datepicker table tr td.active.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.active,
+// .open .dropdown-toggle.datepicker table tr td.active:hover,
+// .open .dropdown-toggle.datepicker table tr td.active.disabled,
+// .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+//   color: #656565;
+//   background-color: #cecece;
+//   border: 1px solid white;
+// }
+// .datepicker table tr td.active:active,
+// .datepicker table tr td.active:hover:active,
+// .datepicker table tr td.active.disabled:active,
+// .datepicker table tr td.active.disabled:hover:active,
+// .datepicker table tr td.active.active,
+// .datepicker table tr td.active:hover.active,
+// .datepicker table tr td.active.disabled.active,
+// .datepicker table tr td.active.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td.active,
+// .open .dropdown-toggle.datepicker table tr td.active:hover,
+// .open .dropdown-toggle.datepicker table tr td.active.disabled,
+// .open .dropdown-toggle.datepicker table tr td.active.disabled:hover {
+//   background-image: none;
+// }
+// .datepicker table tr td.active.disabled,
+// .datepicker table tr td.active:hover.disabled,
+// .datepicker table tr td.active.disabled.disabled,
+// .datepicker table tr td.active.disabled:hover.disabled,
+// .datepicker table tr td.active[disabled],
+// .datepicker table tr td.active:hover[disabled],
+// .datepicker table tr td.active.disabled[disabled],
+// .datepicker table tr td.active.disabled:hover[disabled],
+// fieldset[disabled] .datepicker table tr td.active,
+// fieldset[disabled] .datepicker table tr td.active:hover,
+// fieldset[disabled] .datepicker table tr td.active.disabled,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+// .datepicker table tr td.active.disabled:hover,
+// .datepicker table tr td.active:hover.disabled:hover,
+// .datepicker table tr td.active.disabled.disabled:hover,
+// .datepicker table tr td.active.disabled:hover.disabled:hover,
+// .datepicker table tr td.active[disabled]:hover,
+// .datepicker table tr td.active:hover[disabled]:hover,
+// .datepicker table tr td.active.disabled[disabled]:hover,
+// .datepicker table tr td.active.disabled:hover[disabled]:hover,
+// fieldset[disabled] .datepicker table tr td.active:hover,
+// fieldset[disabled] .datepicker table tr td.active:hover:hover,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover:hover,
+// .datepicker table tr td.active.disabled:focus,
+// .datepicker table tr td.active:hover.disabled:focus,
+// .datepicker table tr td.active.disabled.disabled:focus,
+// .datepicker table tr td.active.disabled:hover.disabled:focus,
+// .datepicker table tr td.active[disabled]:focus,
+// .datepicker table tr td.active:hover[disabled]:focus,
+// .datepicker table tr td.active.disabled[disabled]:focus,
+// .datepicker table tr td.active.disabled:hover[disabled]:focus,
+// fieldset[disabled] .datepicker table tr td.active:focus,
+// fieldset[disabled] .datepicker table tr td.active:hover:focus,
+// fieldset[disabled] .datepicker table tr td.active.disabled:focus,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover:focus,
+// .datepicker table tr td.active.disabled:active,
+// .datepicker table tr td.active:hover.disabled:active,
+// .datepicker table tr td.active.disabled.disabled:active,
+// .datepicker table tr td.active.disabled:hover.disabled:active,
+// .datepicker table tr td.active[disabled]:active,
+// .datepicker table tr td.active:hover[disabled]:active,
+// .datepicker table tr td.active.disabled[disabled]:active,
+// .datepicker table tr td.active.disabled:hover[disabled]:active,
+// fieldset[disabled] .datepicker table tr td.active:active,
+// fieldset[disabled] .datepicker table tr td.active:hover:active,
+// fieldset[disabled] .datepicker table tr td.active.disabled:active,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover:active,
+// .datepicker table tr td.active.disabled.active,
+// .datepicker table tr td.active:hover.disabled.active,
+// .datepicker table tr td.active.disabled.disabled.active,
+// .datepicker table tr td.active.disabled:hover.disabled.active,
+// .datepicker table tr td.active[disabled].active,
+// .datepicker table tr td.active:hover[disabled].active,
+// .datepicker table tr td.active.disabled[disabled].active,
+// .datepicker table tr td.active.disabled:hover[disabled].active,
+// fieldset[disabled] .datepicker table tr td.active.active,
+// fieldset[disabled] .datepicker table tr td.active:hover.active,
+// fieldset[disabled] .datepicker table tr td.active.disabled.active,
+// fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
+//   background-color: #428bca;
+//   border-color: #357ebd;
+// }
+// .datepicker table tr td span {
+//   display: block;
+//   width: 23%;
+//   height: 54px;
+//   line-height: 54px;
+//   float: left;
+//   margin: 1%;
+//   cursor: pointer;
+//   /*border-radius: 4px;*/
+// }
+// .datepicker table tr td span:hover {
+//   background: #eeeeee;
+// }
+// .datepicker table tr td span.disabled,
+// .datepicker table tr td span.disabled:hover {
+//   background: none;
+//   color: #999999;
+//   cursor: default;
+// }
+// .datepicker table tr td span.active,
+// .datepicker table tr td span.active:hover,
+// .datepicker table tr td span.active.disabled,
+// .datepicker table tr td span.active.disabled:hover {
+//   color: #ffffff;
+//   background-color: #428bca;
+//   border-color: #357ebd;
+//   /*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
+// }
+// .datepicker table tr td span.active:hover,
+// .datepicker table tr td span.active:hover:hover,
+// .datepicker table tr td span.active.disabled:hover,
+// .datepicker table tr td span.active.disabled:hover:hover,
+// .datepicker table tr td span.active:focus,
+// .datepicker table tr td span.active:hover:focus,
+// .datepicker table tr td span.active.disabled:focus,
+// .datepicker table tr td span.active.disabled:hover:focus,
+// .datepicker table tr td span.active:active,
+// .datepicker table tr td span.active:hover:active,
+// .datepicker table tr td span.active.disabled:active,
+// .datepicker table tr td span.active.disabled:hover:active,
+// .datepicker table tr td span.active.active,
+// .datepicker table tr td span.active:hover.active,
+// .datepicker table tr td span.active.disabled.active,
+// .datepicker table tr td span.active.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td span.active,
+// .open .dropdown-toggle.datepicker table tr td span.active:hover,
+// .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+// .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+//   color: #656565;
+//   background-color:#cecece;
+//     border: 1px solid white;
+// }
+// .datepicker table tr td span.active:active,
+// .datepicker table tr td span.active:hover:active,
+// .datepicker table tr td span.active.disabled:active,
+// .datepicker table tr td span.active.disabled:hover:active,
+// .datepicker table tr td span.active.active,
+// .datepicker table tr td span.active:hover.active,
+// .datepicker table tr td span.active.disabled.active,
+// .datepicker table tr td span.active.disabled:hover.active,
+// .open .dropdown-toggle.datepicker table tr td span.active,
+// .open .dropdown-toggle.datepicker table tr td span.active:hover,
+// .open .dropdown-toggle.datepicker table tr td span.active.disabled,
+// .open .dropdown-toggle.datepicker table tr td span.active.disabled:hover {
+//   background-image: none;
+// }
+// .datepicker table tr td span.active.disabled,
+// .datepicker table tr td span.active:hover.disabled,
+// .datepicker table tr td span.active.disabled.disabled,
+// .datepicker table tr td span.active.disabled:hover.disabled,
+// .datepicker table tr td span.active[disabled],
+// .datepicker table tr td span.active:hover[disabled],
+// .datepicker table tr td span.active.disabled[disabled],
+// .datepicker table tr td span.active.disabled:hover[disabled],
+// fieldset[disabled] .datepicker table tr td span.active,
+// fieldset[disabled] .datepicker table tr td span.active:hover,
+// fieldset[disabled] .datepicker table tr td span.active.disabled,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+// .datepicker table tr td span.active.disabled:hover,
+// .datepicker table tr td span.active:hover.disabled:hover,
+// .datepicker table tr td span.active.disabled.disabled:hover,
+// .datepicker table tr td span.active.disabled:hover.disabled:hover,
+// .datepicker table tr td span.active[disabled]:hover,
+// .datepicker table tr td span.active:hover[disabled]:hover,
+// .datepicker table tr td span.active.disabled[disabled]:hover,
+// .datepicker table tr td span.active.disabled:hover[disabled]:hover,
+// fieldset[disabled] .datepicker table tr td span.active:hover,
+// fieldset[disabled] .datepicker table tr td span.active:hover:hover,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover:hover,
+// .datepicker table tr td span.active.disabled:focus,
+// .datepicker table tr td span.active:hover.disabled:focus,
+// .datepicker table tr td span.active.disabled.disabled:focus,
+// .datepicker table tr td span.active.disabled:hover.disabled:focus,
+// .datepicker table tr td span.active[disabled]:focus,
+// .datepicker table tr td span.active:hover[disabled]:focus,
+// .datepicker table tr td span.active.disabled[disabled]:focus,
+// .datepicker table tr td span.active.disabled:hover[disabled]:focus,
+// fieldset[disabled] .datepicker table tr td span.active:focus,
+// fieldset[disabled] .datepicker table tr td span.active:hover:focus,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:focus,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus,
+// .datepicker table tr td span.active.disabled:active,
+// .datepicker table tr td span.active:hover.disabled:active,
+// .datepicker table tr td span.active.disabled.disabled:active,
+// .datepicker table tr td span.active.disabled:hover.disabled:active,
+// .datepicker table tr td span.active[disabled]:active,
+// .datepicker table tr td span.active:hover[disabled]:active,
+// .datepicker table tr td span.active.disabled[disabled]:active,
+// .datepicker table tr td span.active.disabled:hover[disabled]:active,
+// fieldset[disabled] .datepicker table tr td span.active:active,
+// fieldset[disabled] .datepicker table tr td span.active:hover:active,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:active,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover:active,
+// .datepicker table tr td span.active.disabled.active,
+// .datepicker table tr td span.active:hover.disabled.active,
+// .datepicker table tr td span.active.disabled.disabled.active,
+// .datepicker table tr td span.active.disabled:hover.disabled.active,
+// .datepicker table tr td span.active[disabled].active,
+// .datepicker table tr td span.active:hover[disabled].active,
+// .datepicker table tr td span.active.disabled[disabled].active,
+// .datepicker table tr td span.active.disabled:hover[disabled].active,
+// fieldset[disabled] .datepicker table tr td span.active.active,
+// fieldset[disabled] .datepicker table tr td span.active:hover.active,
+// fieldset[disabled] .datepicker table tr td span.active.disabled.active,
+// fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
+//   background-color: #428bca;
+//   border-color: #357ebd;
+// }
+// .datepicker table tr td span.old,
+// .datepicker table tr td span.new {
+//   color: #999999;
+// }
+// .datepicker .datepicker-switch {
+//   width: 145px;
+// }
+// .datepicker thead tr:first-child th,
+// .datepicker tfoot tr th {
+//   cursor: pointer;
+// }
+// /*.datepicker thead tr:first-child th:hover,*/
+// .datepicker tfoot tr th:hover {
+//   background: #eeeeee;
+// }
+// .datepicker .cw {
+//   font-size: 10px;
+//   width: 12px;
+//   padding: 0 2px 0 5px;
+//   vertical-align: middle;
+// }
+// .datepicker thead tr:first-child .cw {
+//   cursor: default;
+//   background-color: transparent;
+// }
+// .input-group.date .input-group-addon {
+//   cursor: pointer;
+// }
+// .input-daterange {
+//   width: 100%;
+// }
+// .input-daterange input {
+//   text-align: center;
+// }
+// .input-daterange input:first-child {
+//   border-radius: 3px 0 0 3px;
+// }
+// .input-daterange input:last-child {
+//   border-radius: 0 3px 3px 0;
+// }
+// .input-daterange .input-group-addon {
+//   width: auto;
+//   min-width: 16px;
+//   padding: 4px 5px;
+//   font-weight: normal;
+//   line-height: 1.42857143;
+//   text-align: center;
+//   text-shadow: 0 1px 0 #fff;
+//   vertical-align: middle;
+//   background-color: #eeeeee;
+//   border: solid #cccccc;
+//   border-width: 1px 0;
+//   margin-left: -5px;
+//   margin-right: -5px;
+// }
+// .datepicker.dropdown-menu {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   z-index: 1000;
+//   float: left;
+//   display: none;
+//   min-width: 160px;
+//   list-style: none;
+//   background-color: #ffffff;
+//   border: 1px solid #ccc;
+//   border: 1px solid rgba(0, 0, 0, 0.2);
+//   border-radius: 5px;
+//   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+//   -webkit-background-clip: padding-box;
+//   -moz-background-clip: padding;
+//   background-clip: padding-box;
+//   *border-right-width: 2px;
+//   *border-bottom-width: 2px;
+//   color: #333333;
+//   font-size: 13px;
+//   line-height: 1.42857143;
+// }
+
+
+	}    
+
+}

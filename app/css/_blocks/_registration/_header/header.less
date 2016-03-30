@@ -1,0 +1,146 @@
+.header{
+	.header_main_panel{
+
+		.header_main_panel_reg_profile_mainform{
+		margin-right: 15px;
+			.header_main_panel_reg_profile_regbutt{
+				.disp_inline_block(middle);
+				padding: 0 8px;
+
+				.header_main_panel_reg_profile_regbutt_link{
+					text-align: center;
+					font-weight: 700;
+					font-size: 11px;
+					border-radius: 15px;
+					background: #f9d503;
+					color: #777777;
+					display: block;
+					margin: 0 auto;
+					width: 127px;
+					padding: 2px 0;
+				}
+			}
+			.header_main_panel_reg_form{
+				.disp_inline_block(middle);
+				.header_main_panel_reg_form_block{
+					.disp_inline_block(middle);				
+
+					.header_main_panel_reg_form_block_text{
+						display: block;
+						font-size: 11px;
+						color: #777777;
+					}
+					.header_main_panel_reg_form_block_pass{
+						.input_reg_profile_mix;
+					}
+					.header_main_panel_reg_form_block_email{
+						.input_reg_profile_mix;
+					}
+						.header_main_panel_reg_profile_remembers_blocks{						
+						font-size: 9px;					
+						.header_main_panel_reg_profile_remembers_blocks_checkbox{
+							margin: 0;
+							vertical-align: middle;
+						}
+						.header_main_panel_reg_profile_remembers_blocks_checkbox_label{
+							margin: 0;
+							font-weight: 500;
+							color:#777777;
+						}
+						.header_main_panel_reg_profile_remembers_blocks_link{
+							color:#777777;
+
+						}
+						/* styles for checkbox */
+						.header_main_panel_reg_profile_remembers_blocks--inline{
+						display: inline-block;						
+						position: relative;
+						&:first-child{
+							vertical-align: middle;
+						}
+						.header_main_panel_reg_profile_remembers_blocks_checkbox{
+							opacity: 0;
+							visibility: hidden;
+							position: absolute;
+							display: none;
+							&:checked + label {
+								background: #f9d503;
+							}				
+						}
+						label{
+							display: block;
+							height: 9px;
+							width: 9px;
+							background: grey;
+							border-radius: 50px;
+							margin-bottom: 0;
+							cursor: pointer;							
+						}
+					}
+					/* end styles for checkbox */
+					}
+				}
+				.header_main_panel_reg_form_butt_in{
+					border: none;
+					outline: none;
+					background: #737373;
+					border-radius: 15px;
+					font-size: 11px;
+					font-weight: 700;
+					vertical-align: middle;
+					height: 19px;
+					color: #fff;
+					&:hover{
+						background: darken(#737373,10%);
+					}
+				}
+			}
+		/* not uses */
+		.header_main_panel_reg_profile_remembers{
+				.header_main_panel_reg_profile_remembers_blocks{
+					.disp_inline_block(bottom);
+					font-size: 8px;					
+					.header_main_panel_reg_profile_remembers_blocks_checkbox{
+						margin: 0;
+						vertical-align: middle;
+					}
+					.header_main_panel_reg_profile_remembers_blocks_checkbox_label{
+						margin: 0;
+						font-weight: 500;
+						vertical-align: middle;
+						color:#777777;
+					}
+					.header_main_panel_reg_profile_remembers_blocks_link{
+						color:#777777;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+/* width and height for checkbox block */
+.width_and_height{
+	width: 9px;
+	height: 9px;
+}
+
+/* mixins*/
+.disp_inline_block(@vertical-property){
+	display: inline-block;
+	vertical-align: @vertical-property;
+}
+
+.input_reg_profile_mix{
+	width: 155px;
+	border: none;
+	outline: none;
+	background: #cfcfcf;
+	border-radius: 15px;
+	height: 19px;
+	padding: 3px 9px;
+	font-size: 11px;
+	margin: 1px 8px;
+}
+/* end mixins */

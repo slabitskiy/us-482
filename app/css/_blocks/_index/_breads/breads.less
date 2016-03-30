@@ -1,0 +1,30 @@
+.header_main_panel_breads{
+	// margin-top: 5px;
+	margin-bottom: 20px;
+	.header_main_panel_breads_ul{
+		padding-left: 15px;
+		.header_main_panel_breads_li{
+			display: inline-block;
+			font-size: 12px;
+
+			.header_main_panel_breads_li_a{
+				color: #d0b002;			
+				text-decoration: underline;
+				&:hover{
+					&:extend(active_bread);
+				}
+				&:active{
+					&:extend(active_bread);
+				}
+				&:focus{
+					&:extend(active_bread);
+				}
+			}
+		}
+	}
+}
+// for active bread
+.active_bread{
+	color: #777777!important;
+	text-decoration: underline;
+}

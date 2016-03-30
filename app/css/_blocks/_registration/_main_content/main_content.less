@@ -1,0 +1,115 @@
+.main_content{
+	
+	.reg_info{
+
+		.reg_info_header{
+			padding-bottom: 15px;
+			.reg_info_header_text{
+				font-weight: 700;
+				color: #6e6e6e;
+				// margin-bottom: 10px;
+			}
+			.reg_info_header_subtext{
+				// padding-bottom: 5px;
+			}
+		}
+		.reg_info_block{
+			.reg_info_block_header{
+				.reg_info_block_header_blocks{
+					background: white;
+					border-top-left-radius: 10px;
+					border-top-right-radius: 10px;
+					margin-bottom:20px; 
+					&:hover{
+						background: #f9d503;
+					}
+					.reg_info_block_header_blocks_link{
+						display: block;
+						width: 100%;
+						height: 100%;
+						padding: 20px 0;
+						color: #4d4d4d;
+						&:hover{
+							text-decoration: none;
+						} 
+						.reg_info_block_header_blocks_link_span{
+							font-size: 14px;							
+						}
+						.reg_info_block_header_blocks_link_p{
+							font-size: 21px;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+			.reg_info_block_content{				
+				.reg_info_block_content_blockimg{
+					margin-top: 50px;
+					a{
+						color: #6e6e6e;						
+					}
+				}
+			}
+			.reg_info_block_hover{
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+				background: #f3f3f3;
+
+				/*fixed bug with width for this block */
+				max-width: 949px;
+				margin: 0 auto;
+				margin-top: 20px;
+				padding: 18px 32px 22px 32px;
+				position: absolute;
+				top: 135px;
+				left: 0;
+				right: 0;
+					
+				/*for hover effect*/
+				display: none;
+			
+				.reg_info_block_hover_header{
+					padding-bottom: 37px;
+					.reg_info_block_hover_header_text{
+						text-transform: uppercase;
+						color: #e1af00;
+						font-weight: 600;
+						.reg_info_block_hover_text_color{
+							color: #3c3c3c;
+						}
+					}
+				}
+				.reg_info_block_hover_blocks{
+					padding-bottom: 20px;
+					padding-top: 49px;
+					&:first-child{
+						padding-top: 0;
+					}
+					.reg_info_block_hover_blocks_img{
+						.disp_inline_block(middle);	
+						img{
+							
+						}
+					}
+					.reg_info_block_hover_blocks_text{
+						.disp_inline_block(middle);
+						padding-left: 12px;
+						max-width: 350px;
+							.reg_info_block_hover_blocks_text_p{
+								font-size: 14px;
+								color: #777777;
+								line-height: 1;
+							}	
+					}
+
+				}
+			}
+		}
+	}
+}
+
+/* mixins*/
+.disp_inline_block(@vertical-property){
+	display: inline-block;
+	vertical-align: @vertical-property;
+}
