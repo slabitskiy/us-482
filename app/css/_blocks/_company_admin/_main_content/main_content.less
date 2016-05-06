@@ -1,17 +1,17 @@
 .main_content{
-	
-//	
+
+//
 //variables
-//	
-	
+//
+
 @admin_panel_bg_color: #f3f3f3;
-@admin_panel_yellow_color: #f9d503;	
+@admin_panel_yellow_color: #f9d503;
 @admin_panel_white_color: #fff;
 @admin_panel_text_color: #777777;
 @admin_panel_text_object_color: #6e6e6e;
-//	
+//
 //variables
-//	
+//
 
 #date_calendar_pick{
 	min-height: 320px;
@@ -25,8 +25,8 @@
 	margin-bottom: 20px;
 	// overflow: hidden;
 	border-radius: 5px;
-	
-	.admin_panel_logo{	
+
+	.admin_panel_logo{
 		position: relative;
 		margin-left: 38px;
 		margin-right: 65px;
@@ -46,14 +46,14 @@
 				box-sizing: border-box;
 			}
 	}
-	
+
 	.in_category{
 		.disp_inline(middle,100px);
 		.in_category_text{
 			color: @admin_panel_text_color;
 			font-size: 10px;
 			line-height: 1;
-			
+
 			.in_category_text--number{
 				display: block;
 				width: 54px;
@@ -65,7 +65,7 @@
 			}
 		}
 	}
-	
+
 	.name_object{
 		margin-top: 5px;
 		.name_object_block_header{
@@ -90,7 +90,7 @@
 
 						}
 					}
-			
+
 			// .name_object_block_branch--a{
 			// 	font-size: 14px;
 			// 	color:@admin_panel_text_object_color;
@@ -111,7 +111,7 @@
 			// }
 		}
 	}
-	
+
 	.active_account{
 		.disp_inline();
 		.active_account_text{
@@ -130,28 +130,28 @@
 			}
 		}
 	}
-	
+
 	.cart{
 		position: relative;
 		margin-top: 7px;
 		.disp_inline(middle,36px);
 		.cart_statistics{
-			
+
 			border-radius: 50px;
-			background: @admin_panel_yellow_color;	
+			background: @admin_panel_yellow_color;
 			width: 20px;
 			height: 20px;
 			top: -8px;
 			right: 2px;
 			position: absolute;
-		
+
 			.cart_statistics_number{
 				line-height: 19px;
-				color: @admin_panel_text_color;			
+				color: @admin_panel_text_color;
 			}
 		}
 	}
-	
+
 	.wallet{
 		position: relative;
 		line-height: 1;
@@ -168,12 +168,12 @@
 			line-height: 1;
 			margin:5px 0 5px 0;
 		}
-		.wallet_button{			
+		.wallet_button{
 			width: 78px;
 			height: 24px;
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px;
-			background: @admin_panel_yellow_color;	
+			background: @admin_panel_yellow_color;
 			position: absolute;
 			bottom: -24px;
 			left:0;
@@ -181,14 +181,14 @@
 			margin:0 auto;
 				.wallet_button_add{
 					color: @admin_panel_white_color;
-					text-decoration: none;	
-					font-size: 11px;	
+					text-decoration: none;
+					font-size: 11px;
 					line-height: 21px;
 
 				}
 		}
 	}
-	
+
 	.engine{
 		.disp_inline(top,30px);
 		.message{
@@ -228,7 +228,7 @@
 		.engine_block{
 				margin-top: 8px;
 				.engine_block_a{
-					
+
 					.engine_block_img{
 
 					background: url(../img/engine.png) center center no-repeat;
@@ -239,13 +239,13 @@
 				}
 		}
 	}
-	
+
 	}
 	// end admin panel
 	// begin admin nav panel
 	#admin_nav_click_slide{
 		display: block;
-		padding: 10px;		
+		padding: 10px;
 		color: #6e6e6e;
 
 	}
@@ -253,21 +253,41 @@
 		.admin_nav_ul{
 			margin-bottom: 12px;
 			border-radius: 7px;
-			background: white;			
+			background: white;
 			overflow: hidden;
-			.admin_nav_li{	
-			color: #4d4d4d;	
-			white-space: nowrap; /* Запрещаем перенос строк */
-			text-overflow: ellipsis; /* Добавляем многоточие */	
-			overflow: hidden;	
-				p{
-					font-size: 13px;
+			.admin_nav_li{
+				color: #4d4d4d;
+
+				position: relative;
+				.admin_nav_li_count{
+					position: absolute;
+					right: 5px;
+					min-width: 18px;
+					text-align: center;
+					background: #505050;
+					// top: -3px;
+					// top: 3px;
+					top: 50%;
+					transform: translateY(-50%);
+					border-radius: 500px;
+					color: #fff;
+					display: block;
+					line-height: 1;
+					font-size: 10px;
 					font-weight: 700;
-					padding: 5px 10px 3px 10px;					
+					padding: 4px 3px;
+				}
+					p{
+						// white-space: nowrap; /* Запрещаем перенос строк */
+						// text-overflow: ellipsis; /* Добавляем многоточие */
+						// overflow: hidden;
+						font-size: 13px;
+						font-weight: 700;
+						padding: 5px 10px 3px 10px;
 				}
 				a{
 					padding: 4px 10px;
-					color: #4d4d4d;	
+					color: #4d4d4d;
 					font-size: 12px;
 				}
 				.li_add_company{
@@ -339,10 +359,10 @@
 				}
 				span{
 					padding-top: 3px;
-					font-size: 10px;	
+					font-size: 10px;
 					width: 100px;
-					margin: 0 auto;	
-					display: block;			
+					margin: 0 auto;
+					display: block;
 				}
 			}
 		}
@@ -360,7 +380,7 @@
 				width: 14px;
 				height: 14px;
 				background: url(../img/admin_time_close.png) center center no-repeat;
-				background-color: #737373; 
+				background-color: #737373;
 				position: absolute;
 				right: 0;
 				top: 0;
@@ -375,7 +395,7 @@
 				color: #121445;
 			}
 		}
-		.admin_service{			
+		.admin_service{
 			.admin_service_header{
 				background: #fff;
 				border-top-right-radius: 7px;
@@ -401,7 +421,7 @@
 					text-align: left;
 					margin-top: 8px;
 					margin-bottom: 8px;
-					a{	
+					a{
 						color: #4d4d4d;
 						&:hover{
 							text-decoration: none;
@@ -441,7 +461,7 @@
 	margin-top: 5px;
 }
 .title_li{
-	p{		
+	p{
 		background: #f9d503;
 		a{
 			font-size: 13px !important;

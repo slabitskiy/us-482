@@ -3015,11 +3015,27 @@ select {
 }
 .main_content .admin_nav .admin_nav_ul .admin_nav_li {
   color: #4d4d4d;
-  white-space: nowrap;
-  /* Запрещаем перенос строк */
-  text-overflow: ellipsis;
-  /* Добавляем многоточие */
-  overflow: hidden;
+  position: relative;
+}
+.main_content .admin_nav .admin_nav_ul .admin_nav_li .admin_nav_li_count {
+  position: absolute;
+  right: 5px;
+  min-width: 18px;
+  text-align: center;
+  background: #505050;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 3px;
 }
 .main_content .admin_nav .admin_nav_ul .admin_nav_li p {
   font-size: 13px;
@@ -11487,6 +11503,346 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .finished .another .another_copy:hover {
   text-decoration: none;
+}
+.main_content .user_account_panel {
+  background: #fff;
+  position: relative;
+  margin-bottom: 25px;
+}
+.main_content .user_account_panel:after {
+  display: block;
+  content: '';
+}
+.main_content .user_account_panel {
+  position: relative;
+  padding-bottom: 5px;
+}
+.main_content .user_account_panel:before {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5000px;
+  background: #fff;
+  left: -50%;
+}
+.main_content .user_account_panel .panel_burse {
+  float: left;
+  margin-top: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_panel .panel_burse {
+    float: none;
+    text-align: center;
+  }
+}
+.main_content .user_account_panel .panel_burse .burse_title {
+  background: #dfdfdf;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  padding: 0 10px;
+  height: 23px;
+  max-width: 65px;
+  margin: 0 auto 5px;
+}
+.main_content .user_account_panel .panel_burse .burse_title .title_text {
+  line-height: 23px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+.main_content .user_account_panel .panel_burse .burse_content > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.main_content .user_account_panel .panel_burse .burse_content .burse_icon .img {
+  height: 31px;
+  width: 31px;
+  display: block;
+  background: black;
+}
+.main_content .user_account_panel .panel_burse .burse_content .burse_info {
+  background: #f4f4f4;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  padding: 0 10px;
+  color: #4d4d4d;
+  height: 25px;
+  line-height: 25px;
+}
+.main_content .user_account_panel .panel_burse .burse_content .burse_info .bold {
+  font-weight: 600;
+}
+.main_content .user_account_panel .panel_burse .burse_content .burse_quot {
+  background: #898989;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 7px;
+  position: relative;
+}
+.main_content .user_account_panel .panel_burse .burse_content .burse_quot .img {
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 12px;
+  height: 16px;
+  background: #fff;
+}
+.main_content .user_account_panel .panel_burse .burse_login {
+  text-align: center;
+  margin-top: 2px;
+}
+.main_content .user_account_panel .panel_burse .burse_login .burse_login_link {
+  color: #a5a5a5;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.main_content .user_account_panel .panel_burse .burse_login .burse_login_link:hover {
+  text-decoration: none;
+}
+.main_content .user_account_panel .user_account_block {
+  float: right;
+  padding-top: 12px;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_panel .user_account_block {
+    padding-right: 0;
+    float: none;
+    text-align: center;
+  }
+}
+.main_content .user_account_panel .user_account_block .user_account_avatar {
+  position: relative;
+  max-width: 160px;
+  margin: 0 auto 10px;
+}
+.main_content .user_account_panel .user_account_block .user_account_avatar .avatar_color {
+  width: 35px;
+  height: 35px;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  position: absolute;
+  top: 5px;
+  right: -5px;
+}
+.main_content .user_account_panel .user_account_block .user_account_avatar .avatar_color.green {
+  background: #01dd01;
+}
+.main_content .user_account_panel .user_account_block .user_account_avatar .avatar_face {
+  width: 160px;
+  height: 160px;
+}
+.main_content .user_account_panel .user_account_block .user_account_avatar .avatar_face img {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 5000px;
+          border-radius: 5000px;
+}
+.main_content .user_account_panel .user_account_block .user_account_info {
+  color: #737373;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_panel .user_account_block .user_account_info {
+    padding-bottom: 30px;
+  }
+}
+.main_content .user_account_panel .user_account_block .user_account_info .info_nickname .nickname_text {
+  line-height: 1;
+  font-weight: 700;
+  font-size: 12px;
+}
+.main_content .user_account_panel .user_account_block .user_account_info .info_edit .edit_link {
+  color: #737373;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.main_content .user_account_panel .user_account_block .user_account_info .info_edit .edit_link:hover {
+  text-decoration: none;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_badge {
+  background: #8f8f8f;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  height: 15px;
+  display: inline-block;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_badge .badge_text {
+  line-height: 14px;
+  font-size: 9px;
+  padding: 0 6px;
+  color: #fff;
+}
+.main_content .user_account_message {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 40px 0 38px;
+  text-align: center;
+}
+.main_content .user_account_message .message_link {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  text-decoration: none!important;
+  color: #fff;
+}
+.main_content .user_account_message .message_link .link_img {
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('../img/user__mail.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.main_content .user_account_message .message_link .count_message {
+  text-align: center;
+  line-height: 23px;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  background: #01dd01;
+  top: -11px;
+  right: -27px;
+}
+.main_content .user_account_likes {
+  margin-bottom: 20px;
+  background: #fbefa6;
+  padding: 34px 0 35px;
+  text-align: center;
+}
+.main_content .user_account_likes .likes_link {
+  margin-right: 50px;
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  width: 29px;
+}
+.main_content .user_account_likes .likes_link .link_img {
+  width: 29px;
+  height: 24px;
+  display: block;
+  background: url('../img/user__heart.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.main_content .user_account_likes .likes_link .count_likes {
+  text-align: center;
+  line-height: 23px;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  background: #01dd01;
+  top: -11px;
+  right: -27px;
+}
+.main_content .user_account_likes .stars_link {
+  display: inline-block;
+  position: relative;
+  height: 29px;
+  width: 31px;
+}
+.main_content .user_account_likes .stars_link .link_img {
+  width: 31px;
+  height: 29px;
+  display: block;
+  background: url('../img/user__star.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.main_content .user_account_likes .stars_link .count_stars {
+  text-align: center;
+  line-height: 23px;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  background: #01dd01;
+  top: -11px;
+  right: -27px;
+}
+.main_content .user_account_service {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-bottom-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+  -webkit-border-bottom-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+  padding-bottom: 60px;
+}
+.main_content .user_account_service .service_edit {
+  padding-top: 5px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.main_content .user_account_service .service_edit .edit_link {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #a5a5a5;
+}
+.main_content .user_account_service .service_edit .edit_link:hover {
+  text-decoration: none;
+}
+.main_content .user_account_service .service_block {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_service .service_block {
+    margin-left: 0;
+  }
+}
+.main_content .user_account_service .service_block:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+}
+.main_content .user_account_service .service_block a {
+  text-decoration: none!important;
+  color: #4d4d4d;
+}
+.main_content .user_account_service .service_block .service_img {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 66px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_service .service_block .service_img {
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+}
+.main_content .user_account_service .service_block .service_text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_service .service_block .service_text {
+    display: block;
+    text-align: center;
+  }
+}
+.main_content .user_account_service .service_block .service_text .text {
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: 600;
 }
 .width_320 {
   width: 320px;
