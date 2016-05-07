@@ -9882,6 +9882,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   right: 0;
   margin-top: 0;
 }
+.fixed_navigation-right {
+  z-index: 3;
+}
+.main_content {
+  margin-top: 70px!important;
+}
 .main_content .left_top_0_circle {
   left: 0;
   top: -2px;
@@ -11559,7 +11565,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 31px;
   width: 31px;
   display: block;
-  background: black;
+  background: url('../img/burse_icon.png') no-repeat center;
 }
 .main_content .user_account_panel .panel_burse .burse_content .burse_info {
   background: #f4f4f4;
@@ -11591,7 +11597,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   top: 4px;
   width: 12px;
   height: 16px;
-  background: #fff;
+  background: url('../img/burse_quot_img.png') no-repeat center;
 }
 .main_content .user_account_panel .panel_burse .burse_login {
   text-align: center;
@@ -11666,11 +11672,286 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .user_account_panel .user_account_block .user_account_info .info_edit .edit_link:hover {
   text-decoration: none;
 }
+.main_content .user_account_panel .panel_stats {
+  float: right;
+  width: 310px;
+  padding-top: 25px;
+}
+@media only screen and (max-width: 991px) {
+  .main_content .user_account_panel .panel_stats {
+    float: none;
+    margin: 0 auto;
+  }
+}
+.main_content .user_account_panel .panel_stats .stats_top:after {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}
+.main_content .user_account_panel .panel_stats .stats_top .top_left {
+  float: left;
+}
+.main_content .user_account_panel .panel_stats .stats_top .stats_right {
+  float: right;
+}
+.main_content .user_account_panel .panel_stats .stat_bar {
+  margin-bottom: 16px;
+  width: 123px;
+  position: relative;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress {
+  z-index: 1;
+  width: 100px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #f9d503;
+  height: 16px;
+  line-height: 16px;
+  position: relative;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress:after {
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress .progress_img {
+  z-index: 1;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: -8px;
+  left: 3px;
+  display: block;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress .progress_img.energy {
+  background: url('../img/progress_energy.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress .progress_img.a {
+  background: url('../img/progress_a.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress .progress_img.money {
+  background: url('../img/progress_money.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_progress .progress_text {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.19);
+  font-size: 10px;
+  font-weight: 700;
+  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_add {
+  position: absolute;
+  top: 0;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  right: 0;
+  height: 100%;
+  width: 31px;
+  background: #e6e6e6;
+  display: block;
+  color: #696b72;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none!important;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_add::before {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 16px;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  left: -4px;
+  background: #fff;
+  -webkit-border-radius: 1000px;
+          border-radius: 1000px;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_add:after {
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.main_content .user_account_panel .panel_stats .stat_bar .bar_add span {
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+}
+.main_content .user_account_panel .panel_stats .stats_energy {
+  margin-bottom: 18px;
+}
+.main_content .user_account_panel .panel_stats .stats_energy:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: '';
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_btn {
+  display: block;
+  width: 25px;
+  height: 23px;
+  background: url('../img/energy_btn.png') no-repeat center;
+  float: left;
+  margin-right: 7px;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar {
+  float: left;
+  margin-top: -5px;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_count {
+  background: #c4c4c4;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  height: 13px;
+  padding: 0 5px;
+  display: inline-block;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_count .coun_text {
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.21);
+  color: #fff;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress {
+  margin-top: -2px;
+  position: relative;
+  width: 145px;
+  height: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #e6e6e6;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress:after {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress:before {
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_line {
+  float: left;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background: #898989;
+  height: 10px;
+  width: 70px;
+  overflow: hidden;
+  position: relative;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_line .line_colored {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url('../img/line_colored.png') repeat-x left;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_stars {
+  float: right;
+  margin-top: -4px;
+  position: relative;
+  z-index: 2;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_stars:after {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_stars .star {
+  position: relative;
+  width: 18px;
+  height: 16px;
+  float: left;
+  margin-right: 5px;
+  background: url('../img/progress_star.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress .progress_stars .star:before {
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 1px;
+  left: 0;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+.main_content .user_account_panel .panel_stats .stats_bank {
+  padding-left: 48px;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_img {
+  width: 38px;
+  height: 42px;
+  background: url('../img/stats_bank.png') no-repeat center;
+  margin-right: 5px;
+  float: left;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_info {
+  float: left;
+  text-align: center;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_info .info_text {
+  background: #dfdfdf;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center;
+  width: 65px;
+  height: 23px;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_info .info_text .text {
+  line-height: 23px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_info .info_link {
+  color: #a5a5a5;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.main_content .user_account_panel .panel_stats .stats_bank .bank_info .info_link:hover {
+  text-decoration: none;
+}
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_badge {
   background: #8f8f8f;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   height: 15px;
+  margin-bottom: 5px;
   display: inline-block;
 }
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_badge .badge_text {
@@ -11678,6 +11959,167 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   font-size: 9px;
   padding: 0 6px;
   color: #fff;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements {
+  background: #eeeeee;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding-right: 10px;
+  height: 50px;
+  position: relative;
+  margin-left: 10px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements:after {
+  display: block;
+  content: '';
+  height: 0;
+  clear: both;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .achieve_who {
+  position: absolute;
+  left: -10px;
+  top: -3px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .achieve_items {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 65px;
+  position: relative;
+  height: 100%;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .achieve_items .items_title {
+  text-align: center;
+  color: #737373;
+  font-size: 11px;
+  padding-top: 2px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_slides {
+  text-align: center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_slides .slide {
+  display: inline-block;
+  vertical-align: top;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_button {
+  position: absolute;
+  bottom: 13px;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: url('../img/achivements_nav.png') no-repeat;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_button.items_left {
+  left: 0;
+  background-position: 0 0;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_button.items_right {
+  background-position: -22px 0;
+  right: 0;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs {
+  padding: 18px 0 12px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block {
+  position: relative;
+  height: 11px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_range {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 98%;
+  background: #eeeeee;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_range:before {
+  display: block;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+  background: #fff;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 1;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_range .range_active {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url('../img/line_colored.png') repeat-x left;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons {
+  position: absolute;
+  top: -8px;
+  z-index: 2;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div {
+  height: 27px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-1 {
+  background: url('../img/achieve_rang-1.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-1_active {
+  background: url('../img/achieve_rang-1_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-2 {
+  background: url('../img/achieve_rang-2.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-2_active {
+  background: url('../img/achieve_rang-2_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-3 {
+  background: url('../img/achieve_rang-3.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-3_active {
+  background: url('../img/achieve_rang-3_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-4 {
+  background: url('../img/achieve_rang-4.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-4_active {
+  background: url('../img/achieve_rang-4_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-5 {
+  background: url('../img/achieve_rang-5.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-5_active {
+  background: url('../img/achieve_rang-5_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-6 {
+  background: url('../img/achieve_rang-6.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-6_active {
+  background: url('../img/achieve_rang-6_active.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-7 {
+  background: url('../img/achieve_rang-7.png') no-repeat center;
+}
+.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achieve_rangs .rangs_block .rangs_icons > div .icon.icon-7_active {
+  background: url('../img/achieve_rang-7_active.png') no-repeat center;
 }
 .main_content .user_account_message {
   margin-bottom: 20px;

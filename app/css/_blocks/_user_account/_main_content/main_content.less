@@ -1,4 +1,12 @@
+
+.fixed_navigation-right{
+	z-index: 3;
+}
 .main_content{
+
+	//
+		margin-top: 70px!important;
+	//
 	.left_top_0_circle{
 		left: 0;
 		top: -2px;
@@ -1580,7 +1588,7 @@
 						height: 31px;
 						width: 31px;
 						display: block;
-						background: black;
+						background: url('../img/burse_icon.png') no-repeat center;
 					}
 				}
 				.burse_info{
@@ -1610,7 +1618,7 @@
 						top: 4px;
 						width: 12px;
 						height: 16px;
-						background: #fff;
+						background: url('../img/burse_quot_img.png') no-repeat center;
 					}
 				}
 			}
@@ -1695,12 +1703,285 @@
 		}
 		//
 		.panel_stats{
+			float: right;
+			width: 310px;
+			@media only screen and (max-width: 991px){
+				float: none;
+				margin: 0 auto;
+			}
+			padding-top: 25px;
+			.stats_top{
+				&:after{
+					display: block;
+					content: '';
+					height: 0;
+					clear: both;
+				}
+				.top_left{
+					float: left;
+				}
+				.stats_right{
+					float: right;
+				}
+			}
+			.stat_bar{
+				margin-bottom: 16px;
+				width: 123px;
+				position: relative;
+				.bar_progress{
+					z-index: 1;
+					width: 100px;
+					// border-right: 4px solid #fff;
+					border-radius: 10px;
+					background: #f9d503;
+					height: 16px;
+					line-height: 16px;
+					position: relative;
+					&:after{
+						display: block;
+						width: 100%;
+						height: 50%;
+						top: 0;
+						left: 0;
+						position: absolute;
+						content: '';
+						background: #fff;
+						opacity: 0.3;
+						pointer-events: none;
+					}
+					.progress_img{
+						z-index: 1;
+						width: 31px;
+						height: 31px;
+						position: absolute;
+						top: -8px;
+						left: 3px;
+						display: block;
+						&.energy{
+							background: url('../img/progress_energy.png') no-repeat center;
+						}
+						display: block;
+						&.a{
+							background: url('../img/progress_a.png') no-repeat center;
+						}
+						display: block;
+						&.money{
+							background: url('../img/progress_money.png') no-repeat center;
+						}
+					}
+					.progress_text{
+						text-align: center;
+						color: #fff;
+						text-shadow: 0 0 1px rgba(0, 0, 0, 0.19);
+						font-size: 10px;
+						font-weight: 700;
+						padding-left: 30px;
+						position: relative;
+						z-index: 1;
+					}
+				}
+				.bar_add{
+					&::before{
+						display: block;
+						content: '';
+						height: 100%;
+						width: 16px;
+						position: absolute;
+						top: 0;
+						pointer-events: none;
+						left: -4px;
+						background: #fff;
+						border-radius: 1000px;
+					}
+					&:after{
+						display: block;
+						width: 100%;
+						height: 50%;
+						top: 0;
+						left: 0;
+						position: absolute;
+						content: '';
+						background: #fff;
+						opacity: 0.3;
+						pointer-events: none;
+					}
+					position: absolute;
+					top: 0;
+					border-radius: 10px;
+					right: 0;
+					height: 100%;
+					width: 31px;
+					background: #e6e6e6;
+					display: block;
+					color: #696b72;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 16px;
+					text-align: center;
+					text-decoration: none!important;
+					span{
+						position: relative;
+						z-index: 1;
+						padding-left: 10px;;
+					}
+				}
+			}
+			//
+			.stats_energy{
+				&:after{
+					display: block;
+					height: 0;
+					clear: both;
+					content: '';
+				}
+				margin-bottom: 18px;
+				.energy_btn{
+					display: block;
+					width: 25px;
+					height: 23px;
+					background: url('../img/energy_btn.png') no-repeat center;
+					float: left;
+					margin-right: 7px;
+				}
+				.energy_bar{
+					float: left;
+					margin-top: -5px;
+					.bar_count{
+						background: #c4c4c4;
+						border-radius: 10px;
+						height: 13px;
+						padding: 0 5px;
+						display: inline-block;
+						.coun_text{
+							line-height: 14px;
+							font-size: 12px;
+							font-weight: 600;
+							text-shadow: 1px 0 0 rgba(0, 0, 0, 0.21);
+							color: #fff;
+						}
+					}
+					.bar_progress{
+						margin-top: -2px;
+						position: relative;
+						width: 145px;
+						height: 10px;
+						border-radius: 10px;
+						&:after{
+							display: block;
+							content: '';
+							height: 0;
+							clear: both;
+						}
+						&:before{
+							display: block;
+							width: 100%;
+							height: 50%;
+							top: 0;
+							left: 0;
+							position: absolute;
+							content: '';
+							background: #fff;
+							opacity: 0.3;
+							pointer-events: none;
+							z-index: 1;
+						}
+						background: #e6e6e6;
+						.progress_line{
+							float: left;
+							border-radius: 10px;
+							background: #898989;
+							height: 10px;
+							width: 70px;
+							overflow: hidden;
+							position: relative;
+							.line_colored{
+								position: absolute;
+								height: 100%;
+								// width: 60%;
+								left: 0;
+								top: 0;
+								background: url('../img/line_colored.png') repeat-x left;
+							}
+						}
+						.progress_stars{
+							float: right;
+							margin-top: -4px;
+							position: relative;
+							z-index: 2;
+							&:after{
+								display: block;
+								content: '';
+								height: 0;
+								clear: both;
+							}
+							.star{
+									position: relative;
+									&:before{
+										display: block;
+										width: 100%;
+										height: 50%;
+										top: 1px;
+										left: 0;
+										position: absolute;
+										content: '';
+										background: #fff;
+										opacity: 0.3;
+										pointer-events: none;
+										z-index: 1;
+									}
+									width: 18px;
+									height: 16px;
+									float: left;
+									margin-right: 5px;
+									background: url('../img/progress_star.png') no-repeat center;
+							}
+						}
+					}
+				}
+			}
+			//
+			.stats_bank{
+				padding-left: 48px;
+				.bank_img{
+					width: 38px;
+					height: 42px;
+					background: url('../img/stats_bank.png') no-repeat center;
+					margin-right: 5px;
+					float: left;
+				}
+				.bank_info{
+					float: left;
+					text-align: center;
+					.info_text{
+						background: #dfdfdf;
+						border-radius: 5px;
+						text-align: center;
+						width: 65px;
+						height: 23px;
+						.text{
+							line-height: 23px;
+							font-weight: 600;
+							color: #4d4d4d;
+						}
+					}
+					.info_link{
 
+						color: #a5a5a5;
+						font-size: 12px;
+						text-decoration: underline;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			//
 			.stats_bottom{
 				.stats_badge{
 					background: #8f8f8f;
 					border-radius: 10px;
 					height: 15px;
+					margin-bottom: 5px;
 					display: inline-block;
 					.badge_text{
 						line-height: 14px;
@@ -1709,7 +1990,174 @@
 						color: #fff;
 					}
 				}
+				.stats_achieve{
+					.achivements{
+						background: #eeeeee;
+						border-radius: 10px;
+						padding-right: 10px;
+							&:after{
+								display: block;
+								content: '';
+								height: 0;
+								clear: both;
+							}
+							height: 50px;
+							position: relative;
+							margin-left: 10px;
+							.achieve_who{
+								position: absolute;
+								left: -10px;
+								top: -3px;
+							}
+						.achieve_items{
+							padding-left: 30px;
+							padding-right: 30px;
+							margin-left: 65px;
+							position: relative;
+							height: 100%;
+							// padding-left: 65px;
+							.items_title{
+								text-align: center;
+								color: #737373;
+								font-size: 11px;
+								padding-top: 2px;
+							}
+						}
+						.items_slides{
+							// padding: 0 50px
+							// position: relative;
+							text-align: center;
+							.slide{
+								display: inline-block;
+								vertical-align: top;
+							}
+						}
+
+						.items_button{
+							position: absolute;
+							bottom: 13px;
+							display: block;
+							width: 18px;
+							height: 18px;
+							background: url('../img/achivements_nav.png') no-repeat;
+							border-radius: 500px;
+							&.items_left{
+								left: 0;
+								background-position: 0 0;
+							}
+							&.items_right{
+								background-position: -22px 0;
+								right: 0;
+							}
+						}
+					}
+					.achieve_rangs{
+						// padding-top: 12px;
+						// padding-bottom: 12px;
+						padding: 18px 0 12px;
+						.rangs_block{
+							position: relative;
+							height: 11px;
+							.rangs_range{
+									position: absolute;
+									top: 0;
+									left: 0;
+									right: 0;
+									margin: 0 auto;
+									height: 100%;
+									width: 98%;
+									background: #eeeeee;
+									&:before{
+										display: block;
+										width: 100%;
+										height: 50%;
+										top: 0;
+										left: 0;
+										position: absolute;
+										content: '';
+										background: #fff;
+										opacity: 0.3;
+										pointer-events: none;
+										z-index: 1;
+									}
+									.range_active{
+										position: absolute;
+										height: 100%;
+										left: 0;
+										top: 0;
+										background: url('../img/line_colored.png') repeat-x left;
+									}
+							}
+							.rangs_icons{
+								position: absolute;
+								top: -8px;
+								// top: 0;
+								z-index: 2;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								// display: table;
+								width: 100%;
+								display: flex;
+								justify-content: space-between;
+								// margin-top: -7px;
+								>div{
+										height: 27px;
+										// width: 14%;
+										.icon{
+											display: inline-block;
+											width: 27px;
+											height: 27px;
+											&.icon-1{
+												background: url('../img/achieve_rang-1.png') no-repeat center;
+											}
+											&.icon-1_active{
+												background: url('../img/achieve_rang-1_active.png') no-repeat center;
+											}
+											&.icon-2{
+												background: url('../img/achieve_rang-2.png') no-repeat center;
+											}
+											&.icon-2_active{
+												background: url('../img/achieve_rang-2_active.png') no-repeat center;
+											}
+											&.icon-3{
+												background: url('../img/achieve_rang-3.png') no-repeat center;
+											}
+											&.icon-3_active{
+												background: url('../img/achieve_rang-3_active.png') no-repeat center;
+											}
+											&.icon-4{
+												background: url('../img/achieve_rang-4.png') no-repeat center;
+											}
+											&.icon-4_active{
+												background: url('../img/achieve_rang-4_active.png') no-repeat center;
+											}
+											&.icon-5{
+												background: url('../img/achieve_rang-5.png') no-repeat center;
+											}
+											&.icon-5_active{
+												background: url('../img/achieve_rang-5_active.png') no-repeat center;
+											}
+											&.icon-6{
+												background: url('../img/achieve_rang-6.png') no-repeat center;
+											}
+											&.icon-6_active{
+												background: url('../img/achieve_rang-6_active.png') no-repeat center;
+											}
+											&.icon-7{
+												background: url('../img/achieve_rang-7.png') no-repeat center;
+											}
+											&.icon-7_active{
+												background: url('../img/achieve_rang-7_active.png') no-repeat center;
+											}
+										}
+								}
+							}
+						}
+					}
+				}
 			}
+			//
 		}
 		//
 	}
