@@ -9885,8 +9885,8 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .fixed_navigation-right {
   z-index: 3;
 }
-.main_content {
-  margin-top: 70px!important;
+.social {
+  z-index: 9;
 }
 .main_content .left_top_0_circle {
   left: 0;
@@ -11614,7 +11614,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .user_account_panel .user_account_block {
   float: right;
   padding-top: 12px;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 @media only screen and (max-width: 991px) {
   .main_content .user_account_panel .user_account_block {
@@ -11681,6 +11681,16 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   .main_content .user_account_panel .panel_stats {
     float: none;
     margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .main_content .user_account_panel .panel_stats {
+    margin-left: -13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .main_content .user_account_panel .panel_stats {
+    margin-left: -23px;
   }
 }
 .main_content .user_account_panel .panel_stats .stats_top:after {
@@ -11816,7 +11826,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .user_account_panel .panel_stats .stats_energy .energy_bar {
   float: left;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 .main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_count {
   background: #c4c4c4;
@@ -11827,14 +11837,14 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   display: inline-block;
 }
 .main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_count .coun_text {
-  line-height: 14px;
-  font-size: 12px;
+  line-height: 13px;
+  font-size: 10px;
   font-weight: 600;
   text-shadow: 1px 0 0 rgba(0, 0, 0, 0.21);
   color: #fff;
 }
 .main_content .user_account_panel .panel_stats .stats_energy .energy_bar .bar_progress {
-  margin-top: -2px;
+  margin-top: -1px;
   position: relative;
   width: 145px;
   height: 10px;
@@ -11956,8 +11966,8 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_badge .badge_text {
   line-height: 14px;
-  font-size: 9px;
-  padding: 0 6px;
+  font-size: 10px;
+  padding: 0 10px;
   color: #fff;
 }
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements {
@@ -12210,7 +12220,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   -webkit-border-radius: 500px;
           border-radius: 500px;
   background: #01dd01;
-  top: -11px;
+  top: -7px;
   right: -27px;
 }
 .main_content .user_account_service {
