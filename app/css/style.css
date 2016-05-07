@@ -11996,10 +11996,6 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_slides {
   text-align: center;
 }
-.main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_slides .slide {
-  display: inline-block;
-  vertical-align: top;
-}
 .main_content .user_account_panel .panel_stats .stats_bottom .stats_achieve .achivements .items_button {
   position: absolute;
   bottom: 13px;

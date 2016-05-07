@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
 
   </head>
@@ -33,10 +34,10 @@
   <!-- begin fixed_navigation-right  -->
   <div class="fixed_navigation-right hidden-xs hidden-sm">
     <a href="#" title="" class="button">
-      <span class="glyphicon glyphicon-chevron-up"></span>  
+      <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
     <a href="#" title="" class="button">
-      <span class="glyphicon glyphicon-chevron-down"></span>  
+      <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>
   <!-- end fixed_navigation-right -->
@@ -60,7 +61,7 @@
                     <div class="search">
                       <div class="search_block">
                         <input type="text" class="search_input">
-                        <b class="search_ico"></b>  
+                        <b class="search_ico"></b>
                       </div>
                     </div>
                   <!-- end search <-->
@@ -135,7 +136,7 @@
 
   <div class="main_content">
     <div class="container">
-    
+
     <div class="row">
        <!-- begin nav -->
        <div class="navigation hide">
@@ -147,7 +148,7 @@
               <a href="#" class="header_main_panel_text_leng_ua active_leng">Ua</a>
               <a href="#" class="header_main_panel_text_leng_ru">Ru</a>
             </div>
-            <!-- end header pick lenguage --> 
+            <!-- end header pick lenguage -->
           </div>
         </div>
         <div class="col-md-8 col-sm-8">
@@ -208,7 +209,7 @@
                 </li>
               </ul>
             </div>
-            <!-- /.navbar-collapse --> 
+            <!-- /.navbar-collapse -->
           </nav>
         </div>
         </div>
@@ -220,7 +221,7 @@
             </ul>
           </div>
         </div>
-        </div>         
+        </div>
        </div>
     <!-- end nav -->
     <div class="header_main_panel_breads col-md-offset-3">
@@ -243,15 +244,15 @@
         </li>
       </ul>
     </div>
-    <!-- end breads -->   
+    <!-- end breads -->
     </div>
     <!-- begin user_account panel -->
     <div class="user_account_panel">
       <div class="row">
         <!-- left -->
-        <div class="col-md-8">
+        <div class="col-md-7 col-lg-8 col-sm-6">
         <!-- burse -->
-          <div class="panel_burse pull-left">
+          <div class="panel_burse">
             <div class="burse_title">
               <p class="title_text">
                 Біржа
@@ -271,9 +272,9 @@
           </div>
           <!-- end burse -->
           <!-- user account -->
-          <div class="user_account_block pull-right">
+          <div class="user_account_block ">
             <div class="user_account_avatar">
-              <div class="avatar_color green blue lightblue yellow orange red pink purple"></div>
+              <div class="avatar_color green "></div>
               <div class="avatar_face"><img src="http://fakeimg.pl/350x200/?text=Face" alt="" class="face_img"></div>
             </div>
             <div class="user_account_info">
@@ -287,26 +288,75 @@
             </div>
           </div>
           <!-- end user account -->
+          <div class="clearfix"></div>
         </div>
         <!-- end left -->
         <!-- right -->
-        <div class="col-md-4">
+        <div class="col-md-5 col-lg-4 col-sm-6">
           <div class="panel_stats">
             <div class="stats_top">
               <div class="top_left">
-                <div class="stat_energy">
-                  
+                <div class="stat_bar">
+                  <div class="bar_progress">
+                    <b class="progress_img energy"></b>
+                    <p class="progress_text">120</p>
+                  </div>
+                  <a href="/" class="bar_add">
+                    <span>+</span>
+                  </a>
                 </div>
-                <div class="stats_a">
-                  
+                <div class="stat_bar">
+                  <div class="bar_progress">
+                    <b class="progress_img a"></b>
+                    <p class="progress_text">7</p>
+                  </div>
+                  <a href="/" class="bar_add">
+                    <span>+</span>
+                  </a>
+
                 </div>
-                <div class="stats_money">
-                  
+                <div class="stat_bar">
+                  <div class="bar_progress">
+                    <b class="progress_img money"></b>
+                    <p class="progress_text">22.00</p>
+                  </div>
+                  <a href="/" class="bar_add">
+                    <span>+</span>
+                  </a>
                 </div>
               </div>
               <!--  -->
               <div class="stats_right">
-                
+                <div class="stats_energy">
+                  <a href="/" class="energy_btn"></a>
+                  <div class="energy_bar">
+                    <div class="bar_count">
+                      <p class="coun_text">22/35</p>
+                    </div>
+                    <div class="bar_progress">
+                      <div class="progress_line">
+                        <div class="line_colored" style="width:60%;"></div>
+                      </div>
+                      <div class="progress_stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="stats_bank">
+                  <div class="bank_img"></div>
+                  <div class="bank_info">
+                    <div class="info_text">
+                      <p class="text">Банк</p>
+                    </div>
+                    <a href="/" class="info_link">ввійти</a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <!--  -->
               </div>
             </div>
             <div class="stats_bottom">
@@ -314,60 +364,68 @@
                 <p class="badge_text">Людина-легенда</p>
               </div>
               <div class="stats_achieve">
-              <!-- who -->
-                <div class="achieve_who">
-                  <div class="who_w">
-                    <b class="w-img"></b>
+                <div class="achivements">
+                  <!-- who -->
+                  <div class="achieve_who">
+                    <div class="who_w">
+                      <img src="img/who_img.png" alt="">
+                    </div>
                   </div>
-                  <div class="who_m">
-                    <b class="m-img">
-                      
-                    </b>
+                  <!-- end who -->
+                  <div class="achieve_items">
+                    <div class="items_title">
+                      <p class="title_text">Відзнаки: <b>4</b></p>
+                    </div>
+                    <!-- slides -->
+                    <div class="items_slides owl-carousel" id="achieve_slider">
+                      <div class="slide item-star">
+                        <img src="img/achivement_1.png" alt="" />
+                      </div>
+                      <div class="slide item-flag">
+                        <img src="img/achivement_2.png" alt="" />
+                      </div>
+                      <div class="slide item-man">
+                        <img src="img/achivement_3.png" alt="" />
+                      </div>
+                      <div class="slide item-key">
+                        <img src="img/achivement_4.png" alt="" />
+                      </div>
+                    </div>
+                    <!-- slides -->
+                    <!-- nav -->
+                    <a href="#" class="items_button items_left"><b class="img"></b></a>
+                    <a href="#" class="items_button items_right"><b class="img"></b></a>
+                    <!-- nav -->
                   </div>
-                </div>
-                <!-- end who -->
-                <div class="achieve_items">
-                  <!-- slides -->
-                  <div class="items_slides">
-                    <div class="item-star"></div>
-                    <div class="item-flag"></div>
-                    <div class="item-man"></div>
-                    <div class="item-key"></div>
-                  </div>
-                  <!-- slides -->
-                  <!-- nav -->
-                   <a href="#" class="items_button items_left"><b class="img"></b></a>
-                   <a href="#" class="items_button items_right"><b class="img"></b></a>
-                  <!-- nav -->
+
                 </div>
                 <!--  -->
                 <div class="achieve_rangs">
                   <div class="rangs_block">
                     <div class="rangs_range">
-                      <div class="range_disabled"></div>
-                      <div class="range_active"></div>
+                      <div class="range_active" style="width: 18%;"></div>
                     </div>
                     <div class="rangs_icons">
                       <div class="icon-block">
-                        <b class="icon icon-first icon-first_active"></b>
+                        <b class="icon icon-first icon-1_active"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-second icon-second_active"></b>
+                        <b class="icon icon-second icon-2"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-third icon-third_active"></b>
+                        <b class="icon icon-third icon-3"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-fourth icon-fourth_active"></b>
+                        <b class="icon icon-fourth icon-4"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-fifth icon-fifth_active"></b>
+                        <b class="icon icon-fifth icon-5"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-sixth icon-sixth_active"></b>
+                        <b class="icon icon-sixth icon-6"></b>
                       </div>
                       <div class="icon-block">
-                        <b class="icon icon-seventh icon-seventh_active"></b>
+                        <b class="icon icon-seventh icon-7"></b>
                       </div>
                     </div>
                   </div>
@@ -377,11 +435,12 @@
             </div>
           </div>
         </div>
+        <div class="clearfix"></div>
         <!-- end right -->
       </div>
     </div>
     <!-- end user_account panel -->
- 
+
       <!-- begin main admin -->
       <div class="row">
       <!-- begin menu -->
@@ -389,7 +448,7 @@
          <div class="accordion">
           <div class="text-right">
            <a href="#" id="admin_nav_click_slide" class="hidden-lg hidden-md hidden-sm">Меню</a>
-            
+
           </div>
             <div class="admin_nav" id="slide_menu">
               <ul class="admin_nav_ul">
@@ -397,7 +456,7 @@
                   <p>Головна</p>
                 </li>
                 <li class="admin_nav_li title_li margin margin_top_none">
-                  <p>Акції  <span class="admin_nav_li_count">10</span></p> 
+                  <p>Акції  <span class="admin_nav_li_count">10</span></p>
                 </li>
                 <li class="admin_nav_li ">
                   <a href="" class=""><span class="strong">Всі акції</span> <span class="admin_nav_li_count">10</span> </a>
@@ -422,10 +481,10 @@
                 </li>
                 <li class="admin_nav_li title_li light_title margin margin_bottom_none">
                   <p>Аукціон</p>
-                </li> 
+                </li>
                 <li class="admin_nav_li title_li">
                   <p>Дисконтний клуб</p>
-                </li> 
+                </li>
                 <li class="admin_nav_li title_li margin margin_top_none grey_title">
                   <p>Зручності</p>
                 </li>
@@ -496,8 +555,6 @@
                 <b class="link_img"></b>
                 <span class="count_likes">77</span>
               </a>
-            </div>
-            <div class="user_account_stars">
               <a href="#" class="stars_link">
                 <b class="link_img"></b>
                 <span class="count_stars">24</span>
@@ -513,7 +570,7 @@
           <div class="row">
             <div class="col-md-6 col-sm-6">
             <!--  -->
-             <div class="service_block">
+             <div class="service_block marg_left">
                 <a href="">
                   <div class="service_img">
                     <img src="img/reg_imgs/reg_info_company_l1.png" height="66" width="68" alt="">
@@ -539,7 +596,7 @@
             <!--  -->
           </div>
           <div class="col-md-6 col-sm-6">
-             <div class="service_block">
+             <div class="service_block marg_left">
                 <a href="">
                   <div class="service_img">
                     <img src="img/reg_imgs/reg_info_company_l2.png" height="65" width="68" alt="">
@@ -617,7 +674,7 @@
       <div class="container">
         <div class="fixed_ad_gotop_butt">
           <a href="#" class="fixed_ad_gotop_href ">
-          <span class="hidden-xs"> 
+          <span class="hidden-xs">
            Повернутись наверх
           </span>
           <img src="img/top_arrow_2.svg" alt="" class="hidden-lg hidden-md hidden-sm ">
@@ -629,8 +686,8 @@
       <div class="container">
         <div class="fixed_ad_gotop_butt">
           <a href="#" class="fixed_ad_gotop_href ">
-          <span class="glyphicon glyphicon-chevron-up"> 
-          </span>          
+          <span class="glyphicon glyphicon-chevron-up">
+          </span>
           </a>
         </div>
       </div>
@@ -657,6 +714,7 @@
   <!--scripts-->
 
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/chosen.jquery.min.js"></script>
   <script src="js/rangeslider.min.js"></script>

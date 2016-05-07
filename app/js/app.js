@@ -1,7 +1,17 @@
 $(document).ready(function(){
 
 
-      
+      $('#achieve_slider').owlCarousel({
+        items: 4,
+        margin: 0,
+        loop: true
+      });
+      $('.items_left').on('click',function(){
+          $('#achieve_slider').trigger('prev.owl.carousel');
+      });
+      $('.items_right').on('click',function(){
+          $('#achieve_slider').trigger('next.owl.carousel');
+      });
       $('.admin_service_content_my_referals_resp').on('click', '.user_info_btn', function(event) {
         event.preventDefault();
         var parent = $(this).parents('.referal_user');
