@@ -12402,7 +12402,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   margin: 10px 0;
 }
 .main_content .panel__title .title__text {
-  font-weight: 900;
+  font-weight: 700;
   color: #4d4d4d;
   font-size: 20px;
 }
@@ -12413,7 +12413,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   background: #fbefa6;
 }
 .main_content .shares__tabs .nav-tabs > li.active > a {
-  font-weight: 700;
+  font-weight: 600;
 }
 .main_content .shares__tabs .nav-tabs > li.active > a:hover {
   background-color: #fff;
@@ -12421,9 +12421,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .shares__tabs .nav-tabs > li > a {
   cursor: pointer;
   position: relative;
-  padding: 15px 0;
-  padding-left: 65px;
-  padding-right: 30px;
+  padding: 15px 0!important;
+  padding-left: 65px!important;
+  padding-right: 30px!important;
   font-weight: 400;
   -webkit-border-radius: 0;
           border-radius: 0;

@@ -20,6 +20,45 @@ $(document).ready(function(){
       $('.items_right').on('click',function(){
           $('#achieve_slider').trigger('next.owl.carousel');
       });
+      //
+      //  slider OWL carousel
+        var owl = $("#slide_show_id");
+        owl.owlCarousel({
+          responsive:{
+            0: {
+              items: 1
+            },
+            1000: {
+              items:2
+            }
+          }//1 items above 1000px browser width
+            // itemsDesktop : [1000,2], //1 items between 1000px and 901px
+            // itemsDesktopSmall : [900,1], // betweem 900px and 601px
+            // itemsTablet: [600,1], //2 items between 600 and 0
+            // itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+            // pagination: true
+        });
+      //  slider OWL carousel
+        $("#slide_show_id-1").owlCarousel({
+            responsive:{
+              0: {
+                items: 1
+              },
+              1000: {
+                items:2
+              }
+            }
+        });
+
+        // Custom Navigation Events
+        $(".navigation_right").click(function(){
+          owl.trigger('next.owl.carousel');
+        });
+        $(".navigation_left").click(function(){
+          owl.trigger('prev.owl.carousel');
+        });
+
+
       $('.admin_service_content_my_referals_resp').on('click', '.user_info_btn', function(event) {
         event.preventDefault();
         var parent = $(this).parents('.referal_user');
