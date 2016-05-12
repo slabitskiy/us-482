@@ -1,6 +1,14 @@
 $(document).ready(function(){
 
+      $('.user_account_panel--toggle').on('click',function(event){
+        event.preventDefault();
+        $(this).parents('.user_account_panel').addClass('hidden__panel');
+      });
 
+      $('.user_account_panel--open').on('click',function(event){
+        event.preventDefault();
+        $(this).parents('.user_account_panel').removeClass('hidden__panel');
+      });
       $('#achieve_slider').owlCarousel({
         items: 4,
         margin: 0,
@@ -357,7 +365,7 @@ $(document).ready(function(){
         });
         // main_content top margin
           function contentMarginTop () {
-            $('.main_content').css({"marginTop": $('.header').innerHeight()+20 });
+            $('.main_content').css({"paddingTop": $('.header').innerHeight()+20 });
           }
           contentMarginTop();
         fNiceScroll($('.company_photos'),false);

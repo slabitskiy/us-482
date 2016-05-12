@@ -9888,6 +9888,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .social {
   z-index: 9;
 }
+.main_content {
+  margin-top: 0;
+}
 .main_content .left_top_0_circle {
   left: 0;
   top: -2px;
@@ -11523,6 +11526,108 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
   padding-bottom: 5px;
 }
+.main_content .user_account_panel.hidden__panel {
+  background: transparent;
+  padding-bottom: 0;
+}
+.main_content .user_account_panel.hidden__panel::before {
+  display: none;
+}
+.main_content .user_account_panel.hidden__panel .user_account_panel--toggle {
+  display: none;
+}
+.main_content .user_account_panel.hidden__panel .user_account_panel--open {
+  display: block;
+}
+.main_content .user_account_panel--open {
+  display: none;
+  position: absolute;
+  top: -52px;
+  right: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .main_content .user_account_panel--open {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.main_content .user_account_panel .user_account_panel__notification > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.main_content .user_account_panel .user_account_panel__notification .notification__text {
+  background: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-right: 5px;
+  position: relative;
+}
+.main_content .user_account_panel .user_account_panel__notification .notification__text .text {
+  font-size: 10px;
+  color: #9a9b9d;
+  padding: 7px 12px;
+}
+.main_content .user_account_panel .user_account_panel__notification .notification__text:after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+.main_content .user_account_panel .user_account_panel__notification .notification__img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  background: black;
+  margin-right: -13px;
+  position: relative;
+  z-index: 1;
+}
+.main_content .user_account_panel .user_account_panel__notification .notification__btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  line-height: 22px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background: #f9d503;
+  font-size: 11px;
+  padding-left: 16px;
+  padding-right: 6px;
+  font-weight: 600;
+}
+.main_content .user_account_panel .user_account_panel_hide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+       -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.main_content .user_account_panel .user_account_panel_hide .hide__button {
+  background: #b0aeae;
+  text-decoration: none!important;
+  display: block;
+  height: 14px;
+  padding-left: 12px;
+  padding-right: 22px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 14px;
+  position: relative;
+}
+.main_content .user_account_panel .user_account_panel_hide .hide__button .button-close {
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  background: black;
+}
 .main_content .user_account_panel:before {
   display: block;
   content: '';
@@ -12291,6 +12396,59 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   line-height: 1;
   font-size: 18px;
   font-weight: 600;
+}
+.main_content .panel__title {
+  padding-left: 65px;
+  margin: 10px 0;
+}
+.main_content .panel__title .title__text {
+  font-weight: 900;
+  color: #4d4d4d;
+  font-size: 20px;
+}
+.main_content .shares__tabs .nav-tabs {
+  border: 0;
+}
+.main_content .shares__tabs .nav-tabs > li {
+  background: #fbefa6;
+}
+.main_content .shares__tabs .nav-tabs > li.active > a {
+  font-weight: 700;
+}
+.main_content .shares__tabs .nav-tabs > li.active > a:hover {
+  background-color: #fff;
+}
+.main_content .shares__tabs .nav-tabs > li > a {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 0;
+  padding-left: 65px;
+  padding-right: 30px;
+  font-weight: 400;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 0!important;
+  color: #555;
+  margin: 0;
+}
+.main_content .shares__tabs .nav-tabs > li > a:hover {
+  background-color: transparent;
+}
+.main_content .shares__tabs .nav-tabs > li > a .icon {
+  position: absolute;
+  display: block;
+  height: 29px;
+  width: 32px;
+  background: #000;
+  left: 20px;
+  top: 10px;
+}
+.main_content .shares__tabs .tab-content {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-bottom-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
 }
 .width_320 {
   width: 320px;
