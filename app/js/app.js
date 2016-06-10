@@ -1,24 +1,26 @@
 $(document).ready(function(){
 
-      $('.user_account_panel--toggle').on('click',function(event){
+     
+
+      $('.user_account_panel--toggle').on('click', '.hide__button' ,function(event){
         event.preventDefault();
         $(this).parents('.user_account_panel').addClass('hidden__panel');
       });
 
-      $('.user_account_panel--open').on('click',function(event){
+      $('.user_account_panel--open').on('click', function(event){
         event.preventDefault();
         $(this).parents('.user_account_panel').removeClass('hidden__panel');
       });
-      $('#achieve_slider').owlCarousel({
+      $('.achieve_slider').owlCarousel({
         items: 4,
         margin: 0,
         loop: true
       });
       $('.items_left').on('click',function(){
-          $('#achieve_slider').trigger('prev.owl.carousel');
+          $('.achieve_slider').trigger('prev.owl.carousel');
       });
       $('.items_right').on('click',function(){
-          $('#achieve_slider').trigger('next.owl.carousel');
+          $('.achieve_slider').trigger('next.owl.carousel');
       });
       //
       //  slider OWL carousel
