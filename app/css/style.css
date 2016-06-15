@@ -13838,6 +13838,43 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 31px;
   line-height: 31px;
   color: #4d4d4d;
+  position: relative;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info:hover .user_remove {
+  display: block;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove {
+  display: none;
+  position: absolute;
+  background: #878787;
+  width: 16px;
+  height: 16px;
+  right: -8px;
+  top: 50%;
+  -webkit-border-radius: 500px;
+          border-radius: 500px;
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 3;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove:hover {
+  opacity: 1;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove:after {
+  cursor: pointer;
+  pointer-events: none;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/admin_time_close.png') no-repeat center;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info:after {
   display: block;
@@ -13880,6 +13917,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
        -o-transform: translateY(-58%);
           transform: translateY(-58%);
   position: absolute;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text span {
+  font-size: 9px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_place {
   margin-left: 4px;

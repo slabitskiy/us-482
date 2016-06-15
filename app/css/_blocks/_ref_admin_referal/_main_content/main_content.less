@@ -325,6 +325,42 @@
 						height: 31px;
 						line-height: 31px;
 						color: #4d4d4d;
+						&:hover{
+							.user_remove{
+								display: block
+							}							
+						}
+						.user_remove{
+							display: none;
+							position: absolute;
+							background: #878787;
+							width: 16px;
+							height: 16px;
+							right: -8px;
+							top: 50%;
+							border-radius: 500px;
+							cursor: pointer;
+							opacity: .8;
+							transform: translateY(-50%);
+							// display: block;
+							z-index: 3;
+							&:hover{
+								opacity: 1;
+							}
+							&:after{
+								cursor: pointer;
+								pointer-events: none;
+								display: block;
+								content: '';
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								background: url('../img/admin_time_close.png') no-repeat center;
+							}
+						}
+						position: relative;
 						&:after{
 							display: block;
 							content: '';
@@ -363,6 +399,9 @@
 								top: 50%;
 								transform: translateY(-58%);
 								position: absolute;
+								span{
+									font-size: 9px;
+								}
 							}
 						}
 						.user_place{
