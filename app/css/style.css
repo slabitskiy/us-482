@@ -1,3 +1,7 @@
+html,
+body {
+  height: 100%;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   background: #e6e6e6;
@@ -722,7 +726,7 @@ select {
   background: #f9d503;
 }
 .footer {
-  margin-top: 30px;
+  margin-top: -85px;
   margin-bottom: 65px;
 }
 .footer .footer_copy .footer_copy_text {
@@ -753,7 +757,7 @@ select {
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 44;
 }
 .fixed_ad .fixed_ad_gotop .fixed_ad_gotop_butt {
   background: #a3a3a3;
@@ -892,8 +896,7 @@ select {
 .main_content {
   margin-top: 10px;
   overflow: hidden;
-  margin-bottom: 20px;
-  min-height: 600px;
+  min-height: 100%;
 }
 .main_content .events {
   background: #c3c3c3;
@@ -13521,7 +13524,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 @media only screen and (max-width: 1199px) {
   .main_content.ref_admin .admin_service_content_my_referals {
-    min-width: 820px;
+    min-width: 920px;
   }
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_header:after {
@@ -14100,6 +14103,398 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_dropdown .dropdown_skype .skype_text {
   font-size: 11px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top {
+  margin: 8px  0 14px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort {
+  display: inline-block;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-top {
+  cursor: pointer;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-top .sort-output {
+  font-size: 9px;
+  color: #4d4d4d;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-top .caret {
+  margin-top: 1px;
+  color: #878787;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-dropdown {
+  padding: 5px 8px;
+  width: 100%;
+  min-width: -webkit-calc(125%);
+  min-width: calc(125%);
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-dropdown .dropdown-item {
+  font-size: 9px;
+  line-height: 2;
+  cursor: pointer;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-dropdown .dropdown-item:hover {
+  text-decoration: underline;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_print {
+  color: #4d4d4d;
+  text-decoration: underline;
+  font-size: 9px;
+  padding-right: 25px;
+  position: relative;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_print:hover {
+  text-decoration: none;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_print:after {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  background: url('../img/printer.png') no-repeat center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_search > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_search .search__label {
+  padding-right: 5px;
+  font-size: 9px;
+  color: #4d4d4d;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_search input {
+  border: 1px solid #838383;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  width: 160px;
+  height: 22px;
+  padding: 0 5px;
+  font-size: 9px;
+  line-height: 20px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .checkbox {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  margin-top: 3px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 18px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_name {
+  min-width: 191px !important;
+  width: 191px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_name p {
+  padding-left: 35px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_category {
+  width: 91px;
+  float: left;
+  margin-left: 4px;
+  background: #f9f9f9;
+  height: 39px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_category p {
+  color: #4d4d4d;
+  font-size: 11px;
+  line-height: 39px;
+  text-align: center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_place {
+  width: 100px !important;
+  min-width: 100px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_activity {
+  text-align: center;
+  float: left;
+  width: 87px;
+  margin-left: 4px;
+  background: #f9f9f9;
+  height: 39px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_activity p {
+  margin-top: 7px;
+  color: #4d4d4d;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_money {
+  width: 94px 14 !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_profit {
+  width: 109px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_date {
+  width: 87px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_period {
+  width: 116px !important;
+  min-width: 116px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item.opened .item__bottom {
+  display: block;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top {
+  padding: 6px 0 0;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top > div {
+  float: left;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom {
+  padding: 5px 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .left {
+  float: left;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .right {
+  float: right;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .item__control {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 10px;
+  margin-right: 23px;
+  background: #f9e67d;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .item__control:hover {
+  text-decoration: none;
+  background: #f7dd4c;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .hot__secur {
+  font-size: 9px;
+  color: #4d4d4d;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .page__action {
+  display: inline-block;
+  vertical-align: middle;
+  width: 175px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  margin-right: 23px;
+  background: #898989;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .page__action:hover {
+  text-decoration: none;
+  background: #707070;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .page__company {
+  display: inline-block;
+  vertical-align: middle;
+  width: 195px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  margin-right: 27px;
+  background: #0095fe;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .page__company:hover {
+  text-decoration: none;
+  background: #0077cb;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name {
+  width: 191px;
+  margin-right: 4px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .count {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 11px;
+  color: #4d4d4d;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  height: 17px;
+  margin-left: 5px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .avatar .avatar-img {
+  width: 24px;
+  height: 24px;
+  display: block;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  background-size: black;
+  border: 0;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-size: 10px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .text span {
+  display: block;
+  font-size: 11px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category {
+  margin-right: 4px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .category {
+  font-size: 9px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .category__green {
+  background: #0ad900;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .category__red {
+  background: #ff0000;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .category__blue {
+  background: #01a6f3;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .category__orange {
+  background: #fe8f00;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__category .subcategory {
+  margin-top: 1px;
+  font-size: 8px;
+  line-height: 1;
+  width: 91px;
+  cursor: pointer;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__city {
+  margin-right: 4px;
+  width: 100px;
+  font-size: 10px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__date {
+  width: 87px;
+  font-size: 11px;
+  margin-right: 4px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__activity {
+  font-size: 11px;
+  margin-right: 4px;
+  width: 87px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__money-comp {
+  width: 107px;
+  margin-right: 4px;
+  font-size: 11px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__money-person {
+  margin-right: 4px;
+  font-size: 11px;
+  width: 109px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__period {
+  width: 116px;
+  font-size: 11px;
+}
+.main_content.ref_admin .checkbox input {
+  display: none;
+}
+.main_content.ref_admin .checkbox input:checked + label:before {
+  background: url('../img/checkbox_active-circle.png') no-repeat center;
+}
+.main_content.ref_admin .checkbox label {
+  padding: 0;
+  min-height: 17px;
+  width: 17px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  display: inline-block;
+  border: 1px solid #797663;
+  position: relative;
+  opacity: .8;
+}
+.main_content.ref_admin .checkbox label:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-size: 100%!important;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 1px auto;
+}
+.main_content.ref_admin .my_companies_all {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 25px;
+  line-height: 24px;
+  background-color: #fbefa6;
+}
+.main_content.ref_admin .my_companies_all .left {
+  float: left;
+}
+.main_content.ref_admin .my_companies_all .right {
+  float: right;
+}
+.main_content.ref_admin .my_companies_all span {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  padding-left: 10px;
+  color: #4d4d4d;
+}
+.main_content.ref_admin .my_companies_all .all__text {
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.main_content.ref_admin .my_companies_all .all__companies {
+  width: 115px;
+  text-align: center;
+}
+.main_content.ref_admin .my_companies_all .all__mymoney {
+  text-align: center;
+  width: 109px;
+  margin-right: 124px;
+}
+.main_content.ref_admin .my_companies_all .all__companymoney {
+  text-align: center;
+  width: 107px;
+}
+.main_content.ref_admin .my_companies_all .all__activity {
+  width: 87px;
+  text-align: center;
 }
 @media (max-width: 1199px) {
   .header_main_panel_nav_second .second_list .list_items .items_link {

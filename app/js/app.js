@@ -1,7 +1,11 @@
 $(document).ready(function(){
 
-     
-
+	// open dropdown in companies item on ref_admin_companies     
+	$('.my_companies_body').on('click', '.open-dropdown', function(event) {
+		event.preventDefault();
+		
+		$(this).parents('.body_item').toggleClass('opened');
+	});
       $('.user_account_panel--toggle').on('click', '.hide__button' ,function(event){
         event.preventDefault();
         $(this).parents('.user_account_panel').addClass('hidden__panel');
