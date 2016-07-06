@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Реферал адмінка</title>
+  <title>Реферал адмінка - Мої компанії</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,700,300,400' rel='stylesheet' type='text/css'>
@@ -12,8 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
 
   <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
 
@@ -140,7 +140,7 @@
 
   <!-- main content -->
 
-  <div class="main_content company_pay">
+  <div class="main_content ref_admin">
     <div class="container">
       <div class="row">
        <!-- begin nav -->
@@ -339,6 +339,9 @@
                   <p>Мої реферали</p>
                 </li>
                 <li class="admin_nav_li">
+                  <a href="">Структура</a>
+                </li>
+                <li class="admin_nav_li admin_nav_li__active">
                   <a href="">Загальний список</a>
                 </li>
                 <li class="admin_nav_li">
@@ -350,7 +353,7 @@
                 <li class="admin_nav_li title_li margin">
                   <p>Мої повідомлення</p>
                 </li>
-                <li class="admin_nav_li admin_nav_li__active ">
+                <li class="admin_nav_li  ">
                   <a href="">Переглянути</a>
                 </li>
                 <li class="admin_nav_li">
@@ -390,7 +393,7 @@
             <div class="admin_service">
               <div class="admin_service_header text-center">
                 <img src="img/admin_service_img.png"  alt="">
-                <p class="admin_service_header_text">ГАМАНЕЦЬ</p>
+                <p class="admin_service_header_text">МОЇ КОМПАНІЇ</p>
               </div>
               <div class="admin_service_header_lines">
                 <div class="categories_block_header_lines_yellow col-md-4 col-xs-4 col-sm-4"></div>
@@ -398,144 +401,458 @@
                 <div class="categories_block_header_lines_silver col-md-4 col-xs-4 col-sm-4"></div>
               </div>
               <div class="admin_service_content">
-                <div class="row">
-                  <div class="col-md-3 col-sm-4">
-                      <ul class="pay__list" role="tablist">
-                        <li class="list__item active" role="presentation">
-                          <a href="#myBalance" aria-controls="myBalance" role="tab" data-toggle="tab">Мій рахунок</a>
-                        </li>
-                        <li class="list__item" role="presentation">
-                          <a href="#userBalance" aria-controls="userBalance" role="tab" data-toggle="tab">Абонплата</a>
-                        </li>
-                        <li class="list__item" role="presentation">
-                          <a href="#myOrders" aria-controls="myOrders" role="tab" data-toggle="tab">Мої замовлення 
-                          <span>2</span>
-                          </a>
-                        </li>
-                      </ul>
-                  </div>
-                  <div class="col-md-9 col-sm-8">
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="myBalance">
-                          <div class="pay__columns">
-                            <div class="column text-center">
-                              <p class="myBalance__title">
-                                На вашому рахунку:
-                              </p>
-                              <input type="text" readonly class="myBalance__input" value="0,00">
-                              <p class="myBalance__money">
-                                грошенят
-                              </p>
+              <!--  -->
+                <div class="admin_service_content_my_referals_resp">
+                  <div class="admin_service_content_my_referals">
+                  <!--  -->
+                    <div class="admin_service_content_my_companies-top">
+                      <div class="left">
+                                  
+                          <div class="companies_sort dropdown">
+                            
+                            <div class="sort-top"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="sort-output">Впорядкувати</span>
+                              <div class="caret"></div>
                             </div>
-                            <div class="column text-center">
-                              <p class="myBalance__title--add">
-                                Поповнити особистий рахунок
+                            
+                            <div class="sort-dropdown dropdown-menu" >
+                              <p class="dropdown-item">
+                                Сортировка 0 
                               </p>
-                              <a href="/" class="myBalance__btn">Поповнити</a>
-                              <div class="myBalance__id">
-                                <p class="id__title">
-                                  особистий номер клієнта
-                                </p>
-                                <p class="id">
-                                  ID 4067777
-                                </p>
-                              </div>
+                              <p class="dropdown-item">
+                                Сортировка 1 
+                              </p>
+                              <p class="dropdown-item">
+                                Сортировка 2 
+                              </p>
+                              <p class="dropdown-item">
+                                Сортировка 3 
+                              </p>
+                              <p class="dropdown-item">
+                                Сортировка 4 
+                              </p>
                             </div>
                           </div>
+
+                      </div>
+                      
+                      <div class="center">
+                        <a href="/" class="companies_print">Роздрукувати</a>
+                      </div>
+
+                      <div class="right">
+                        <div class="companies_search">
+                          <span class="search__label">
+                            Пошук:
+                          </span>
+                          <input type="text" class="companies_input">
                         </div>
-                         <div role="tabpanel" class="tab-pane" id="userBalance">
-                             <div class="pay__columns">
-                              <div class="column text-center">
-                                <p class="userBalance__title">
-                                  <strong>Абонементна плата:</strong>
-                                </p>
-                                <p class="userBalance__money">
-                                  150,00
-                                </p>
-                                <p class="userBalance__subtitle">
-                                  грошей / місяць
-                                </p>
+                      </div>
+                      <!-- <div class="clearfix"></div> -->
+                    </div>
 
-                                <p class="userBalance__title--small">
-                                  Доступно публікацій акцій:
-                                </p>
-                                <div class="userBalance__type">
-                                  безліміт
-                                </div>
-                                <a href="/" class="userBalance__link">детальніше</a>
+                    <div class="my_referals_header my_companies_header">
+                      <div class="header_name">
+                        <div class="checkbox">
+                          <input type="checkbox" id="header-check">
+                          <label for="header-check">
+                          </label>
+                        </div>
+                        <p class="name_text">Мої компанії </p>
+                      </div>
+                      <div class="header_category">
+                        <p class="place_text">Категорія</p>
+                      </div>
+                      <div class="header_place">
+                        <p class="place_text">Місто</p>
+                      </div>
+                      <div class="header_date">
+                        <p class="date_text">Дата <br> залучення</p>
+                      </div>
+                      <div class="header_activity">
+                        <p class="activity_text">Активність <br> (акції, шт.)</p>
+                      </div>
+                      <div class="header_money">
+                        <p class="money_text">Оборот <br> компанії, <br> грн.</p>
+                      </div>
+                      <div class="header_profit">
+                        <p class="profit_text">Мій дохід, <br> грн.</p>
+                      </div>
+                      <div class="header_period">
+                        <p class="period_text">
+                          Вибрати <br> період
+                        </p>
+                        <div class="period_dropdown"></div>
+                        <div class="period_choose">
+                          <div class="choose_year">
+                            <div class="year_button year_prev">&lt;</div>
+                              <div class="year">2016</div>
+                            <div class="year_button year_next">&gt;</div>
+                          </div>
+                          <div class="choose_months">
+                            <div class="month">січень</div>
+                            <div class="month">квітень</div>
+                            <div class="month">липень</div>
+                            <div class="month">жовтень</div>
+                            <div class="month">лютий</div>
+                            <div class="month">травень</div>
+                            <div class="month">серпень</div>
+                            <div class="month">листопад</div>
+                            <div class="month">березень</div>
+                            <div class="month">червень</div>
+                            <div class="month">вересень</div>
+                            <div class="month">грудень</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-                                <p class="userBalance__title--small">
-                                   Доступно додаткових опцій:
-                                </p>
-                                <div class="userBalance__bonus">
-                                  0
-                                </div>
-                                <div class="userBalance__bonus--t">
-                                  в тому числі:
-                                </div>
-                                <ul class="userBalance__list">
-                                  <li class="list__item">
-                                    <span>Інформаційна “біжуча” стрічка:</span>
-                                    <strong>0</strong>
-                                  </li>
-                                  <li class="list__item">
-                                    <span>TV ”UA482”:</span>
-                                    <strong>0</strong>
-                                  </li>
-                                  <li class="list__item">
-                                    <span>Розсилка особистих повідомлень:</span>
-                                    <strong>0</strong>
-                                  </li>
-                                  <li class="list__item">
-                                    <span>Розсилка телефонних SMS:</span>
-                                    <strong>0</strong>
-                                  </li>
-                                </ul>
-                              </div>
-                              
-                              <div class="column text-center">
-                                  <div class="userBalance__title">
-                                    Ваш тарифний план
-                                  </div>
-                                   <p class="userBalance__plan">професійний</p>
-                                   <a href="/" class="userBalance__change">змінити</a>
-                                   <p class="userBalance__tarif">тарифний пакет</p>
+                    <div class="my_companies_all">
+                      <div class="left">
+                        <span class="all__text">
+                          Всього
+                        </span>
+                        <span class="all__companies">
+                          4
+                        </span>
+                      </div>
+                      <div class="right">
+                        <span class="all__activity">
+                          18
+                        </span>
+                        <span class="all__companymoney">
+                          11  750,00
+                        </span>
+                        <span class="all__mymoney">
+                          61 200,00
+                        </span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
 
-                                    <p class="myBalance__title--add myBalance__title--add--small">
-                                    Поповнити особистий рахунок
-                                    </p>
-                                    <a href="/" class="myBalance__btn">Поповнити</a>
-                                    <div class="myBalance__id">
-                                      <p class="id__title">
-                                        особистий номер клієнта
-                                      </p>
-                                      <p class="id">
-                                        ID 4067777
-                                      </p>
+                    <div class="my_companies_body">
+                      <div class="body_item ">
+                        <!--  -->
+
+                          <div class="item__top clearfix">
+                            <div class="item__name">
+                              <span class="count">1.</span>
+                                <div class="checkbox">
+                                  <input type="checkbox" id="item__1">
+                                  <label for="item__1">
+                                  </label>
+                                </div>
+                              <div class="avatar open-dropdown">
+                                <img src="img/user.jpg" alt="" class="avatar-img">
                               </div>
-                              </div>
-                             </div>
-                             <div class="pay__columns pay__columns__also pay__columns-border">
-                              <div class="column text-center">
-                                <p class="userBalance__also">
-                                  Також ви можете:
-                                </p>
-                                <ul class="userBalance__also-list">
-                                  <li class="list-item"><a href="/">Підняти рейтинг своїх акцій</a></li>
-                                  <li class="list-item"><a href="/">Виділити свою акцію</a></li>
-                                  <li class="list-item"><a href="/">Створити подію </a></li>
-                                  <li class="list-item"><a href="/">Замовити банерну рекламу</a></li>
-                                </ul>
-                              </div>
+                              <p class="text">
+                                <span>Кукурузка</span>
+                                ID 2545412
+                              </p>
                             </div>
-                         </div>
-                         <!--</div>-->
-                         <div role="tabpanel" class="tab-pane" id="myOrders">
-                           myOrders
-                         </div>
-                    <!--</div>-->
+
+                             <div class="item__category text-center">
+                               <p class="category category__green">
+                                 Туризм
+                               </p>
+                               <p class="subcategory">
+                                 категорія:<br>підкатегорія
+                               </p>
+                             </div> 
+
+                              <div class="item__city text-center">
+                                Івано-Франківськ
+                              </div>
+
+                              <div class="item__date text-center">
+                                16.03.2016
+                              </div>
+
+                              <div class="item__activity text-center">
+                                5
+                              </div>
+
+                              <div class="item__money-comp text-center">
+                                5 700,00
+                              </div>
+
+                              <div class="item__money-person text-center">
+                                15 300,00
+                              </div>
+
+                              <div class="item__period text-center">
+                                січень, 2016
+                              </div>
+                          </div>
+
+                          <div class="item__bottom">
+                            <div class="left">
+                              <a href="/" class="item__control">
+                                КЕРУВАТИ СПРАВАМИ
+                              </a>
+                              <span class="hot__secur">
+                                Немає доступу
+                              </span>
+                            </div>
+
+                            <div class="right">
+                              <a href="/" class="page__action">
+                                ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
+                              </a>
+                              <a href="/" class="page__company">
+                                ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
+                              </a>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        <!--  -->
+                      </div>
+
+                      <!-- -->
+
+                      <div class="body_item ">
+                        <!--  -->
+
+                          <div class="item__top clearfix">
+                            <div class="item__name">
+                              <span class="count">1.</span>
+                                <div class="checkbox">
+                                  <input type="checkbox" id="item__2">
+                                  <label for="item__2">
+                                  </label>
+                                </div>
+                              <div class="avatar open-dropdown">
+                                <img src="img/user.jpg" alt="" class="avatar-img">
+                              </div>
+                              <p class="text">
+                                <span>Кукурузка</span>
+                                ID 2545412
+                              </p>
+                            </div>
+
+                             <div class="item__category text-center">
+                               <p class="category category__red">
+                                 Послуги
+                               </p>
+                               <p class="subcategory">
+                                 категорія:<br>підкатегорія
+                               </p>
+                             </div> 
+
+                              <div class="item__city text-center">
+                                Івано-Франківськ
+                              </div>
+
+                              <div class="item__date text-center">
+                                16.03.2016
+                              </div>
+
+                              <div class="item__activity text-center">
+                                5
+                              </div>
+
+                              <div class="item__money-comp text-center">
+                                5 700,00
+                              </div>
+
+                              <div class="item__money-person text-center">
+                                15 300,00
+                              </div>
+
+                              <div class="item__period text-center">
+                                січень, 2016
+                              </div>
+                          </div>
+
+                          <div class="item__bottom">
+                            <div class="left">
+                              <a href="/" class="item__control">
+                                КЕРУВАТИ СПРАВАМИ
+                              </a>
+                              <span class="hot__secur">
+                                Немає доступу
+                              </span>
+                            </div>
+
+                            <div class="right">
+                              <a href="/" class="page__action">
+                                ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
+                              </a>
+                              <a href="/" class="page__company">
+                                ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
+                              </a>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        <!--  -->
+                      </div>
+
+                      <!-- -->
+
+                      <div class="body_item ">
+                        <!--  -->
+
+                          <div class="item__top clearfix">
+                            <div class="item__name">
+                              <span class="count">1.</span>
+                                <div class="checkbox">
+                                  <input type="checkbox" id="item__3">
+                                  <label for="item__3">
+                                  </label>
+                                </div>
+                              <div class="avatar open-dropdown">
+                                <img src="img/user.jpg" alt="" class="avatar-img">
+                              </div>
+                              <p class="text">
+                                <span>Кукурузка</span>
+                                ID 2545412
+                              </p>
+                            </div>
+
+                             <div class="item__category text-center">
+                               <p class="category category__blue">
+                                 Їжа&Розваги
+                               </p>
+                               <p class="subcategory">
+                                 категорія:<br>підкатегорія
+                               </p>
+                             </div> 
+
+                              <div class="item__city text-center">
+                                Івано-Франківськ
+                              </div>
+
+                              <div class="item__date text-center">
+                                16.03.2016
+                              </div>
+
+                              <div class="item__activity text-center">
+                                5
+                              </div>
+
+                              <div class="item__money-comp text-center">
+                                5 700,00
+                              </div>
+
+                              <div class="item__money-person text-center">
+                                15 300,00
+                              </div>
+
+                              <div class="item__period text-center">
+                                січень, 2016
+                              </div>
+                          </div>
+
+                          <div class="item__bottom">
+                            <div class="left">
+                              <a href="/" class="item__control">
+                                КЕРУВАТИ СПРАВАМИ
+                              </a>
+                              <span class="hot__secur">
+                                Немає доступу
+                              </span>
+                            </div>
+
+                            <div class="right">
+                              <a href="/" class="page__action">
+                                ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
+                              </a>
+                              <a href="/" class="page__company">
+                                ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
+                              </a>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        <!--  -->
+                      </div>
+
+                      <!-- -->
+
+                      <div class="body_item ">
+                        <!--  -->
+
+                          <div class="item__top clearfix">
+                            <div class="item__name">
+                              <span class="count">1.</span>
+                                <div class="checkbox">
+                                  <input type="checkbox" id="item__4">
+                                  <label for="item__4">
+                                  </label>
+                                </div>
+                              <div class="avatar open-dropdown">
+                                <img src="img/user.jpg" alt="" class="avatar-img">
+                              </div>
+                              <p class="text">
+                                <span>Кукурузка</span>
+                                ID 2545412
+                              </p>
+                            </div>
+
+                             <div class="item__category text-center">
+                               <p class="category category__orange">
+                                 Товари
+                               </p>
+                               <p class="subcategory">
+                                 категорія:<br>підкатегорія
+                               </p>
+                             </div> 
+
+                              <div class="item__city text-center">
+                                Івано-Франківськ
+                              </div>
+
+                              <div class="item__date text-center">
+                                16.03.2016
+                              </div>
+
+                              <div class="item__activity text-center">
+                                5
+                              </div>
+
+                              <div class="item__money-comp text-center">
+                                5 700,00
+                              </div>
+
+                              <div class="item__money-person text-center">
+                                15 300,00
+                              </div>
+
+                              <div class="item__period text-center">
+                                січень, 2016
+                              </div>
+                          </div>
+
+                          <div class="item__bottom">
+                            <div class="left">
+                              <a href="/" class="item__control">
+                                КЕРУВАТИ СПРАВАМИ
+                              </a>
+                              <span class="hot__secur">
+                                Немає доступу
+                              </span>
+                            </div>
+
+                            <div class="right">
+                              <a href="/" class="page__action">
+                                ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
+                              </a>
+                              <a href="/" class="page__company">
+                                ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
+                              </a>
+                            </div>
+                            <div class="clearfix"></div>
+                          </div>
+                        <!--  -->
+                      </div>
+
+                      <!-- -->
+
+
+                    </div>
+                    <!--  -->
                   </div>
                 </div>
+                <!--  -->
               </div>
             </div>
           </div>
