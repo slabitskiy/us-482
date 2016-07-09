@@ -566,24 +566,75 @@
         <div class="col-md-10 col-sm-9">
           <div class="panel__title">
             <p class="title__text">
-              Акції
+              Компанії
             </p>
           </div>
           <div class="shares__tabs">
             <!-- Nav tabs -->
              <ul class="nav nav-tabs" role="tablist">
-               <li role="presentation" class="active"><a href="#favorites__shares" aria-controls="favorites__shares" role="tab" data-toggle="tab"><i class="icon icon-heart"></i>Улюблені</a></li>
-               <li role="presentation"><a href="#bookmarks__shares" aria-controls="bookmarks__shares" role="tab" data-toggle="tab"><i class="icon icon-star"></i>Закладені</a></li>
+<!--                <li role="presentation" class="active"><a href="#favorites__shares" aria-controls="favorites__shares" role="tab" data-toggle="tab"><i class="icon icon-heart"></i>Улюблені</a></li> -->
+               <li role="presentation" class="active"><a href="#bookmarks__shares" aria-controls="bookmarks__shares" role="tab" data-toggle="tab"><i class="icon icon-star "></i>Закладені</a></li>
+
+               <li class="search-li">
+                 <span>
+                   Пошук:
+                 </span>
+                 <input type="search">
+               </li>
             </ul>
              <!-- Tab panes -->
              <div class="tab-content c_all_actions ">
 
              <div class="content-top">
                <div class="right">
-                 <div class="checkbox">
-                   <input type="checkbox" id="all_checks">
-                   <label for="all_checks"></label>
-                 </div>
+                <div class="all__fav">
+                  <small>
+                    Всього 
+                    <b>
+                      “Закладених”
+                    </b>
+                    :
+                  </small>
+                  122
+                </div>
+                <div>
+                   <div class="checkbox">
+                     <input type="checkbox" id="all_checks">
+                     <label for="all_checks"></label>
+                   </div>
+                   <a href="/" class="delete">
+                     Видалити обрані
+                   </a>
+                </div>
+
+                <div class="choose__cat">
+                  <span>
+                    Вибрати розділ:
+                  </span>
+                  <div class="dropdown">
+                        <a id="dropdownCat" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                         Всі розділи
+                      </a>
+
+                      <ul class="dropdown-menu text-center" aria-labelledby="dropdownCat">
+                        <li class="all">
+                          Всі розділи
+                        </li>
+                        <li class="red">
+                           Послуги
+                        </li>
+                        <li class="orange">
+                           Товари
+                        </li>
+                        <li class="blue">
+                          Їжа & Розваги
+                        </li>
+                        <li class="green">
+                          Туризм
+                        </li>
+                      </ul>
+                  </div>
+                </div>
 
                  <div class="tabs__action">
                    <div class="dropdown">
@@ -615,7 +666,7 @@
                         </li>
                       </ul>
                     </div>
-                     <div class="dropdown">
+                    <div class="dropdown">
                       <a id="move" data-target="#" href="/" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Перенести:
                         <span class="caret-arrow"></span>
@@ -648,572 +699,21 @@
                </div>
                 <div class="clearfix"></div>
              </div>
-               <div role="tabpanel" class="tab-pane fade in active" id="favorites__shares">
-               <!--  -->
-                 <div class="block clearfix">
-                      <div class="shares_block red_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="block-action">
-                        <div class="checkbox">
-                          <input type="checkbox" id="input1">
-                          <label for="input1"></label>
-                        </div>
-                        <div class="action-heart">
-                          
-                        </div>
-                        <div class="action-favorites">
-                          
-                        </div>
-
-                        <div class="action-delete">
-                          
-                        </div>
-                      </div>        
-
-                      <div class="block-info">
-                        <p class="info-title">Мамонт</p>
-                        <p class="info-category">
-                          <b>Група</b> / Категорія 1 / Категорія 2
-                        </p>
-
-                        <div class="info-comment">
-                          <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
-                            <b class="ico"></b>
-                            Рекомендувати друзям
-                          </button>
-                        </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
-                        </div>
-                      </div> 
-                 </div>
-                 <!--  -->
-               <!--  -->
-                 <div class="block clearfix">
-                      <div class="shares_block blue_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="block-action">
-                        <div class="checkbox">
-                          <input type="checkbox" id="input2">
-                          <label for="input2"></label>
-                        </div>
-                        <div class="action-heart">
-                          
-                        </div>
-                        <div class="action-favorites">
-                          
-                        </div>
-
-                        <div class="action-delete">
-                          
-                        </div>
-                      </div>        
-
-                      <div class="block-info">
-                        <p class="info-title">Мамонт</p>
-                        <p class="info-category">
-                          <b>Група</b> / Категорія 1 / Категорія 2
-                        </p>
-
-                        <div class="info-comment">
-                          <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
-                            <b class="ico"></b>
-                            Рекомендувати друзям
-                          </button>
-                        </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
-                        </div>
-                      </div> 
-                 </div>
-               <!--  -->
-                 <div class="block clearfix">
-                      <div class="shares_block orange_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="block-action">
-                        <div class="checkbox">
-                          <input type="checkbox" id="input3">
-                          <label for="input3"></label>
-                        </div>
-                        <div class="action-heart">
-                          
-                        </div>
-                        <div class="action-favorites">
-                          
-                        </div>
-
-                        <div class="action-delete">
-                          
-                        </div>
-                      </div>        
-
-                      <div class="block-info">
-                        <p class="info-title">Мамонт</p>
-                        <p class="info-category">
-                          <b>Група</b> / Категорія 1 / Категорія 2
-                        </p>
-
-                        <div class="info-comment">
-                          <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
-                            <b class="ico"></b>
-                            Рекомендувати друзям
-                          </button>
-                        </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
-                        </div>
-                      </div> 
-                 </div>
-                 <!--  -->
-                 <div class="block clearfix">
-                      <div class="shares_block green_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="block-action">
-                        <div class="checkbox">
-                          <input type="checkbox" id="input4">
-                          <label for="input4"></label>
-                        </div>
-                        <div class="action-heart">
-                          
-                        </div>
-                        <div class="action-favorites">
-                          
-                        </div>
-
-                        <div class="action-delete">
-                          
-                        </div>
-                      </div>        
-
-                      <div class="block-info">
-                        <p class="info-title">Мамонт</p>
-                        <p class="info-category">
-                          <b>Група</b> / Категорія 1 / Категорія 2
-                        </p>
-
-                        <div class="info-comment">
-                          <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
-                            <b class="ico"></b>
-                            Рекомендувати друзям
-                          </button>
-                        </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
-                        </div>
-                      </div> 
-                 </div>
-                 <!--  -->
+                 <div role="tabpanel" class="tab-pane fade" id="favorites__shares">
                </div>
-               <div role="tabpanel" class="tab-pane fade in" id="bookmarks__shares">
+               <div role="tabpanel" class="tab-pane fade in active" id="bookmarks__shares">
                <!--  -->
                  <div class="block clearfix">
-                      <div class="shares_block red_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
+                 <!--  -->
+                    <div class="block-avatar">
+                      
+                      <div class="avatar-img">
+                        <img src="img/admin_logo.png" alt="">
                       </div>
+                      <b>сайт</b>
+                      <a href="/" class="avatar-link">www.sitename.ua</a>
+                    </div>
+                 <!--  -->
                       <div class="block-action">
                         <div class="checkbox">
                           <input type="checkbox" id="input1">
@@ -1233,108 +733,74 @@
 
                       <div class="block-info">
                         <p class="info-title">Мамонт</p>
-                        <p class="info-category">
+                        <p class="info-category red">
                           <b>Група</b> / Категорія 1 / Категорія 2
                         </p>
 
                         <div class="info-comment">
+                        <div class="textarea">
                           <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
+                          <button class="save">Зберегти</button>
+                        </div>
+                          <button class="button"  data-toggle="modal" data-target="#recomedModal">
                             <b class="ico"></b>
                             Рекомендувати друзям
                           </button>
-                        </div>
-                      </div>          
 
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
+                          <div class="info-actions">
+                          <p>Акції компанії:</p>
+                            <div class="action">
+                              1
+                                
+                                <span>Нова</span>
+                            </div>
+                            <div class="action">
+                              2                              
+                            </div>
+                            <div class="action">
+                              3
+                            </div>
+                            <div class="action action-disabled">
+                              4
+                            </div>
+                          </div>
                         </div>
-                      </div> 
+                      </div>   
+                      <div class="block-more">
+                        <div class="more-sale">
+                          <span>Учасник ДК</span> <br>
+                          <!-- <b>10</b> -->
+                          <div class="sale-count red">
+                            <b>-10</b>%
+                          </div>
+                        </div>
+
+                        <div class="more-contact">
+                          <b>Контакти:</b>
+                          Тернопіль, <br> вул. Велика Васильківська, 4б. <br> тел.: 45-48-50, 067-352-10-52
+                        </div>
+
+                        <a href="/" class="more-btn">
+                          Детальніше
+                        </a>
+                      </div>       
+
+                      <!--  -->
                  </div>
                  <!--  -->
                <!--  -->
+               <!--  -->
                  <div class="block clearfix">
-                      <div class="shares_block blue_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
+                 <!--  -->
+                    <div class="block-avatar">
+                      
+                      <div class="avatar-img">
+                        <img src="img/admin_logo.png" alt="">
                       </div>
+                      <b>сайт</b>
+                      <a href="/" class="avatar-link">www.sitename.ua</a>
+                    </div>
+                 <!--  -->
                       <div class="block-action">
                         <div class="checkbox">
                           <input type="checkbox" id="input2">
@@ -1354,107 +820,62 @@
 
                       <div class="block-info">
                         <p class="info-title">Мамонт</p>
-                        <p class="info-category">
+                        <p class="info-category blue">
                           <b>Група</b> / Категорія 1 / Категорія 2
                         </p>
 
                         <div class="info-comment">
+                        <div class="textarea">
                           <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
+                          <button class="save">Зберегти</button>
+                        </div>
+                          <button class="button"  data-toggle="modal" data-target="#recomedModal">
                             <b class="ico"></b>
                             Рекомендувати друзям
                           </button>
+                          <div class="info-actions">
+                          <p>Акції компанії:</p>
+                            <span>
+                              У компанії немає акцій
+                            </span>
+                          </div>
                         </div>
-                      </div>          
+                      </div>   
+                      <div class="block-more">
+                        <div class="more-sale">
+                          <span>Учасник ДК</span> <br>
+                          <!-- <b>10</b> -->
+                          <div class="sale-count blue">
+                            <b>-10</b>%
+                          </div>
+                        </div>
 
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
+                        <div class="more-contact">
+                          <b>Контакти:</b>
+                          Тернопіль, <br> вул. Велика Васильківська, 4б. <br> тел.: 45-48-50, 067-352-10-52
                         </div>
-                      </div> 
+
+                        <a href="/" class="more-btn">
+                          Детальніше
+                        </a>
+                      </div>       
+
+                      <!--  -->
                  </div>
+                 <!--  -->
+               <!--  -->
                <!--  -->
                  <div class="block clearfix">
-                      <div class="shares_block orange_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
+                 <!--  -->
+                    <div class="block-avatar">
+                      
+                      <div class="avatar-img">
+                        <img src="img/admin_logo.png" alt="">
                       </div>
+                      <b>сайт</b>
+                      <a href="/" class="avatar-link">www.sitename.ua</a>
+                    </div>
+                 <!--  -->
                       <div class="block-action">
                         <div class="checkbox">
                           <input type="checkbox" id="input3">
@@ -1474,107 +895,56 @@
 
                       <div class="block-info">
                         <p class="info-title">Мамонт</p>
-                        <p class="info-category">
+                        <p class="info-category orange">
                           <b>Група</b> / Категорія 1 / Категорія 2
                         </p>
 
                         <div class="info-comment">
+                        <div class="textarea">
                           <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
+                          <button class="save">Зберегти</button>
+                        </div>
+                          <button class="button"  data-toggle="modal" data-target="#recomedModal">
                             <b class="ico"></b>
                             Рекомендувати друзям
                           </button>
                         </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
+                      </div>   
+                      <div class="block-more">
+                        <div class="more-sale">
+                          <span>Учасник ДК</span> <br>
+                          <!-- <b>10</b> -->
+                          <div class="sale-count orange">
+                            <b>-10</b>%
+                          </div>
                         </div>
-                      </div> 
+
+                        <div class="more-contact">
+                          <b>Контакти:</b>
+                          Тернопіль, <br> вул. Велика Васильківська, 4б. <br> тел.: 45-48-50, 067-352-10-52
+                        </div>
+
+                        <a href="/" class="more-btn">
+                          Детальніше
+                        </a>
+                      </div>       
+
+                      <!--  -->
                  </div>
                  <!--  -->
+               <!--  -->
+               <!--  -->
                  <div class="block clearfix">
-                      <div class="shares_block green_shares">
-                        <!-- begin block content -->
-                          <div class="block_content">
-                              <div class="content_img"><img src="http://fillmurray.com/300/300" alt="" class="image"></div>
-                              <div class="content_bottom">
-                              <!-- left -->
-                                <div class="bottom_stick-left">
-                                    <div class="bottom_stick_cell">
-                                      <div class="bottom_stick_sm">
-                                        <p class="bottom_stick_sm_text">до</p>
-                                      </div>
-                                      <div class="bottom_stick_bg text-center">
-                                        <p class="bottom_stick_bg_text">
-                                          15<span>%</span>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                               <!-- end left -->
-                               <!-- right -->
-                                <div class="bottom_stick-right">
-                                  <div class="bottom_gifts">
-                                  <div class="bottom_gifts_img"><b class="image"></b></div>
-                                  <div class="bottom_gifts_info">
-                                    <p class="bottom_gifts_info_text strong">пляшка кефіру кожному</p>
-                                    <p class="bottom_gifts_info_text small">при покупці на 50,00 грн.</p>
-                                  </div>
-                                </div>
-                                </div>
-                                <!-- end right -->
-                                <!-- bottom -->
-                                <div class="bottom_block">
-                                  <!-- block text -->
-                                  <div class="bottom_block_text text-center">
-                                    <p class="bottom_block_text_p">
-                                      <span class="bottom_block_text_p_color">з</span>
-                                      20:00
-                                      <span class="bottom_block_text_p_color">до</span>
-                                      23:00
-                                    </p>
-                                    <div class="bottom_block_text_date">
-                                      <span class="bottom_block_text_date_with">22.11</span>
-                                      -
-                                      <span class="bottom_block_text_date_to">22.12</span>
-                                    </div>
-                                  </div>
-                                  <!-- end block text -->
-                                  <!-- block button -->
-                                  <div class="bottom_block_butt text">
-                                    <a href="#" class="bottom_block_butt_link">переглянути</a>
-                                  </div>
-                                  <!-- end block button -->
-                                </div>
-                                <!-- end bottom -->
-                              </div>
-                          </div>
-                        <!-- end block content -->
-                        <div class="block_header">
-                          <div class="block_statistics">
-                            <div class="see">
-                              <p class="text">555</p>
-                              <b class="sprite yey"></b>
-                            </div>
-                            <div class="star">
-                              <p class="text">45</p>
-                              <b class="sprite star"></b>
-                            </div>
-                            <div class="like">
-                              <p class="text">455</p>
-                              <b class="sprite heart"></b>
-                            </div>
-                          </div>
-                          <div class="header_text">
-                           <p class="text">
-                            <span class="strong">Будь ідеальною</span> в день свого головного свята! Робота стиліста, перукаря, візажиста, манікюр, 10 сеансів лазерної эпіляції, послуги косметолога <span class="color_text">в салоні Vojage SPA</span> та <span class="color_text">Sun Beach!</span> Для перщих 30 осіб.
-                           </p>
-                          </div>
-                        </div>
+                 <!--  -->
+                    <div class="block-avatar">
+                      
+                      <div class="avatar-img">
+                        <img src="img/admin_logo.png" alt="">
                       </div>
+                      <b>сайт</b>
+                      <a href="/" class="avatar-link">www.sitename.ua</a>
+                    </div>
+                 <!--  -->
                       <div class="block-action">
                         <div class="checkbox">
                           <input type="checkbox" id="input4">
@@ -1594,27 +964,44 @@
 
                       <div class="block-info">
                         <p class="info-title">Мамонт</p>
-                        <p class="info-category">
+                        <p class="info-category green">
                           <b>Група</b> / Категорія 1 / Категорія 2
                         </p>
 
                         <div class="info-comment">
+                        <div class="textarea">
                           <textarea placeholder="Додати примітку"></textarea>
-                          <button class="button">
+                          <button class="save">Зберегти</button>
+                        </div>
+                          <button class="button"  data-toggle="modal" data-target="#recomedModal">
                             <b class="ico"></b>
                             Рекомендувати друзям
                           </button>
                         </div>
-                      </div>          
-
-                      <div class="block-timer">
-                        <p class="timer-text">До закінчення</p>
-                        <div class="timer">
-                          02:48:17
+                      </div>   
+                      <div class="block-more">
+                        <div class="more-sale">
+                          <span>Учасник ДК</span> <br>
+                          <!-- <b>10</b> -->
+                          <div class="sale-count green">
+                            <b>-10</b>%
+                          </div>
                         </div>
-                      </div> 
+
+                        <div class="more-contact">
+                          <b>Контакти:</b>
+                          Тернопіль, <br> вул. Велика Васильківська, 4б. <br> тел.: 45-48-50, 067-352-10-52
+                        </div>
+
+                        <a href="/"  class="more-btn">
+                          Детальніше
+                        </a>
+                      </div>       
+
+                      <!--  -->
                  </div>
                  <!--  -->
+               <!--  -->
 
                </div>
              </div>
@@ -1719,6 +1106,87 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/bootstrap-datepicker.uk.min.js"></script>
   <script src="js/app.js"></script>
+
+<!-- Modal -->
+<div class="modal fade recommendModal" id="recomedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title">
+          Рекомендувати друзям
+        </p>
+        <!-- <h4 class="modal-title" id="myModalLabel">Modal title</h4> -->
+      </div>
+      <div class="modal-body">
+        <div class="modal-warning">
+          <p>
+            *Увага! Ця дія додасть вам 30 бонусних балів енергії!
+          </p>
+        </div>
+        <div class="modal-share">
+          <div class="share-socials">
+            <p>
+              Через соціальні мережі
+            </p>
+            <a href="/" class="socialbtn socialbtn-fb"></a>
+            <a href="/" class="socialbtn socialbtn-tw"></a>
+            <a href="/" class="socialbtn socialbtn-vk"></a>
+            <a href="/" class="socialbtn socialbtn-gp"></a>
+          </div>
+
+          <div class="share-mail">
+            <p>
+              Надіслати на електронну пошту
+            </p>
+            <input type="text" placeholder="Ввести адресу...">
+          </div>
+        </div>
+      
+        <div class="modal-note">
+          <p>
+            Додати примітку, коментар
+          </p>
+
+          <div>
+            Рекомендую звернути увагу на цю компанію - вона пропонує цікаві    акції та знижки! Та й взагалі тут на сайті купа “халявних” пропозицій!
+          </div>
+        </div>
+
+        <div class="modal-action">
+          <div class="action-banner">
+            <img src="img/banner.jpg" alt="">
+            <a href="/">
+              (вибрати  інше фото)
+            </a>
+          </div>
+          <div class="action-company">
+            <p class="name">
+              <b>Назва компанії</b>
+            </p>
+            <p class="type">тип закладу</p>
+            <p class="adress">
+              м. Тернопіль, вул. Руська, 180
+            </p>
+            <img src="img/company-modal.jpg" alt="">
+            <a href="/" class="choose">
+               (вибрати  інше фото)
+            </a>
+
+            <div class="text-right">
+              <a href="/" class="btn">
+                Розповісти
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
