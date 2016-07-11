@@ -12763,6 +12763,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   padding-left: 65px;
   margin: 10px 0;
 }
+@media only screen and (max-width: 767px) {
+  .main_content .panel__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
 .main_content .panel__title .title__text {
   font-weight: 700;
   color: #4d4d4d;
@@ -12782,13 +12788,18 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media only screen and (max-width: 767px) {
+  .main_content .shares__tabs .nav-tabs .search-li {
+    top: -20px;
+  }
+}
 .main_content .shares__tabs .nav-tabs .search-li span {
   display: inline-block;
   vertical-align: middle;
   padding-right: 5px;
   line-height: 1;
   color: #4d4d4d;
-  font-size: 10px;
+  font-size: 12px;
 }
 .main_content .shares__tabs .nav-tabs .search-li input {
   display: inline-block;
@@ -12797,7 +12808,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   border: 1px solid #838383;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  width: 150px;
+  width: 170px;
   background: #f0f0f0;
 }
 .main_content .shares__tabs .nav-tabs > li {
@@ -12805,28 +12816,20 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 @media only screen and (max-width: 767px) {
   .main_content .shares__tabs .nav-tabs > li {
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
 }
-@media only screen and (max-width: 400px) {
-  .main_content .shares__tabs .nav-tabs > li {
-    width: 100%;
-  }
-}
 .main_content .shares__tabs .nav-tabs > li.active > a {
-  font-weight: 600;
+  font-weight: 900;
 }
 .main_content .shares__tabs .nav-tabs > li.active > a:hover {
   background-color: #fff;
 }
 .main_content .shares__tabs .nav-tabs > li > a {
   cursor: pointer;
-  position: relative;
   padding: 15px 0!important;
-  padding-left: 65px!important;
   padding-right: 30px!important;
-  font-weight: 400;
   -webkit-border-radius: 0;
           border-radius: 0;
   border: 0!important;
@@ -12836,13 +12839,17 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .shares__tabs .nav-tabs > li > a:hover {
   background-color: transparent;
 }
+.main_content .shares__tabs .nav-tabs > li > a span {
+  position: relative;
+  padding-left: 65px!important;
+}
 .main_content .shares__tabs .nav-tabs > li > a .icon {
   position: absolute;
   display: block;
   height: 29px;
   width: 32px;
   left: 20px;
-  top: 10px;
+  top: -5px;
 }
 .main_content .shares__tabs .nav-tabs > li > a .icon-heart {
   background: url('../img/tab-heart.png') no-repeat center;
@@ -12885,20 +12892,19 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .shares__tabs .tab-content .all__fav {
   font-size: 16px;
-  font-weight: 300;
 }
 .main_content .shares__tabs .tab-content .all__fav small {
   font-size: 12px;
 }
 .main_content .shares__tabs .tab-content .all__fav small b {
-  font-weight: 600;
+  font-weight: 700;
 }
 .main_content .shares__tabs .tab-content .delete {
   font-size: 12px;
   color: #4d4d4d;
 }
 .main_content .shares__tabs .tab-content .checkbox {
-  margin-right: 10px;
+  margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -12941,9 +12947,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   }
 }
 .main_content .shares__tabs .tab-content .choose__cat span {
-  padding-right: 5px;
+  padding-right: 3px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .main_content .shares__tabs .tab-content .choose__cat .dropdown {
   display: inline-block;
@@ -13009,7 +13015,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .shares__tabs .tab-content .tabs__action .dropdown > a {
   padding-right: 25px;
   color: #4d4d4d;
-  font-weight: 300;
+  font-weight: 600;
   display: block;
 }
 .main_content .shares__tabs .tab-content .tabs__action .dropdown > a[aria-expanded=true] .caret-arrow {
@@ -13024,7 +13030,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -5px;
+  margin-top: -4px;
   background: url('../img/arrow_down_admin.png') no-repeat center;
 }
 .main_content .shares__tabs .tab-content .block-avatar {
@@ -13078,7 +13084,11 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 22px;
   height: 18px;
   cursor: pointer;
-  background: url('../img/action-like.png') no-repeat center;
+  background: url('../img/action-like-l.png') no-repeat center;
+}
+.main_content .shares__tabs .tab-content .block-action .action-heart:hover,
+.main_content .shares__tabs .tab-content .block-action .action-heart.active {
+  background: url('../img/action-like_h.png') no-repeat center;
 }
 .main_content .shares__tabs .tab-content .block-action .action-favorites {
   margin-top: 10px;
@@ -13099,7 +13109,21 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   background: url('../img/action-delete.png') no-repeat center;
 }
 .main_content .shares__tabs .tab-content .block {
-  padding-bottom: 40px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.main_content .shares__tabs .tab-content .block:not(:first-child) {
+  padding-top: 20px;
+}
+.main_content .shares__tabs .tab-content .block:before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  background: #d2d3d3;
+  width: 100%;
 }
 .main_content .shares__tabs .tab-content .block-info {
   float: left;
@@ -13257,7 +13281,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 90px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  padding: 15px 20px 25px;
+  padding: 10px 20px 25px;
   border: 0;
   font-size: 12px;
   font-style: italic;
@@ -13309,6 +13333,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   float: left;
   padding-left: 20px;
   text-align: left;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   .main_content .shares__tabs .tab-content .block-more {
@@ -13316,6 +13341,24 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
     display: inline-block;
     vertical-align: top;
   }
+}
+.main_content .shares__tabs .tab-content .block-more .more-rating {
+  right: 0;
+  top: 0;
+  position: absolute;
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.main_content .shares__tabs .tab-content .block-more .more-rating div {
+  margin-top: 3px;
+  font-size: 18px;
+  background: #fbefa6;
+  line-height: 1;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 2px 15px 4px;
 }
 .main_content .shares__tabs .tab-content .block-more .more-sale span {
   color: #4d4d4d;
