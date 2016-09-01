@@ -13514,6 +13514,26 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
   padding: 0 50px;
 }
+.main_content .all_actions_archive .all_actions_archive__slider .owl-dots {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .owl-dots .owl-dot {
+  background: #b2b2b2;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin: 0 7px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .owl-dots .owl-dot.active {
+  background: #636363;
+}
 .main_content .all_actions_archive .all_actions_archive__slider .actions {
   text-align: right;
   position: relative;

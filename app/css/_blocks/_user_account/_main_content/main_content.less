@@ -3162,7 +3162,7 @@
 	}
 
 	.all_actions_archive{
-		padding-bottom: 70px;
+		padding-bottom: 70px; 
 		margin-top: 50px;
 		.archive__title{
 			margin-bottom: 8px;
@@ -3194,6 +3194,25 @@
 		}
 
 		.all_actions_archive__slider{
+			.owl-dots{
+				position: absolute;
+				bottom: -30px;
+				width: 100%;
+				left: 0;
+				text-align: center;
+				.owl-dot{
+					background: #b2b2b2;
+					display: inline-block;
+					vertical-align: middle;
+					width: 10px;
+					height: 10px;
+					border-radius: 10px;
+					margin: 0 7px;
+					&.active{
+						background: #636363;
+					}
+				}
+			}
 			position: relative;
 			.actions{
 				// .action-heart{
