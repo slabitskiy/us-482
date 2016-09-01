@@ -1,5 +1,24 @@
 $(document).ready(function(){
 
+
+    $('#all_actions_archive__slides').owlCarousel({
+        margin: 25,
+        loop: true,
+          responsive:{
+            0: {
+              items: 1
+            },
+            560: {
+              items:2
+            }
+          }
+        });
+     $('.all_actions_archive__slides-left').on('click',function(){
+          $('#all_actions_archive__slides').trigger('prev.owl.carousel');
+      });
+      $('.all_actions_archive__slides-right').on('click',function(){
+          $('#all_actions_archive__slides').trigger('next.owl.carousel');
+      });
 	// open dropdown in companies item on ref_admin_companies     
 	$('.my_companies_body').on('click', '.open-dropdown', function(event) {
 		event.preventDefault();
