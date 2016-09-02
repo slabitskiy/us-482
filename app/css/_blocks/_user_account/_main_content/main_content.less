@@ -2706,6 +2706,20 @@
 			}
 
 			.block-avatar{
+				&-shares{
+					width: 330px;
+					margin-right: 25px;
+
+					// padding-left: 0;
+					.shares_block{
+						margin: 0;
+						// margin-right: -15px;
+						width: 100%!important;
+					}
+					b{
+						margin-top: 0!important;
+					}
+				}
 				@media only screen and (max-width: 991px) {
 					float: none;
 					display: inline-block;
@@ -3136,6 +3150,14 @@
 					color: #4d4d4d;
 					line-height: 24px;
 					background: #fbefa6;
+					border-radius: 5px;
+					&.closed{
+						margin-top: 40px;
+						color: #fff;
+						background: #ff0000;
+						font-size: 12px;
+						font-weight: 600;
+					}
 				}
 			}
 			.shares_block{
