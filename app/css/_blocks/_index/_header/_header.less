@@ -286,7 +286,67 @@
 				}
 
 			}
+			.header_main_panel_reg_profile_room{
+				position: relative;
+				.dropdown-menu{
+					&:before{
+						content: "";
+   						position: absolute;
+					    width: 0;
+					    height: 0;
+					    right: -5px;
+					    top: 0;
+					    box-sizing: border-box;
+					    border: 6px solid black;
+					    border-color: transparent transparent #fff #fff;
+					    transform-origin: 0 0;
+					    transform: rotate(-225deg);
+					    box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.10);
+					}
+					margin-top: 15px;
+					border: 0;
+					right: 0;
+					left: auto;
+					box-shadow: 0 0 3px rgba(0,0,0,.37);
+					padding: 10px;
 
+					ul{
+						width: 195px;
+						> li {
+							display: inline-block;
+							vertical-align: middle;
+							margin-bottom: 10px;
+							a{
+								min-width: 70px;
+								color: #777777;
+								font-size: 11px;
+								padding: 6px 0 6px;
+								padding-left: 17px;
+								padding-right: 12px;
+								display: block;
+								border-radius: 4px;
+								position: relative;
+								text-decoration: none;
+								&:hover{
+									background: #f3f3f3;
+								}
+								&:before{
+									content: '';
+									width: 7px;
+									height: 7px;
+									border-radius: 7px;
+									position: absolute;
+									left: 5px;
+									background: #f9d503;
+									top: 50%;
+									transform: translateY(-50%);
+									margin-top: 1px;
+								}
+							}
+						}
+					}
+				}
+			}
 			.header_main_panel_reg_profile_out{
 				display: inline-block;
 				align-self: center;
