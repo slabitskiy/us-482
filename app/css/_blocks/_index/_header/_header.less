@@ -291,8 +291,50 @@
 				display: inline-block;
 				align-self: center;
 				margin-top: 5px;
-
-			
+				position: relative;
+				.dropdown-menu{
+					&:before{
+						content: "";
+   						position: absolute;
+					    width: 0;
+					    height: 0;
+					    right: -5px;
+					    top: 0;
+					    box-sizing: border-box;
+					    border: 6px solid black;
+					    border-color: transparent transparent #fff #fff;
+					    transform-origin: 0 0;
+					    transform: rotate(-225deg);
+					    box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.10);
+					}
+					margin-top: 15px;
+					border: 0;
+					right: 0;
+					left: auto;
+					box-shadow: 0 0 3px rgba(0,0,0,.37);
+					padding-top: 15px;
+					padding-left: 20px;
+					padding-bottom: 14px;
+					.out__button{
+						background: #f9d503;
+						width: 64px;
+						line-height: 20px;
+						color: #777777;
+						display: block;
+						text-decoration: none!important;
+						border-radius: 3px;
+						font-size: 12px;
+						text-align: center;
+						margin-bottom: 7px;
+						&:hover{
+							background: darken(#f9d503,3%);
+						}
+					}
+					.out__password{
+						font-size: 12px;
+						color: #777777;
+					}
+				}		
 			}
 		}
 }
