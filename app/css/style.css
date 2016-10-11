@@ -3288,6 +3288,7 @@ select {
   -webkit-border-top-left-radius: 7px;
           border-top-left-radius: 7px;
   padding: 22px 0 17px 0;
+  position: relative;
 }
 .main_content .admin_content .admin_service .admin_service_header .admin_service_header_text {
   text-transform: uppercase;
@@ -3297,6 +3298,22 @@ select {
   display: inline-block;
   font-weight: 600;
   vertical-align: middle;
+}
+.main_content .admin_content .admin_service .admin_service_header_support {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 11px;
+  right: 100px;
+  color: #656565;
+  line-height: 1;
+}
+.main_content .admin_content .admin_service .admin_service_header_support span {
+  font-size: 13px;
+  text-decoration: underline;
 }
 .main_content .admin_content .admin_service .admin_service_content {
   background: rgba(255, 255, 255, 0.5);
@@ -4411,6 +4428,9 @@ select {
   margin: 30px auto 0 auto;
   max-width: 630px;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form #services_category_colored_chosen .chosen-container-single .chosen-single span {
+  color: #fff!important;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset {
   position: relative;
   margin-bottom: 15px;
@@ -4445,6 +4465,9 @@ select {
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_left .line_circle:before {
   height: 1410px;
   top: 26px;
+}
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_left .line_circle__action:before {
+  height: 700px!important;
 }
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_right {
   display: inline-block;
@@ -4621,6 +4644,9 @@ select {
   min-height: 191px;
   margin-bottom: 20px;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .photos_block__action {
+  width: 300px!important;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .upload_files_block {
   position: relative;
 }
@@ -4674,10 +4700,17 @@ select {
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .photo_from_gallery .photo_from_gallery_link:hover {
   text-decoration: none;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount__type img {
+  max-width: 100%;
+  height: auto;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_title {
   color: #4d4d4d;
   font-weight: 700;
   margin-bottom: 15px;
+}
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_title_action {
+  font-size: 13px;
 }
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_checkbox_main {
   margin-bottom: 3px;

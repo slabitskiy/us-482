@@ -577,7 +577,7 @@ select {
 .header .header_main_panel_reg_profile .header_main_panel_reg_profile_room .dropdown-menu {
   margin-top: 15px;
   border: 0;
-  right: 0;
+  right: -7px;
   left: auto;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.37);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.37);
@@ -3288,6 +3288,7 @@ select {
   -webkit-border-top-left-radius: 7px;
           border-top-left-radius: 7px;
   padding: 22px 0 17px 0;
+  position: relative;
 }
 .main_content .admin_content .admin_service .admin_service_header .admin_service_header_text {
   text-transform: uppercase;
@@ -3297,6 +3298,22 @@ select {
   display: inline-block;
   font-weight: 600;
   vertical-align: middle;
+}
+.main_content .admin_content .admin_service .admin_service_header_support {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 11px;
+  right: 100px;
+  color: #656565;
+  line-height: 1;
+}
+.main_content .admin_content .admin_service .admin_service_header_support span {
+  font-size: 13px;
+  text-decoration: underline;
 }
 .main_content .admin_content .admin_service .admin_service_content {
   background: rgba(255, 255, 255, 0.5);
@@ -4411,6 +4428,9 @@ select {
   margin: 30px auto 0 auto;
   max-width: 630px;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form #services_category_colored_chosen .chosen-container-single .chosen-single span {
+  color: #fff!important;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset {
   position: relative;
   margin-bottom: 15px;
@@ -4445,6 +4465,9 @@ select {
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_left .line_circle:before {
   height: 1410px;
   top: 26px;
+}
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_left .line_circle__action:before {
+  height: 700px!important;
 }
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .col_right {
   display: inline-block;
@@ -4621,6 +4644,9 @@ select {
   min-height: 191px;
   margin-bottom: 20px;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .photos_block__action {
+  width: 300px!important;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .upload_files_block {
   position: relative;
 }
@@ -4674,10 +4700,17 @@ select {
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .photo_from_gallery .photo_from_gallery_link:hover {
   text-decoration: none;
 }
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount__type img {
+  max-width: 100%;
+  height: auto;
+}
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_title {
   color: #4d4d4d;
   font-weight: 700;
   margin-bottom: 15px;
+}
+.main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_title_action {
+  font-size: 13px;
 }
 .main_content .admin_content .admin_service .admin_create_action .admin_create_action_form .admin_create_action_fieldset .discount_text .discount_checkbox_main {
   margin-bottom: 3px;
@@ -8435,6 +8468,11 @@ select {
   background: rgba(255, 255, 255, 0.5);
   padding: 6px 0 4px 0;
   text-align: left;
+}
+.main_content .action_shares .shares_block .block_content .content_bottom .bottom_block:after {
+  display: block;
+  content: '';
+  height: 0;
   clear: both;
 }
 .main_content .action_shares .shares_block .block_content .content_bottom .bottom_block .bottom_block_text {
@@ -10239,6 +10277,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   padding: 2px 0 4px 0;
   text-align: left;
   clear: both;
+  min-height: 40px;
 }
 .main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom_block_text {
   text-align: center;
@@ -10270,6 +10309,40 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   font-size: 9px;
   margin: 1px auto;
   font-weight: bold;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 117px;
+  padding-bottom: 5px;
+  left: 10px;
+  top: -10px;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__title {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  background: #5f5f5f;
+  font-size: 8px;
+  width: 45px;
+  font-weight: 700;
+  height: 12px;
+  line-height: 10px;
+  color: #fdfdfd;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__content {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  font-size: 14px;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__time {
+  font-size: 10px;
+  padding-top: 4px;
+  color: #f0efef;
 }
 .main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom_block_butt {
   display: inline-block;
@@ -10303,6 +10376,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .c_all_actions .red_shares .bottom_stick-right {
   background: #c30000 ;
 }
+.main_content .c_all_actions .red_shares .bottom__date {
+  background: #ff0000 ;
+}
 .main_content .c_all_actions .red_shares:before {
   display: block;
   content: '';
@@ -10322,6 +10398,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .c_all_actions .green_shares .bottom_stick-right {
   background: #00af00 ;
+}
+.main_content .c_all_actions .green_shares .bottom__date {
+  background: #0ad900 ;
 }
 .main_content .c_all_actions .green_shares:before {
   display: block;
@@ -10343,6 +10422,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .c_all_actions .blue_shares .bottom_stick-right {
   background: #007aeb ;
 }
+.main_content .c_all_actions .blue_shares .bottom__date {
+  background: #01a6f3 ;
+}
 .main_content .c_all_actions .blue_shares:before {
   display: block;
   content: '';
@@ -10362,6 +10444,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .c_all_actions .orange_shares .bottom_stick-right {
   background: #ff6e00 ;
+}
+.main_content .c_all_actions .orange_shares .bottom__date {
+  background: #fe8f00 ;
 }
 .main_content .c_all_actions .orange_shares:before {
   display: block;
@@ -13663,6 +13748,52 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .all_actions_archive .all_actions_archive__slider {
   position: relative;
   padding: 0 50px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions {
+  text-align: right;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img {
+  width: 18px;
+  height: 15px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img.action__restore {
+  background: #ffffff url('../img/restore.png') no-repeat center;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img.action__delete {
+  margin-left: 2px;
+  background: #ffffff url('../img/delete__action.png') no-repeat center;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__label {
+  position: absolute;
+  right: -10px;
+  font-weight: 300;
+  color: #4d4d4d;
+  background: #fbefa6;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 10px;
+  padding: 0 10px;
+  z-index: 3;
+  top: 100%;
+  display: none;
+  margin-top: 5px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action.actions__action__delete .action__label {
+  text-align: center;
+  width: 120px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action:hover {
+  cursor: pointer;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action:hover .action__label {
+  display: block;
 }
 .main_content .all_actions_archive .all_actions_archive__slider .owl-dots {
   position: absolute;

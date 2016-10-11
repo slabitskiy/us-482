@@ -401,6 +401,8 @@
 				border-top-right-radius: 7px;
 				border-top-left-radius: 7px;
 				padding: 22px 0 17px 0;
+			position: relative;
+
 				.admin_service_header_text{
 					text-transform: uppercase;
 					color: #4d4d4d;
@@ -409,6 +411,19 @@
 					display: inline-block;
 					font-weight: 600;
 					vertical-align: middle;
+				}
+			}
+			.admin_service_header_support{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 11px;
+				right: 100px;
+				color: #656565;
+				line-height: 1;
+				span{
+					font-size: 13px;
+					text-decoration: underline;
 				}
 			}
 			.admin_service_content{

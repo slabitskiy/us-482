@@ -27,6 +27,10 @@
 				max-width: 630px;
 				// height: 2500px;
 				.admin_create_action_form{
+
+						#services_category_colored_chosen .chosen-container-single .chosen-single span{
+							color: #fff!important;
+						}
 					.admin_create_action_fieldset{
 						position: relative;
 						margin-bottom: 15px;
@@ -61,6 +65,11 @@
 									height: 1410px;
 									top: 26px;
 									// z-index: -100;
+								}
+								&__action{
+									&:before{
+										height: 700px!important;
+									}
 								}
 							}
 						}
@@ -145,6 +154,9 @@
 							font-weight: 500;
 						}
 						.photos_block{
+							&__action{
+								width: 300px!important;
+							}
 							width: 320px;
 							border-radius: 10px;
 							background: #b9b9b9;
@@ -205,11 +217,20 @@
 								}
 							}
 						}
+						.discount__type{
+							img{
+								max-width: 100%;
+								height: auto;
+							}
+						}
 						.discount_text{
 							.discount_title{
 								color: #4d4d4d;
 								font-weight: 700;	
-								margin-bottom: 15px;							
+								margin-bottom: 15px;	
+								&_action{
+									font-size: 13px;
+								}						
 							}
 							.discount_checkbox_main{
 								margin-bottom: 3px;
