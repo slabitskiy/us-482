@@ -428,7 +428,13 @@
 					  background: rgba(255, 255, 255, 0.5);
 					  padding: 6px 0 4px 0;
 					  text-align: left;
-					  clear: both;
+					  // clear: both;
+					  &:after{
+					  	display: block;
+					  	content: '';
+					  	height: 0;
+					  	clear: both;
+					  }
 					.bottom_block_text{
 						  text-align: center;
 						  display: inline-block;
@@ -460,6 +466,8 @@
 							  font-weight: bold;
 						}
 					}
+
+					
 					.bottom_block_butt{
 					  display: inline-block;
 					  float: right;

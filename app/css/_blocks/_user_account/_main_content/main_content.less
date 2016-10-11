@@ -3216,6 +3216,53 @@
 		}
 
 		.all_actions_archive__slider{
+			.slide__actions{
+				text-align: right;
+				.actions__action{
+					display: inline-block;
+					vertical-align: middle;
+					position: relative;
+					.action__img{
+						width: 18px;
+						height: 15px;
+						&.action__restore{
+							background: #fff url('../img/restore.png') no-repeat center;
+						}
+						&.action__delete{
+							margin-left: 2px;
+							background: #fff url('../img/delete__action.png') no-repeat center;
+						}
+					}
+					.action__label{
+						position: absolute;
+						right: -10px;
+						font-weight: 300;
+						color: #4d4d4d;
+						background: #fbefa6;
+						border-radius: 6px;
+						height: 15px;
+						line-height: 15px;
+						font-size: 10px;
+						padding: 0 10px;
+						z-index: 3;
+						top: 100%;
+						display: none;
+						margin-top: 5px;
+					}
+					&.actions__action__delete{
+						.action__label{
+							text-align: center;
+							width: 120px;
+						}
+					}
+					&:hover{
+						cursor: pointer;
+						.action__label{
+							display: block;
+						}
+					}
+				}
+			}
 			.owl-dots{
 				position: absolute;
 				bottom: -30px;

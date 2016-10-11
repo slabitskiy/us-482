@@ -252,6 +252,8 @@
 					  padding: 2px 0 4px 0;
 					  text-align: left;
 					  clear: both;
+					  min-height: 40px;
+
 					.bottom_block_text{
 						  text-align: center;
 						  display: inline-block;
@@ -281,6 +283,42 @@
 							  font-size: 9px;
 							  margin: 1px auto;
 							  font-weight: bold;
+						}
+					}
+					.bottom__date{
+						position: absolute;
+						// left: 0;
+						// top: 50%;
+						// transform: translateY(-50%);
+						color: #fff;
+						text-align: center;
+						width: 117px;
+						padding-bottom: 5px;
+						left: 10px;
+						top: -10px;
+						.date__title{
+							display: inline-block;
+							vertical-align: top;
+							border-bottom-left-radius: 3px;
+							border-bottom-right-radius: 3px;
+							background: #5f5f5f;
+							font-size: 8px;
+							width: 45px;
+							font-weight: 700;
+							height: 12px;
+							line-height: 10px;
+							color: #fdfdfd;
+						}
+						.date__content{
+							// margin-top: -8px;
+							background: rgba(255,255,255,.2);
+							font-weight: 700;
+							font-size: 14px;
+						}
+						.date__time{
+							font-size: 10px;
+							padding-top: 4px;
+							color: #f0efef;
 						}
 					}
 					.bottom_block_butt{
@@ -321,6 +359,9 @@
 		 .bottom_stick-right{
 			 background: #c30000 ;
 		 }
+		.bottom__date{
+			background: #ff0000 ;
+		}
 		  &:before{
 			display: block;
 			content: '';
@@ -345,6 +386,9 @@
 		  .bottom_stick-right{
 			 background: #00af00 ;
 		 }
+		.bottom__date{
+			background: #0ad900 ;
+		}
 		 &:before{
 			display: block;
 			content: '';
@@ -360,28 +404,31 @@
 		}
 	}
 	.blue_shares{
-					 .color_text{
-						 color: #01a6f3;
-					 }
-					 .bottom_stick-left{
-						 background: #01a6f3 ;
-					 }
-					  .bottom_stick-right{
-						 background: #007aeb ;
-					 }
-					&:before{
-						display: block;
-						content: '';
-						width: 10px;
-						height: 180px;
-						border-bottom: 8px solid #494949;
-						background: #01a6f3 ;
-						position: absolute;
-						right: 0;
-						// top: 50%;
-  					    margin-top: 0;
-						
-					}
+		 .color_text{
+			 color: #01a6f3;
+		 }
+		 .bottom_stick-left{
+			 background: #01a6f3 ;
+		 }
+		  .bottom_stick-right{
+			 background: #007aeb ;
+		 }
+		.bottom__date{
+			background: #01a6f3 ;
+		}
+		&:before{
+			display: block;
+			content: '';
+			width: 10px;
+			height: 180px;
+			border-bottom: 8px solid #494949;
+			background: #01a6f3 ;
+			position: absolute;
+			right: 0;
+			// top: 50%;
+			    margin-top: 0;
+			
+		}
 	}
 	.orange_shares{
 			 .color_text{
@@ -393,6 +440,9 @@
 		  .bottom_stick-right{
 			 background: #ff6e00 ;
 		 }
+		.bottom__date{
+			background: #fe8f00 ;
+		}
 		&:before{
 			display: block;
 			content: '';

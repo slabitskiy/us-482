@@ -577,7 +577,7 @@ select {
 .header .header_main_panel_reg_profile .header_main_panel_reg_profile_room .dropdown-menu {
   margin-top: 15px;
   border: 0;
-  right: 0;
+  right: -7px;
   left: auto;
   -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.37);
           box-shadow: 0 0 3px rgba(0, 0, 0, 0.37);
@@ -8435,6 +8435,11 @@ select {
   background: rgba(255, 255, 255, 0.5);
   padding: 6px 0 4px 0;
   text-align: left;
+}
+.main_content .action_shares .shares_block .block_content .content_bottom .bottom_block:after {
+  display: block;
+  content: '';
+  height: 0;
   clear: both;
 }
 .main_content .action_shares .shares_block .block_content .content_bottom .bottom_block .bottom_block_text {
@@ -10239,6 +10244,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   padding: 2px 0 4px 0;
   text-align: left;
   clear: both;
+  min-height: 40px;
 }
 .main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom_block_text {
   text-align: center;
@@ -10270,6 +10276,40 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   font-size: 9px;
   margin: 1px auto;
   font-weight: bold;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  width: 117px;
+  padding-bottom: 5px;
+  left: 10px;
+  top: -10px;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__title {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+  background: #5f5f5f;
+  font-size: 8px;
+  width: 45px;
+  font-weight: 700;
+  height: 12px;
+  line-height: 10px;
+  color: #fdfdfd;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__content {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  font-size: 14px;
+}
+.main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom__date .date__time {
+  font-size: 10px;
+  padding-top: 4px;
+  color: #f0efef;
 }
 .main_content .c_all_actions .shares_block .block_content .content_bottom .bottom_block .bottom_block_butt {
   display: inline-block;
@@ -10303,6 +10343,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .c_all_actions .red_shares .bottom_stick-right {
   background: #c30000 ;
 }
+.main_content .c_all_actions .red_shares .bottom__date {
+  background: #ff0000 ;
+}
 .main_content .c_all_actions .red_shares:before {
   display: block;
   content: '';
@@ -10322,6 +10365,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .c_all_actions .green_shares .bottom_stick-right {
   background: #00af00 ;
+}
+.main_content .c_all_actions .green_shares .bottom__date {
+  background: #0ad900 ;
 }
 .main_content .c_all_actions .green_shares:before {
   display: block;
@@ -10343,6 +10389,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .c_all_actions .blue_shares .bottom_stick-right {
   background: #007aeb ;
 }
+.main_content .c_all_actions .blue_shares .bottom__date {
+  background: #01a6f3 ;
+}
 .main_content .c_all_actions .blue_shares:before {
   display: block;
   content: '';
@@ -10362,6 +10411,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content .c_all_actions .orange_shares .bottom_stick-right {
   background: #ff6e00 ;
+}
+.main_content .c_all_actions .orange_shares .bottom__date {
+  background: #fe8f00 ;
 }
 .main_content .c_all_actions .orange_shares:before {
   display: block;
@@ -13663,6 +13715,52 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content .all_actions_archive .all_actions_archive__slider {
   position: relative;
   padding: 0 50px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions {
+  text-align: right;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img {
+  width: 18px;
+  height: 15px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img.action__restore {
+  background: #ffffff url('../img/restore.png') no-repeat center;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__img.action__delete {
+  margin-left: 2px;
+  background: #ffffff url('../img/delete__action.png') no-repeat center;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action .action__label {
+  position: absolute;
+  right: -10px;
+  font-weight: 300;
+  color: #4d4d4d;
+  background: #fbefa6;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 10px;
+  padding: 0 10px;
+  z-index: 3;
+  top: 100%;
+  display: none;
+  margin-top: 5px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action.actions__action__delete .action__label {
+  text-align: center;
+  width: 120px;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action:hover {
+  cursor: pointer;
+}
+.main_content .all_actions_archive .all_actions_archive__slider .slide__actions .actions__action:hover .action__label {
+  display: block;
 }
 .main_content .all_actions_archive .all_actions_archive__slider .owl-dots {
   position: absolute;
