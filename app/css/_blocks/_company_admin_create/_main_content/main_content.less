@@ -423,6 +423,7 @@
 							}
 						}
 						#date_calendar_pick{
+
 						.dow{
 						  text-transform: lowercase;
 						}
@@ -578,9 +579,30 @@
 						.datepicker table tr td.today:hover,
 						.datepicker table tr td.today.disabled,
 						.datepicker table tr td.today.disabled:hover {
-						  color: #000000;
-						  background-color: #ffdb99;
-						  border-color: #ffb733;
+						  color: #656565!important;
+						  // color: #000000;
+						  position: relative;
+						  background-color: #fff!important;
+						  // background-color: #ffdb99;
+						  border-color: #484848;
+						  // border-color: #ffb733;
+						  border: 2px solid transparent!important;
+						}
+						.datepicker table tr td.today:hover{
+							background: #eeeeee!important;
+						}
+
+						.datepicker table tr td.today{
+							&:before{
+								display: block;
+								content: '';
+								width: 100%;
+								height: 100%;
+								position: absolute;
+								top: 0;
+								left: 0;
+								border: 3px solid #484848;
+							}
 						}
 						.datepicker table tr td.today:hover,
 						.datepicker table tr td.today:hover:hover,
@@ -602,9 +624,11 @@
 						.open .dropdown-toggle.datepicker table tr td.today:hover,
 						.open .dropdown-toggle.datepicker table tr td.today.disabled,
 						.open .dropdown-toggle.datepicker table tr td.today.disabled:hover {
-						  color: #000000;
-						  background-color: #ffcd70;
-						  border-color: #f59e00;
+						  color: #656565;
+						  // color: #000000;
+						  background-color: #fff;
+						  // background-color: #ffcd70;
+						  border-color: #484848;
 						}
 						.datepicker table tr td.today:active,
 						.datepicker table tr td.today:hover:active,
@@ -680,11 +704,14 @@
 						fieldset[disabled] .datepicker table tr td.today:hover.active,
 						fieldset[disabled] .datepicker table tr td.today.disabled.active,
 						fieldset[disabled] .datepicker table tr td.today.disabled:hover.active {
-						  background-color: #ffdb99;
-						  border-color: #ffb733;
+						  background-color: #fff;
+						  // background-color: #ffdb99;
+						  border-color: #484848;
+						  // border-color: #ffb733;
 						}
 						.datepicker table tr td.today:hover:hover {
-						  color: #000;
+						  color: #656565;
+						  // color: #000;
 						}
 						.datepicker table tr td.today.active:hover {
 						  color: #fff;
@@ -1165,6 +1192,9 @@
 						.datepicker thead tr:first-child th,
 						.datepicker tfoot tr th {
 						  cursor: pointer;
+						}
+						.day .span{
+							pointer-events: none;
 						}
 						/*.datepicker thead tr:first-child th:hover,*/
 						.datepicker tfoot tr th:hover {

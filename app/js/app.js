@@ -209,7 +209,24 @@ $(document).ready(function(){
               language: "uk",
               multidate: true,
               forceParse: false,
-              toggleActive: true
+              toggleActive: true,
+              todayHighlight: true
+          }).on('changeDate',function(e){
+              var day = $('#date_calendar_pick').datepicker('getStartDate'),
+                  dateUtc = $('#date_calendar_pick').datepicker('getUTCDates'),
+                  dateUtcLast = new Date(dateUtc[dateUtc.length-1]),
+                  dateUtcFirst = new Date(dateUtc[0]), 
+                  lastDay =  dateUtcLast.getDate(),
+                  firstDay =  dateUtcFirst.getDate(),
+                  lastMonth =  dateUtcLast.getMonth(),
+                  firstMonth = dateUtcFirst.getMonth(),
+                  lastYear = dateUtcLast.getFullYear(),
+                  firstYear = dateUtcFirst.getFullYear(),
+                  fullDate = firstDay+'.'+firstMonth+'.'+firstYear+' - '+lastDay+'.'+lastMonth+'.'+lastYear;
+
+                  $('#fullDate').text(fullDate);
+                // console.log($('#date_calendar_pick').datepicker('getStartDate') , $('#date_calendar_pick').datepicker('getEndDate'))
+              // console.log(testsq, new Date(testsq1[testsq1.length-1]).getMonth())
           });
      $('#data_archive').datepicker({
            clearBtn: false,
