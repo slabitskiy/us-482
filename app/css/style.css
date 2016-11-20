@@ -9251,6 +9251,23 @@ select {
   color: #787878;
   text-decoration: underline;
 }
+.main_content .calendar_year .calendar__filter {
+  margin-top: 25px;
+  text-align: center;
+}
+.main_content .calendar_year .calendar__filter .filter__button {
+  display: inline-block;
+  vertical-align: middle;
+  color: #787878;
+  font-size: 14px;
+  padding: 5px 10px 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  margin-bottom: 3px;
+}
+.main_content .calendar_year .calendar__filter .filter__button-active {
+  background: #f5f5f5;
+}
 .main_content #data_archive {
   display: inline-block;
   vertical-align: top;
