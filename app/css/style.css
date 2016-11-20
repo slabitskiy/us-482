@@ -7409,6 +7409,94 @@ select {
   background: #00d000;
   opacity: 1;
 }
+.main_content .company_contacts .action__type {
+  margin-bottom: 25px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+  padding: 18px 0 20px;
+}
+.main_content .company_contacts .action__type .type__img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 15px;
+}
+.main_content .company_contacts .action__type .type__text {
+  font-weight: 700;
+  color: #5f5f5f;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.main_content .company_contacts .action__date {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.main_content .company_contacts .action__date .date__number {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  color: #282828;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.main_content .company_contacts .action__date .date__text {
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 300;
+  color: #282828;
+}
+.main_content .company_contacts .action__date .date__time {
+  width: 113px;
+  height: 38px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background: #5f5f5f;
+  margin: 0 auto;
+}
+.main_content .company_contacts .action__date .date__time .time__text {
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+.main_content .company_contacts .action__place {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main_content .company_contacts .action__place .place__ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 31px;
+  height: 42px;
+  background: url('../img/action__place.png') no-repeat center;
+}
+.main_content .company_contacts .action__place .place__text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  color: #6d6e71;
+  max-width: 190px;
+  font-size: 14px;
+  text-align: left;
+}
+.main_content .company_contacts .action__title {
+  background: #fff;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  text-align: center;
+  color: #282828;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 10px 20px;
+}
 .main_content .company_contacts .sale__blue {
   background: #01a6f3 ;
 }
