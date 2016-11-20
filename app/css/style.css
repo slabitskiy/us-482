@@ -8963,6 +8963,27 @@ select {
   vertical-align: middle;
   font-size: 11px;
 }
+#modalCalendar .modal-dialog .body-header .header-filter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 13px;
+  text-align: center;
+  width: 150px;
+}
+#modalCalendar .modal-dialog .body-header .header-filter .filter__button {
+  display: inline-block;
+  vertical-align: middle;
+  color: #787878;
+  font-size: 14px;
+  padding: 5px 10px 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+#modalCalendar .modal-dialog .body-header .header-filter .filter__button-active {
+  background: #fff;
+}
 #modalCalendar .modal-dialog .modal-action {
   clear: both;
 }
@@ -9269,6 +9290,7 @@ select {
   display: inline-block;
   font-size: 30px;
   font-weight: 700;
+  width: auto;
 }
 .main_content #data_archive .datepicker .thead .tr:first-child .prependSpan {
   position: absolute;
@@ -9447,15 +9469,21 @@ select {
   height: 15px;
   -webkit-border-radius: 100px;
           border-radius: 100px;
-  background: #afafaf;
   display: block;
   position: absolute;
-  color: #303030;
   font-size: 10px;
   font-weight: 600;
   bottom: 4px;
-  right: 4px;
   line-height: 14px;
+  color: #303030;
+}
+.main_content #data_archive .datepicker .tbody .tr .td .numberLink-action {
+  left: 4px;
+  background: #caeaf0;
+}
+.main_content #data_archive .datepicker .tbody .tr .td .numberLink-other {
+  background: #afafaf;
+  right: 4px;
 }
 .main_content #data_archive .datepicker .tbody .tr .td:hover .span:before {
   position: absolute;

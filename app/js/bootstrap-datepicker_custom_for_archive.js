@@ -999,7 +999,8 @@
 			}
 			this.picker.find('.datepicker-days .tbody').empty().append(html.join(''));
 			// create tbody span
-            createLinksBody('numberLink',5);
+            createLinksBody('numberLink numberLink-action',5);
+            createLinksBody('numberLink numberLink-other',1);
 
 
 			var months = this.picker.find('.datepicker-months')
