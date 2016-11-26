@@ -352,7 +352,7 @@
 					  display: table;
 					  margin-left: -2px;
 					  position: absolute;
-					  bottom: 42px;
+					  bottom: 72px;
 					.bottom_stick_cell{
 						display: table-cell;
   						vertical-align: middle;
@@ -428,6 +428,7 @@
 					  background: rgba(255, 255, 255, 0.5);
 					  padding: 6px 0 4px 0;
 					  text-align: left;
+					  position: relative;
 					  // clear: both;
 					  &:after{
 					  	display: block;
@@ -465,6 +466,54 @@
 							  margin: 1px auto;
 							  font-weight: bold;
 						}
+						// 
+						  &-action{
+						  	margin-top: -17px;
+						  	margin-bottom: -26px;
+						  	width: 180px;
+						  	text-align: center;
+						  	position: relative;
+						  	padding-top: 18px;
+						  	.text__title{
+						  		position: absolute;
+						  		top: 0;
+						  		display: block;
+						  		width: 60px;
+						  		font-weight: 700;
+						  		font-size: 12px;
+						  		line-height: 1;
+						  		padding-bottom: 3px;
+						  		color: #fff;
+						  		margin: 0 auto;
+						  		left: 0;
+						  		right: 0;
+						  		background: #5f5f5f;
+						  		border-bottom-right-radius: 4px;
+						  		border-bottom-left-radius: 4px;
+						  	}
+						  	.bottom_block_text_p{
+						  		padding-top: 2px;
+						  		padding-bottom: 4px;
+						  		line-height: 1;
+						  		color: #fff;
+						  		background: rgba(255, 255, 255, 0.2);
+						  	}
+						  	.bottom_block_text_date{
+						  		padding-top: 4px;
+						  		height: auto;
+						  		background: none;
+						  		width: 100%;
+						  		text-align: center;
+						  		color: #f0efef;
+						  		font-size: 14px;
+						  		font-weight: 400;
+						  		padding-bottom: 8px;
+						  	}
+						  	&+.bottom_block_butt{
+						  		margin-top: 3px;
+						  	}
+						  }
+						// 
 					}
 
 					
@@ -506,6 +555,11 @@
 		 .bottom_stick-right{
 			 background: #c30000 ;
 		 }
+		 .bottom_block_text{
+		 	&-action{
+		 		background: #ff0000;
+		 	}
+		 }
 		  &:before{
 			display: block;
 			content: '';
@@ -530,6 +584,11 @@
 		  .bottom_stick-right{
 			 background: #00af00 ;
 		 }
+		 .bottom_block_text{
+		 	&-action{
+		 		background: #0ad900;
+		 	}
+		 }
 		 &:before{
 			display: block;
 			content: '';
@@ -545,28 +604,33 @@
 		}
 	}
 	.blue_shares{
-					 .color_text{
-						 color: #01a6f3;
-					 }
-					 .bottom_stick-left{
-						 background: #01a6f3 ;
-					 }
-					  .bottom_stick-right{
-						 background: #007aeb ;
-					 }
-					&:before{
-						display: block;
-						content: '';
-						width: 10px;
-						height: 280px;
-						border-bottom: 8px solid #494949;
-						background: #01a6f3 ;
-						position: absolute;
-						right: 0;
-						// top: 50%;
-  					    margin-top: 0;
-						
-					}
+		 .color_text{
+			 color: #01a6f3;
+		 }
+		 .bottom_stick-left{
+			 background: #01a6f3 ;
+		 }
+		  .bottom_stick-right{
+			 background: #007aeb ;
+		 }
+		 .bottom_block_text{
+		 	&-action{
+		 		background: #01a6f3;
+		 	}
+		 }
+		&:before{
+			display: block;
+			content: '';
+			width: 10px;
+			height: 280px;
+			border-bottom: 8px solid #494949;
+			background: #01a6f3 ;
+			position: absolute;
+			right: 0;
+			// top: 50%;
+			    margin-top: 0;
+			
+		}
 	}
 	.orange_shares{
 			 .color_text{
@@ -577,6 +641,11 @@
 		 }
 		  .bottom_stick-right{
 			 background: #ff6e00 ;
+		 }
+		 .bottom_block_text{
+		 	&-action{
+		 		background: #fe8f00;
+		 	}
 		 }
 		&:before{
 			display: block;
