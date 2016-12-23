@@ -1855,7 +1855,7 @@
 	};
 	DPGlobal.template = '<div class="datepicker">'+
 							'<div class="datepicker-days">'+
-								'<table class=" table-condensed">'+
+								'<table class="table-condensed">'+
 									DPGlobal.headTemplateDays+
 									'<tbody></tbody>'+
 									DPGlobal.footTemplate+

@@ -212,22 +212,45 @@ $(document).ready(function(){
               toggleActive: true,
               todayHighlight: true
           }).on('changeDate',function(e){
-              var day = $('#date_calendar_pick').datepicker('getStartDate'),
-                  dateUtc = $('#date_calendar_pick').datepicker('getUTCDates'),
-                  dateUtcLast = new Date(dateUtc[dateUtc.length-1]),
-                  dateUtcFirst = new Date(dateUtc[0]), 
-                  lastDay =  dateUtcLast.getDate(),
-                  firstDay =  dateUtcFirst.getDate(),
-                  lastMonth =  dateUtcLast.getMonth(),
-                  firstMonth = dateUtcFirst.getMonth(),
-                  lastYear = dateUtcLast.getFullYear(),
-                  firstYear = dateUtcFirst.getFullYear(),
-                  fullDate = firstDay+'.'+firstMonth+'.'+firstYear+' - '+lastDay+'.'+lastMonth+'.'+lastYear;
+              var dateUtc = $('#date_calendar_pick').datepicker('getUTCDates');
+              //     dateUtcLast = new Date(dateUtc[dateUtc.length-1]),
+              //     dateUtcFirst = new Date(dateUtc[0]), 
+              //     lastDay =  dateUtcLast.getDate(),
+              //     firstDay =  dateUtcFirst.getDate(),
+              //     lastMonth =  dateUtcLast.getMonth(),
+              //     firstMonth = dateUtcFirst.getMonth(),
+              //     lastYear = dateUtcLast.getFullYear(),
+              //     firstYear = dateUtcFirst.getFullYear(),
+              //     fullDate = firstDay+'.'+firstMonth+'.'+firstYear+' - '+lastDay+'.'+lastMonth+'.'+lastYear;
+                  var preSorted = [],
+                      sorted = [];
+                  dateUtc.forEach(function(el){
+                      preSorted.push(el.getTime());
+                      if(dateUtc.length == preSorted.length){
+                        var sorted = preSorted.sort(function(a, b) {return a - b;})
+                            initData(sorted);
+                      }
+                      // console.log(new Date(el).getDate(),new Date(el).getMonth(),new Date(el).getFullYear() )
+                  });
 
-                  $('#fullDate').text(fullDate);
+                function initData(date) {
+                  var dateUtcLast = new Date(date[date.length-1]),
+                      dateUtcFirst = new Date(date[0]), 
+                      lastDay =  dateUtcLast.getDate(),
+                      firstDay =  dateUtcFirst.getDate(),
+                      lastMonth =  dateUtcLast.getMonth(),
+                      firstMonth = dateUtcFirst.getMonth(),
+                      lastYear = dateUtcLast.getFullYear(),
+                      firstYear = dateUtcFirst.getFullYear(),
+                      fullDate = firstDay+'.'+firstMonth+'.'+firstYear+' - '+lastDay+'.'+lastMonth+'.'+lastYear;
+
+                      $('#fullDate').val(fullDate);
+                      // console.log(fullDate)
+                }
                 // console.log($('#date_calendar_pick').datepicker('getStartDate') , $('#date_calendar_pick').datepicker('getEndDate'))
               // console.log(testsq, new Date(testsq1[testsq1.length-1]).getMonth())
           });
+          
      $('#data_archive').datepicker({
            clearBtn: false,
            language: 'uk',

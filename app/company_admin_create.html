@@ -482,7 +482,7 @@
                   <!--  -->
                   <fieldset class="admin_create_action_fieldset">
                     <div class="col_left">
-                    <div class="line_circle"></div>
+                    <div class="line_circle line_circle-1"></div>
                     <div class="check_circle top_15 true_circle">
                       <div class="check_circle_block"></div>
                     </div>
@@ -776,10 +776,11 @@
                               сьогодні
                             </p>
                           </div>
-                          <div class="date_calendar">
-                            <p class="date_calendar_text">
+                          <div class="date_calendar date_calendar-320">
+                            <!-- <p class="date_calendar_text" >
                               календар
-                            </p>
+                            </p> -->
+                            <input type="Календар" type="text" id="fullDate" readonly>
                           </div>
                       </div>
                       <div class="inline-block">
@@ -824,6 +825,11 @@
                         <div class="access_method_main margin_radio">
                           <input type="checkbox" class="access_method_radio" id="acces_radio_sms">
                           <label for="acces_radio_sms"></label>
+                        </div>
+                        <p class="access_method_checklist_text">Без обмежень для всіх</p>
+                        <div class="access_method_main margin_radio">
+                          <input type="checkbox" class="access_method_radio" id="acces_radio_all">
+                          <label for="acces_radio_all"></label>
                         </div>
                         <div class="access_method_checklist_number">
                           <p class="access_method_checklist_small_text">Введіть номер телефону</p>
