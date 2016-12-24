@@ -297,12 +297,13 @@
 			}
 			.my_referals_users{
 				.referal_user{
+					position: relative;
 					&:nth-child(even){
 						background: #fff;
 						.user_info{
 							.user_name{
 								.name_text{
-									padding-left: 49px;
+									padding-left: 60px;
 								}
 							}
 						}
@@ -311,15 +312,24 @@
 						.user_info{
 							.user_name{
 								.name_text{
-									padding-left:  52px;
+									padding-left:  60px;
 								}
 							}
 						}
 					}
 					&.open{
-						// .user_dropdown{
-						// 	display: block;
-						// }
+						.user_dropdown{
+							display: block;
+						}
+						.user_info{
+							.user_name{
+								.user_info_btn{
+									&:after{
+										transform: rotate(0);
+									}
+								}
+							}
+						}
 					}
 					.user_info{
 						height: 31px;
@@ -390,6 +400,20 @@
 								height: 15px;
 								z-index: 2;
 								background: url('../img/referal_user_info.png') no-repeat center;
+								&:after{
+									display: block;
+									content: '';
+									height: 12px;
+									width: 12px;
+									background: url('../img/menu_open.png') no-repeat center;
+									position: absolute;
+									right: -16px;
+									top: 50%;
+									margin-top: -6px;
+									background-size: cover;
+									transform: rotate(180deg);
+									z-index: 1;
+								}
 							}
 							.name_text{
 								line-height: 1;
@@ -489,13 +513,35 @@
 						height: 31px;
 						line-height: 31px;
 						color: #4d4d4d;
-						background: #f8f8f8;
+						background: #fbefa6;
+						// background: #f8f8f8;
 						display: none;
+						position: absolute;
+						width: 100%;
+						z-index: 9;
+						left: 0;
+						bottom: -32px;
+						box-shadow: 0 0 5px rgba(0,0,0,.43);
 						&:after{
 							display: block;
 							content: '';
 							height: 0;
 							clear: both;
+						}
+						&:before{
+							bottom: 100%;
+							// left: 50%;
+							border: solid transparent;
+							content: " ";
+							height: 0;
+							width: 0;
+							position: absolute;
+							pointer-events: none;
+							border-color: rgba(255, 255, 255, 0);
+							border-bottom-color: #fbefa6;
+							border-width: 8px;
+							// margin-left: -8px;
+							left: 38px;
 						}
 						.dropdown_hp{
 							float: left;

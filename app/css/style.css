@@ -15413,14 +15413,26 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 13px;
   cursor: pointer;
 }
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user {
+  position: relative;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(even) {
   background: #fff;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(even) .user_info .user_name .name_text {
-  padding-left: 49px;
+  padding-left: 60px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(odd) .user_info .user_name .name_text {
-  padding-left: 52px;
+  padding-left: 60px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user.open .user_dropdown {
+  display: block;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user.open .user_info .user_name .user_info_btn:after {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+       -o-transform: rotate(0);
+          transform: rotate(0);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info {
   height: 31px;
@@ -15493,6 +15505,23 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 15px;
   z-index: 2;
   background: url('../img/referal_user_info.png') no-repeat center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn:after {
+  display: block;
+  content: '';
+  height: 12px;
+  width: 12px;
+  background: url('../img/menu_open.png') no-repeat center;
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  margin-top: -6px;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 1;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text {
   line-height: 1;
@@ -15601,14 +15630,34 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 31px;
   line-height: 31px;
   color: #4d4d4d;
-  background: #f8f8f8;
+  background: #fbefa6;
   display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  left: 0;
+  bottom: -32px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_dropdown:after {
   display: block;
   content: '';
   height: 0;
   clear: both;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_dropdown:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fbefa6;
+  border-width: 8px;
+  left: 38px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_dropdown .dropdown_hp {
   float: left;
@@ -15842,10 +15891,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   display: block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item.opened .avatar:after {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(0deg) !important;
+      -ms-transform: rotate(0deg) !important;
+       -o-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top {
   padding: 13px 0 8px;
@@ -15968,6 +16017,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   margin-left: 8px;
   cursor: pointer;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .avatar:after {
   display: block;
@@ -15981,6 +16034,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   margin-top: -6px;
   background-size: cover;
   z-index: 1;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .avatar .avatar-img {
   width: 24px;

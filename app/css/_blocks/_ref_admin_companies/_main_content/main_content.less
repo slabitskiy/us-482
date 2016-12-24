@@ -171,7 +171,7 @@
 						}
 						.avatar{
 							&:after{
-								transform: rotate(180deg);
+								transform: rotate(0deg)!important;
 							}
 						}
 					}
@@ -296,6 +296,7 @@
 							margin-left: 8px;
 							cursor: pointer;
 							position: relative;
+							user-select: none;
 							&:after{
 								display: block;
 								content: '';
@@ -308,6 +309,7 @@
 								margin-top: -6px;
 								background-size: cover;
 								z-index: 1;
+								transform: rotate(180deg);
 							}
 							.avatar-img{
 								width: 24px;

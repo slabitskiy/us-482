@@ -90,10 +90,10 @@ $(document).ready(function(){
         var dropdown = parent.find('.user_dropdown');
         if (parent.hasClass('open')) {
           parent.removeClass('open');
-          dropdown.stop().slideUp('300');
+          // dropdown.stop().slideUp('300');
         } else{
           parent.addClass('open');
-          dropdown.stop().slideDown('300');
+          // dropdown.stop().slideDown('300');
         }
       });
 
