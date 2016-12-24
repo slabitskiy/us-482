@@ -159,6 +159,12 @@
 
 			.my_companies_body{
 				.body_item{
+					position: relative;
+					&:not(:last-child){
+						.item__top{
+							border-bottom: 1px solid #848484;
+						}
+					}
 					&.opened{
 						.item__bottom{
 							display:block;
@@ -170,15 +176,25 @@
 						}
 					}
 					.item__top{
-						padding: 6px 0 0;
+						padding: 13px 0 8px;
 						>div{
 							float: left;	
 						}
 					}
 					.item__bottom{
-						padding: 5px 0;
+						padding: 6px 0 7px;
 						display: none;
 						background: rgba(255, 255, 255, 0.5);
+						position: absolute;
+						z-index: 9;
+						background: #fff;
+						box-shadow: 0 0 5px rgba(0,0,0,.43);
+						width: 100%;
+
+						// top: 100%;
+						bottom: -32px;
+						left: 0;
+						margin-top: 6px;
 						.left{
 							float: left;
 						}	
@@ -241,6 +257,21 @@
 								text-decoration:  none;
 								background: darken(#0095fe,10%);
 							}
+						}
+						&:after{
+							bottom: 100%;
+							// left: 50%;
+							border: solid transparent;
+							content: " ";
+							height: 0;
+							width: 0;
+							position: absolute;
+							pointer-events: none;
+							border-color: rgba(255, 255, 255, 0);
+							border-bottom-color: #fff;
+							border-width: 8px;
+							// margin-left: -8px;
+							left: 70px;
 						}
 					}
 					.item__name{
@@ -369,6 +400,9 @@
 						// margin-right: 4px;
 						font-size: 11px;
 					}
+
+
+
 				}
 			}
 

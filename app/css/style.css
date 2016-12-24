@@ -15832,6 +15832,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 116px !important;
   min-width: 116px !important;
 }
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item {
+  position: relative;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item:not(:last-child) .item__top {
+  border-bottom: 1px solid #848484;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item.opened .item__bottom {
   display: block;
 }
@@ -15842,15 +15848,24 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
           transform: rotate(180deg);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top {
-  padding: 6px 0 0;
+  padding: 13px 0 8px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top > div {
   float: left;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom {
-  padding: 5px 0;
+  padding: 6px 0 7px;
   display: none;
   background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 9;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
+  width: 100%;
+  bottom: -32px;
+  left: 0;
+  margin-top: 6px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .left {
   float: left;
@@ -15916,6 +15931,19 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .page__company:hover {
   text-decoration: none;
   background: #0077cb;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 8px;
+  left: 70px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name {
   width: 191px;
