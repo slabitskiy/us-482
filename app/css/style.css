@@ -15104,6 +15104,19 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   padding: 0 15px 15px;
   overflow-y: hidden;
 }
+.main_content.ref_admin .admin_service_content_my_referals_resp .resp__text {
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+.main_content.ref_admin .admin_service_content_my_referals_resp .resp__text b {
+  font-size: 11px;
+  padding-right: 20px;
+}
+.main_content.ref_admin .admin_service_content_my_referals_resp .resp__text span {
+  padding-left: 45px;
+}
 .main_content.ref_admin .admin_service_content_my_referals {
   min-width: 800px;
 }
@@ -15132,6 +15145,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   font-size: 11px;
   line-height: 39px;
   text-align: center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_header .header_name .name_text span {
+  display: none;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_header .header_name .sort_up {
   position: absolute;
@@ -15429,14 +15445,14 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   display: block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user.open .user_info .user_name .user_info_btn:after {
-  -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
-       -o-transform: rotate(0);
-          transform: rotate(0);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info {
-  height: 31px;
-  line-height: 31px;
+  height: 38px;
+  line-height: 36px;
   color: #4d4d4d;
   position: relative;
 }
@@ -15493,7 +15509,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_count {
   position: absolute;
   left: 7px;
-  top: 0;
+  top: -2px;
   height: 100%;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn {
@@ -15501,10 +15517,24 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   left: 25px;
   position: absolute;
   cursor: pointer;
-  width: 9px;
-  height: 15px;
+  width: 18px;
+  -webkit-border-radius: 18px;
+          border-radius: 18px;
+  background: #878787;
+  height: 18px;
   z-index: 2;
-  background: url('../img/referal_user_info.png') no-repeat center;
+  text-align: center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn span {
+  font-size: 10px;
+  line-height: 18px;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn:after {
   display: block;
@@ -15513,13 +15543,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 12px;
   background: url('../img/menu_open.png') no-repeat center;
   position: absolute;
-  right: -2px;
+  right: 3px;
   bottom: -12px;
   background-size: cover;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-          transform: rotate(180deg);
   z-index: 1;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text {
@@ -15528,11 +15554,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   left: 0;
   width: 100%;
   top: 50%;
-  -webkit-transform: translateY(-58%);
-      -ms-transform: translateY(-58%);
-       -o-transform: translateY(-58%);
-          transform: translateY(-58%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
   position: absolute;
+  font-size: 11px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text span {
   font-size: 9px;
