@@ -15982,6 +15982,22 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   text-decoration: none;
   background: #0077cb;
 }
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .closer {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+  margin-right: 10px;
+  width: 12px;
+  height: 10px;
+  background: url('../img/black__close.png') no-repeat center;
+  opacity: .7;
+  -webkit-transition: all 300ms ease-in-out;
+       -o-transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom .closer:hover {
+  opacity: 1;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom:after {
   bottom: 100%;
   border: solid transparent;
