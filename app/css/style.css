@@ -15763,6 +15763,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   color: #878787;
   margin-left: 20px;
   margin-right: 5px;
+  border-top: 6px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
 }
 .main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-dropdown {
   padding: 5px 8px;
