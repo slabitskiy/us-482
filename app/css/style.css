@@ -15513,9 +15513,8 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 12px;
   background: url('../img/menu_open.png') no-repeat center;
   position: absolute;
-  right: -16px;
-  top: 50%;
-  margin-top: -6px;
+  right: -2px;
+  bottom: -12px;
   background-size: cover;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -15762,6 +15761,8 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-top .caret {
   margin-top: 1px;
   color: #878787;
+  margin-left: 20px;
+  margin-right: 5px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top .companies_sort .sort-dropdown {
   padding: 5px 8px;
@@ -15891,13 +15892,13 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   display: block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item.opened .avatar:after {
-  -webkit-transform: rotate(0deg) !important;
-      -ms-transform: rotate(0deg) !important;
-       -o-transform: rotate(0deg) !important;
-          transform: rotate(0deg) !important;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top {
-  padding: 13px 0 8px;
+  padding: 13px 0 13px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top > div {
   float: left;
@@ -16029,15 +16030,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 12px;
   background: url('../img/menu_open.png') no-repeat center;
   position: absolute;
-  right: -16px;
-  top: 50%;
-  margin-top: -6px;
+  right: 6px;
+  bottom: -14px;
   background-size: cover;
   z-index: 1;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-       -o-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .avatar .avatar-img {
   width: 24px;
@@ -16051,7 +16047,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .text {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 10px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__name .text span {

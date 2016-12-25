@@ -19,6 +19,8 @@
 							.caret{
 								margin-top: 1px;
 								color: #878787;
+								margin-left: 20px;
+								margin-right: 5px;
 							}
 
 
@@ -171,12 +173,12 @@
 						}
 						.avatar{
 							&:after{
-								transform: rotate(0deg)!important;
+								transform: rotate(180deg);
 							}
 						}
 					}
 					.item__top{
-						padding: 13px 0 8px;
+						padding: 13px 0 13px;
 						>div{
 							float: left;	
 						}
@@ -304,12 +306,14 @@
 								width: 12px;
 								background: url('../img/menu_open.png') no-repeat center;
 								position: absolute;
-								right: -16px;
-								top: 50%;
-								margin-top: -6px;
+								// right: -16px;
+								right: 6px;
+								// top: 50%;
+								bottom: -14px;
+								// margin-top: -6px;
 								background-size: cover;
 								z-index: 1;
-								transform: rotate(180deg);
+								// transform: rotate(180deg);
 							}
 							.avatar-img{
 								width: 24px;
@@ -323,7 +327,7 @@
 						.text{
 							display: inline-block;
 							vertical-align: middle;
-							margin-left: 20px;
+							margin-left: 10px;
 							span{
 								display: block;
 								font-size: 11px;
