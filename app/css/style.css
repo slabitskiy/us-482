@@ -15118,12 +15118,19 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   padding-left: 45px;
 }
 .main_content.ref_admin .admin_service_content_my_referals {
+  padding-bottom: 1px;
   min-width: 800px;
 }
 @media only screen and (max-width: 1199px) {
   .main_content.ref_admin .admin_service_content_my_referals {
     min-width: 920px;
   }
+}
+.main_content.ref_admin .admin_service_content_my_referals table {
+  width: 100%;
+}
+.main_content.ref_admin .admin_service_content_my_referals table tr td {
+  position: relative;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_header:after {
   display: block;
