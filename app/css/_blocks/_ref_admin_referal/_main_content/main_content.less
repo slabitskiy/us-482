@@ -2,7 +2,7 @@
 	&.ref_admin{
 		.admin_service_content_my_referals_resp{
 			width: 100%;
-			padding: 0 15px 15px;
+			padding: 0 15px 0;
 			overflow-y: hidden;
 			.resp__text{
 				font-size: 14px;
@@ -19,25 +19,31 @@
 				}
 			}
 			// height: 400px;
+
+			table.dataTable thead th, table.dataTable thead td,
+			table.dataTable tbody th, table.dataTable tbody td{
+				padding: 0;
+			}
+			table.dataTable tbody tr{
+				background-color: transparent;
+			}
+			table.dataTable.no-footer{
+				border-bottom: 0;
+			}
 		}
 		.admin_service_content_my_referals{
-			padding-bottom: 1px;
+			padding-bottom: 20px;
+			// margin-bottom: -20px;
 			min-width: 800px;
 			@media only screen and (max-width: 1199px) {
 				min-width: 920px;
 			}
 			table{
 				width: 100%;
-				// padding-bottom: 40px;
 				tr{
-					// table-row
 					display: block;
-					td{
-						// position: relative;
-					}
 				}
 			}
-			// overflow-x: auto;
 			.my_referals_header{
 				&:after{
 					display: block;
@@ -325,10 +331,16 @@
 				}   			
 			}
 			.my_referals_users{
+				.dataTables_empty{
+					background-color: transparent;
+				}
 				.referal_user{
 					position: relative;
 					&:nth-child(even){
-						background: #fff;
+						background-color: #fff;
+					}
+					&:nth-child(odd){
+						background-color: transparent;
 					}
 					&.open{
 						.user_dropdown{
@@ -395,8 +407,10 @@
 							float: left;
 							min-width: 180px;
 							width: 22%;
-							position: relative;
-							height: 31px;
+							.name__block{
+								height: 31px;
+								position: relative;
+							}
 							.user_count{
 								position: absolute;
 								left: 7px;

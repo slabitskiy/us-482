@@ -15101,7 +15101,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals_resp {
   width: 100%;
-  padding: 0 15px 15px;
+  padding: 0 15px 0;
   overflow-y: hidden;
 }
 .main_content.ref_admin .admin_service_content_my_referals_resp .resp__text {
@@ -15117,8 +15117,20 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals_resp .resp__text span {
   padding-left: 45px;
 }
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable thead th,
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable thead td,
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody th,
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody td {
+  padding: 0;
+}
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody tr {
+  background-color: transparent;
+}
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable.no-footer {
+  border-bottom: 0;
+}
 .main_content.ref_admin .admin_service_content_my_referals {
-  padding-bottom: 1px;
+  padding-bottom: 20px;
   min-width: 800px;
 }
 @media only screen and (max-width: 1199px) {
@@ -15436,6 +15448,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   height: 13px;
   cursor: pointer;
 }
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .dataTables_empty {
+  background-color: transparent;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user {
   position: relative;
   height: 38px;
@@ -15443,7 +15458,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   color: #4d4d4d;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(even) {
-  background: #fff;
+  background-color: #fff;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(odd) {
+  background-color: transparent;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user.open .user_dropdown {
   display: block;
@@ -15495,8 +15513,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   float: left;
   min-width: 180px;
   width: 22%;
-  position: relative;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .name__block {
   height: 31px;
+  position: relative;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .user_count {
   position: absolute;
