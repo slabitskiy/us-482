@@ -15129,6 +15129,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals table {
   width: 100%;
 }
+.main_content.ref_admin .admin_service_content_my_referals table tr {
+  display: block;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_header:after {
   display: block;
   content: '';
@@ -15648,8 +15651,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   color: #4d4d4d;
   background: #fbefa6;
   display: none;
+  position: absolute;
   margin-top: 39px;
   width: 100%;
+  z-index: 9;
+  left: 0;
+  bottom: -32px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
 }
