@@ -116,8 +116,16 @@
 				.header_name{
 					min-width: 180px + 11 !important;
 					width: 180px + 11 !important;
-					p{
+					p.name_text{
 						padding-left: 35px;
+				    	line-height: 1;
+				    	margin-top: 7px;
+						  b{
+					    	font-size: 11px;
+					    	line-height: 1.2;
+					    	padding-top: 1px;
+					    	display: inline-block;
+					    }
 					}
 				}
 
@@ -148,19 +156,47 @@
 				    height: 39px;
 			        border-bottom: 1px solid #c3c3c3;
 			        p{
-			        	margin-top: 7px;
+			        	margin-top: 2px;
 			        	 color: #4d4d4d;
 					    font-size: 11px;
 					    line-height: 1;
+					    font-size: 10px;
+					    b{
+					    	font-size: 11px;
+					    	line-height: 1.2;
+					    	padding-top: 1px;
+					    	display: inline-block;
+					    }
 					    text-align: center;
 			        }
 				}
 				.header_money{
 					width: 94px +14!important;
+					// margin-top: 2px;
+					p.money_text{
+						margin-top: 2px;
+						font-size: 10px;
+					    b{
+					    	font-size: 11px;
+					    	line-height: 1.2;
+					    	padding-top: 1px;
+					    	display: inline-block;
+					    }
+					}
 				}
 
 				.header_profit{
 					width: 94px + 15!important;
+					p.profit_text{
+						margin-top: 6px;
+						font-size: 10px;
+					    b{
+					    	font-size: 11px;
+					    	line-height: 1.2;
+					    	padding-top: 1px;
+					    	display: inline-block;
+					    }
+					}
 				}
 				.header_date{
 					width: 76px + 11!important;
@@ -178,9 +214,9 @@
 				.body_item{
 					position: relative;
 					&:not(:last-child){
-						.item__top{
+						// .item__top{
 							border-bottom: 1px solid #848484;
-						}
+						// }
 					}
 					&.opened{
 						.item__bottom{
@@ -192,11 +228,14 @@
 							}
 						}
 					}
+					padding: 13px 0 13px;
+					td{
+						float: left;
+					}
 					.item__top{
-						padding: 13px 0 13px;
-						>div{
-							float: left;	
-						}
+						// >div{
+						// 	float: left;	
+						// }
 					}
 					.item__bottom{
 						padding: 6px 0 7px;
@@ -482,18 +521,22 @@
 			}			
 		}
 		.my_companies_all{
+			width: 100%;
 			.left{
 				float: left;
 			}
 			.right{
 				float: right;
 			}
-			margin-top: 5px;
-			margin-bottom: 10px;
-			height: 25px;
+			padding-top: 15px;
+			padding-bottom: 10px;
 
-			line-height: 24px;
-			background-color: #fbefa6;
+			th{
+				width: 918px;
+				height: 25px;
+				line-height: 24px;
+				background-color: #fbefa6;
+			}
 			span{
 				display: inline-block;
 				font-size: 13px;

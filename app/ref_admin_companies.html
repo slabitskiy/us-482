@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/owl.carousel.css">
 
   <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
-
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -450,92 +450,85 @@
                       </div>
                       <!-- <div class="clearfix"></div> -->
                     </div>
+                    <table id="neuro-crm-list">
+                      <!--  -->
+                      <thead class="my_referals_header my_companies_header">
+                        <tr class="clearfix">
+                          <th class="header_name">
+                            <div class="checkbox">
+                              <input type="checkbox" id="header-check">
+                              <label for="header-check">
+                              </label>
+                            </div>
+                            <p class="name_text">Мої компанії 
+                            <br>
+                              <b>
+                                4
+                              </b>
+                            </p>
+                          </th>
+                          <th class="header_category">
+                            <p class="place_text">Категорія</p>
+                          </th>
+                          <th class="header_place">
+                            <p class="place_text">Місто</p>
+                          </th>
+                          <th class="header_date">
+                            <p class="date_text">Дата <br> залучення</p>
+                          </th>
+                          <th class="header_activity">
+                            <p class="activity_text">Активність <br> (акції, шт.) <br> <b>18</b></p>
+                          </th>
+                          <th class="header_money">
+                            <p class="money_text">Оборот <br> компанії,грн. <br>
+                            <b>
+                              11  750,00
+                            </b>
+                            </p>
+                          </th>
+                          <th class="header_profit">
+                            <p class="profit_text">Мій дохід, грн. <br> 
+                              <b>
+                                61  200,00
+                              </b>
+                            </p>
+                          </th>
+                          <th class="header_period">
+                            <p class="period_text">
+                              Вибрати <br> період
+                            </p>
+                            <div class="period_dropdown"></div>
+                            <div class="period_choose">
+                              <div class="choose_year">
+                                <div class="year_button year_prev">&lt;</div>
+                                  <div class="year">2016</div>
+                                <div class="year_button year_next">&gt;</div>
+                              </div>
+                              <div class="choose_months">
+                                <div class="month">січень</div>
+                                <div class="month">квітень</div>
+                                <div class="month">липень</div>
+                                <div class="month">жовтень</div>
+                                <div class="month">лютий</div>
+                                <div class="month">травень</div>
+                                <div class="month">серпень</div>
+                                <div class="month">листопад</div>
+                                <div class="month">березень</div>
+                                <div class="month">червень</div>
+                                <div class="month">вересень</div>
+                                <div class="month">грудень</div>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                      </thead>
+                      <!--  -->
+                      <tbody class="my_companies_body">
 
-                    <div class="my_referals_header my_companies_header">
-                      <div class="header_name">
-                        <div class="checkbox">
-                          <input type="checkbox" id="header-check">
-                          <label for="header-check">
-                          </label>
-                        </div>
-                        <p class="name_text">Мої компанії </p>
-                      </div>
-                      <div class="header_category">
-                        <p class="place_text">Категорія</p>
-                      </div>
-                      <div class="header_place">
-                        <p class="place_text">Місто</p>
-                      </div>
-                      <div class="header_date">
-                        <p class="date_text">Дата <br> залучення</p>
-                      </div>
-                      <div class="header_activity">
-                        <p class="activity_text">Активність <br> (акції, шт.)</p>
-                      </div>
-                      <div class="header_money">
-                        <p class="money_text">Оборот <br> компанії, <br> грн.</p>
-                      </div>
-                      <div class="header_profit">
-                        <p class="profit_text">Мій дохід, <br> грн.</p>
-                      </div>
-                      <div class="header_period">
-                        <p class="period_text">
-                          Вибрати <br> період
-                        </p>
-                        <div class="period_dropdown"></div>
-                        <div class="period_choose">
-                          <div class="choose_year">
-                            <div class="year_button year_prev">&lt;</div>
-                              <div class="year">2016</div>
-                            <div class="year_button year_next">&gt;</div>
-                          </div>
-                          <div class="choose_months">
-                            <div class="month">січень</div>
-                            <div class="month">квітень</div>
-                            <div class="month">липень</div>
-                            <div class="month">жовтень</div>
-                            <div class="month">лютий</div>
-                            <div class="month">травень</div>
-                            <div class="month">серпень</div>
-                            <div class="month">листопад</div>
-                            <div class="month">березень</div>
-                            <div class="month">червень</div>
-                            <div class="month">вересень</div>
-                            <div class="month">грудень</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                        <tr class="body_item clearfix">
+                          <!--  -->
 
-                    <div class="my_companies_all">
-                      <div class="left">
-                        <span class="all__text">
-                          Всього
-                        </span>
-                        <span class="all__companies">
-                          4
-                        </span>
-                      </div>
-                      <div class="right">
-                        <span class="all__activity">
-                          18
-                        </span>
-                        <span class="all__companymoney">
-                          11  750,00
-                        </span>
-                        <span class="all__mymoney">
-                          61 200,00
-                        </span>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-
-                    <div class="my_companies_body">
-                      <div class="body_item ">
-                        <!--  -->
-
-                          <div class="item__top clearfix">
-                            <div class="item__name">
+                            <td class="item__name">
                               <span class="count">1.</span>
                                 <div class="checkbox">
                                   <input type="checkbox" id="item__1">
@@ -549,68 +542,66 @@
                                 <span>Кукурузка</span>
                                 ID 2545412
                               </p>
-                            </div>
+                              <!--  -->
+                              <div class="item__bottom">
+                                <div class="left">
+                                  <a href="/" class="item__control">
+                                    КЕРУВАТИ СПРАВАМИ
+                                  </a>
+                                  <span class="hot__secur">
+                                    Немає доступу
+                                  </span>
+                                </div>
 
-                             <div class="item__category text-center">
+                                <div class="right">
+                                  <a href="/" class="page__action">
+                                    ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
+                                  </a>
+                                  <a href="/" class="page__company">
+                                    ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
+                                  </a>
+
+                                  <a href="" class="closer"></a>
+                                </div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <!--  -->
+                            </td>
+                             <td class="item__category text-center">
                                <p class="category category__green">
                                  Туризм
                                </p>
                                <p class="subcategory">
                                  категорія:<br>підкатегорія
                                </p>
-                             </div> 
+                             </td> 
+                            <td class="item__city text-center">
+                              Івано-Франківськ
+                            </td>
+                            <td class="item__date text-center">
+                              16.03.2016
+                            </td>
+                            <td class="item__activity text-center">
+                              5
+                            </td>
 
-                              <div class="item__city text-center">
-                                Івано-Франківськ
-                              </div>
+                            <td class="item__money-comp text-center">
+                              5 700,00
+                            </td>
 
-                              <div class="item__date text-center">
-                                16.03.2016
-                              </div>
+                            <td class="item__money-person text-center">
+                              15 300,00
+                            </td>
 
-                              <div class="item__activity text-center">
-                                5
-                              </div>
+                            <td class="item__period text-center">
+                              січень, 2016
+                            </td>
+                           <!--  <div class="item__top clearfix"></div> -->
 
-                              <div class="item__money-comp text-center">
-                                5 700,00
-                              </div>
-
-                              <div class="item__money-person text-center">
-                                15 300,00
-                              </div>
-
-                              <div class="item__period text-center">
-                                січень, 2016
-                              </div>
-                          </div>
-
-                          <div class="item__bottom">
-                            <div class="left">
-                              <a href="/" class="item__control">
-                                КЕРУВАТИ СПРАВАМИ
-                              </a>
-                              <span class="hot__secur">
-                                Немає доступу
-                              </span>
-                            </div>
-
-                            <div class="right">
-                              <a href="/" class="page__action">
-                                ПРОГЛЯНУТИ АКЦІЇ КОМПАНІЇ
-                              </a>
-                              <a href="/" class="page__company">
-                                ПРОГЛЯНУТИ СТОРІНКУ КОМПАНІЇ
-                              </a>
-
-                              <a href="" class="closer"></a>
-                            </div>
-                            <div class="clearfix"></div>
-                          </div>
-                        <!--  -->
-                      </div>
-                    </div>
-                    <!--  -->
+                          <!--  -->
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <!--  -->
@@ -715,7 +706,42 @@
   <script src="js/rangeslider.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
+  <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
   <script src="js/app.js"></script>
-
+  <script type="text/javascript">
+   $(function() {
+    var dt = $('#neuro-crm-list').DataTable({
+     "language" : {
+      "url" : "https://cdn.datatables.net/plug-ins/1.10.12/i18n/Ukrainian.json"
+     }
+    });
+   });
+  </script>
 </body>
 </html>
+
+<!-- 
+<div class=" my_companies_all">
+    <div class="clearfix">
+      <div class="left">
+        <span class="all__text">
+          Всього
+        </span>
+        <span class="all__companies">
+          4
+        </span>
+      </div>
+      <div class="right">
+        <span class="all__activity">
+          18
+        </span>
+        <span class="all__companymoney">
+          11  750,00
+        </span>
+        <span class="all__mymoney">
+          61 200,00
+        </span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div> -->

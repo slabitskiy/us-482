@@ -15130,6 +15130,11 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable.no-footer {
   border-bottom: 0;
 }
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tfoot th,
+.main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tfoot td {
+  border: 0;
+  padding: 0;
+}
 .main_content.ref_admin .admin_service_content_my_referals {
   padding-bottom: 20px;
   min-width: 800px;
@@ -15886,8 +15891,16 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   min-width: 191px !important;
   width: 191px !important;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_name p {
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_name p.name_text {
   padding-left: 35px;
+  line-height: 1;
+  margin-top: 7px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_name p.name_text b {
+  font-size: 11px;
+  line-height: 1.2;
+  padding-top: 1px;
+  display: inline-block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_category {
   width: 91px;
@@ -15917,17 +15930,44 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   border-bottom: 1px solid #c3c3c3;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_activity p {
-  margin-top: 7px;
+  margin-top: 2px;
   color: #4d4d4d;
   font-size: 11px;
   line-height: 1;
+  font-size: 10px;
   text-align: center;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_activity p b {
+  font-size: 11px;
+  line-height: 1.2;
+  padding-top: 1px;
+  display: inline-block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_money {
   width: 94px 14 !important;
 }
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_money p.money_text {
+  margin-top: 2px;
+  font-size: 10px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_money p.money_text b {
+  font-size: 11px;
+  line-height: 1.2;
+  padding-top: 1px;
+  display: inline-block;
+}
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_profit {
   width: 109px !important;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_profit p.profit_text {
+  margin-top: 6px;
+  font-size: 10px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_profit p.profit_text b {
+  font-size: 11px;
+  line-height: 1.2;
+  padding-top: 1px;
+  display: inline-block;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_header .header_date {
   width: 87px !important;
@@ -15938,8 +15978,9 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item {
   position: relative;
+  padding: 13px 0 13px;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item:not(:last-child) .item__top {
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item:not(:last-child) {
   border-bottom: 1px solid #848484;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item.opened .item__bottom {
@@ -15951,10 +15992,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
        -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top {
-  padding: 13px 0 13px;
-}
-.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__top > div {
+.main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item td {
   float: left;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_companies_body .body_item .item__bottom {
@@ -16215,17 +16253,21 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   margin: 1px auto;
 }
 .main_content.ref_admin .my_companies_all {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  height: 25px;
-  line-height: 24px;
-  background-color: #fbefa6;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 .main_content.ref_admin .my_companies_all .left {
   float: left;
 }
 .main_content.ref_admin .my_companies_all .right {
   float: right;
+}
+.main_content.ref_admin .my_companies_all th {
+  width: 918px;
+  height: 25px;
+  line-height: 24px;
+  background-color: #fbefa6;
 }
 .main_content.ref_admin .my_companies_all span {
   display: inline-block;
