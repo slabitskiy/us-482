@@ -15101,7 +15101,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals_resp {
   width: 100%;
-  padding: 0 15px 0;
+  padding: 0 14px 0;
   overflow-y: hidden;
 }
 .main_content.ref_admin .admin_service_content_my_referals_resp .resp__text {
@@ -15122,6 +15122,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody th,
 .main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody td {
   padding: 0;
+  font-weight: 400;
 }
 .main_content.ref_admin .admin_service_content_my_referals_resp table.dataTable tbody tr {
   background-color: transparent;
@@ -15777,6 +15778,15 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_dropdown .dropdown_skype .skype_text {
   font-size: 11px;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies table {
+  width: 100%;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies table tr {
+  display: block;
+}
+.main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies table tr th {
+  font-weight: 400;
 }
 .main_content.ref_admin .admin_service_content_my_referals .admin_service_content_my_companies-top {
   margin: 8px  0 14px;
