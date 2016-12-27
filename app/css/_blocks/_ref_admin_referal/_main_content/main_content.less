@@ -30,8 +30,9 @@
 				width: 100%;
 				// padding-bottom: 40px;
 				tr{
+					table-row
 					td{
-						position: relative;
+						// position: relative;
 					}
 				}
 			}
@@ -327,22 +328,6 @@
 					position: relative;
 					&:nth-child(even){
 						background: #fff;
-						.user_info{
-							.user_name{
-								.name_text{
-									padding-left: 60px;
-								}
-							}
-						}
-					}
-					&:nth-child(odd){
-						.user_info{
-							.user_name{
-								.name_text{
-									padding-left:  60px;
-								}
-							}
-						}
 					}
 					&.open{
 						.user_dropdown{
@@ -358,7 +343,7 @@
 							}
 						}
 					}
-					.user_info{
+					// .user_info{
 						height: 38px;
 						line-height: 36px;
 						color: #4d4d4d;
@@ -397,13 +382,13 @@
 								background: url('../img/admin_time_close.png') no-repeat center;
 							}
 						}
-						position: relative;
-						&:after{
-							display: block;
-							content: '';
-							height: 0;
-							clear: both;
-						}
+						// position: relative;
+						// &:after{
+						// 	display: block;
+						// 	content: '';
+						// 	height: 0;
+						// 	clear: both;
+						// }
 						.user_name{
 							font-size: 11px;
 							float: left;
@@ -467,6 +452,8 @@
 								transform: translateY(-50%);
 								position: absolute;
 								font-size: 11px;
+								padding-left: 60px;
+
 								span{
 									font-size: 9px;
 								}
@@ -551,7 +538,7 @@
 								text-align: center;
 							}
 						}
-					}
+					// }
 					// 
 					.user_dropdown{
 						height: 31px;
@@ -560,11 +547,12 @@
 						background: #fbefa6;
 						// background: #f8f8f8;
 						display: none;
-						position: absolute;
+						// position: absolute;
+						margin-top: 39px;
 						width: 100%;
-						z-index: 9;
-						left: 0;
-						bottom: -32px;
+						// z-index: 9;
+						// left: 0;
+						// bottom: -32px;
 						box-shadow: 0 0 5px rgba(0,0,0,.43);
 						&:after{
 							display: block;

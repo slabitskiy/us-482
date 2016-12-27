@@ -15129,9 +15129,6 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 .main_content.ref_admin .admin_service_content_my_referals table {
   width: 100%;
 }
-.main_content.ref_admin .admin_service_content_my_referals table tr td {
-  position: relative;
-}
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_header:after {
   display: block;
   content: '';
@@ -15438,15 +15435,12 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user {
   position: relative;
+  height: 38px;
+  line-height: 36px;
+  color: #4d4d4d;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(even) {
   background: #fff;
-}
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(even) .user_info .user_name .name_text {
-  padding-left: 60px;
-}
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:nth-child(odd) .user_info .user_name .name_text {
-  padding-left: 60px;
 }
 .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user.open .user_dropdown {
   display: block;
@@ -15457,16 +15451,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
        -o-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info {
-  height: 38px;
-  line-height: 36px;
-  color: #4d4d4d;
-  position: relative;
-}
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info:hover .user_remove {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user:hover .user_remove {
   display: block;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_remove {
   display: none;
   position: absolute;
   background: #878787;
@@ -15484,10 +15472,10 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
           transform: translateY(-50%);
   z-index: 3;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove:hover {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_remove:hover {
   opacity: 1;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_remove:after {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_remove:after {
   cursor: pointer;
   pointer-events: none;
   display: block;
@@ -15499,13 +15487,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   left: 0;
   background: url('../img/admin_time_close.png') no-repeat center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info:after {
-  display: block;
-  content: '';
-  height: 0;
-  clear: both;
-}
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name {
   font-size: 11px;
   float: left;
   min-width: 180px;
@@ -15513,13 +15495,13 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
   height: 31px;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_count {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .user_count {
   position: absolute;
   left: 7px;
   top: -2px;
   height: 100%;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .user_info_btn {
   top: 7px;
   left: 25px;
   position: absolute;
@@ -15532,7 +15514,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   z-index: 2;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn span {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .user_info_btn span {
   font-size: 10px;
   line-height: 18px;
   color: #fff;
@@ -15543,7 +15525,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   width: 100%;
   height: 100%;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .user_info_btn:after {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .user_info_btn:after {
   display: block;
   content: '';
   height: 12px;
@@ -15555,7 +15537,7 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   background-size: cover;
   z-index: 1;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .name_text {
   line-height: 1;
   display: inline-block;
   left: 0;
@@ -15567,51 +15549,52 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
           transform: translateY(-50%);
   position: absolute;
   font-size: 11px;
+  padding-left: 60px;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_name .name_text span {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_name .name_text span {
   font-size: 9px;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_place {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_place {
   margin-left: 4px;
   float: left;
   min-width: 122px;
   width: 15%;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_place .place_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_place .place_text {
   font-size: 10px;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_date {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_date {
   margin-left: 4px;
   float: left;
   min-width: 76px;
   width: 10%;
 }
 @media only screen and (max-width: 1199px) {
-  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_date {
+  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_date {
     width: 9.7%;
   }
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_date .date_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_date .date_text {
   font-size: 11px;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_count {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_count {
   margin-left: 4px;
   float: left;
   min-width: 76px;
   width: 10%;
 }
 @media only screen and (max-width: 1199px) {
-  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_count {
+  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_count {
     width: 9.7%;
   }
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_count .count_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_count .count_text {
   font-size: 11px;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_money {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_money {
   margin-left: 4px;
   float: left;
   min-width: 94px;
@@ -15619,15 +15602,15 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
-  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_money {
+  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_money {
     width: 11.5%;
   }
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_money .money_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_money .money_text {
   font-size: 11px;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_profit {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_profit {
   margin-left: 4px;
   float: left;
   min-width: 94px;
@@ -15635,15 +15618,15 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
-  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_profit {
+  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_profit {
     width: 11.5%;
   }
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_profit .profit_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_profit .profit_text {
   font-size: 11px;
   text-align: center;
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_period {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_period {
   margin-left: 4px;
   float: left;
   min-width: 136px;
@@ -15651,11 +15634,11 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
-  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_period {
+  .main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_period {
     width: 16.6%;
   }
 }
-.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_info .user_period .period_text {
+.main_content.ref_admin .admin_service_content_my_referals .my_referals_users .referal_user .user_period .period_text {
   font-size: 11px;
   text-align: center;
 }
@@ -15665,11 +15648,8 @@ fieldset[disabled] .main_content #data_archive .datepicker table tr td.selected.
   color: #4d4d4d;
   background: #fbefa6;
   display: none;
-  position: absolute;
+  margin-top: 39px;
   width: 100%;
-  z-index: 9;
-  left: 0;
-  bottom: -32px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.43);
 }
